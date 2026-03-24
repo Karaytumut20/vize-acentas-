@@ -79,7 +79,7 @@ useHead({
       href: "/rss.xml",
     },
     { rel: "dns-prefetch", href: "https://www.google-analytics.com" },
-    { rel: "preload", href: "/fonts/inter-var.woff2", as: "font", type: "font/woff2", crossorigin: "anonymous" },
+    { rel: "preload", href: "/fonts/lchmp.woff2", as: "font", type: "font/woff2", crossorigin: "anonymous" },
   ],
   // 🔥 ÇÖZÜM: noscript etiketi Vue Template'i yerine Head kısmına taşındı.
   // JavaScript kapalıysa animasyon sınıfları (invisible) zorla görünür yapılır.

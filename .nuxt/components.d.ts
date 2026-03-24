@@ -33,6 +33,8 @@ export const NuxtRouteAnnouncer: typeof import("../node_modules/nuxt/dist/app/co
 export const NuxtAnnouncer: typeof import("../node_modules/nuxt/dist/app/components/nuxt-announcer")['default']
 export const NuxtImg: typeof import("../node_modules/@nuxt/image/dist/runtime/components/NuxtImg.vue")['default']
 export const NuxtPicture: typeof import("../node_modules/@nuxt/image/dist/runtime/components/NuxtPicture.vue")['default']
+export const DelayHydration: typeof import("../node_modules/nuxt-delay-hydration/dist/runtime/components/DelayHydration")['default']
+export const HydrationStatus: typeof import("../node_modules/nuxt-delay-hydration/dist/runtime/components/HydrationStatus.vue")['default']
 export const VitePwaManifest: typeof import("../node_modules/@vite-pwa/nuxt/dist/runtime/components/VitePwaManifest")['default']
 export const NuxtPwaManifest: typeof import("../node_modules/@vite-pwa/nuxt/dist/runtime/components/VitePwaManifest")['default']
 export const NuxtPwaAssets: typeof import("../node_modules/@vite-pwa/nuxt/dist/runtime/components/NuxtPwaAssets")['default']
@@ -94,6 +96,8 @@ export const LazyNuxtRouteAnnouncer: LazyComponent<typeof import("../node_module
 export const LazyNuxtAnnouncer: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-announcer")['default']>
 export const LazyNuxtImg: LazyComponent<typeof import("../node_modules/@nuxt/image/dist/runtime/components/NuxtImg.vue")['default']>
 export const LazyNuxtPicture: LazyComponent<typeof import("../node_modules/@nuxt/image/dist/runtime/components/NuxtPicture.vue")['default']>
+export const LazyDelayHydration: LazyComponent<typeof import("../node_modules/nuxt-delay-hydration/dist/runtime/components/DelayHydration")['default']>
+export const LazyHydrationStatus: LazyComponent<typeof import("../node_modules/nuxt-delay-hydration/dist/runtime/components/HydrationStatus.vue")['default']>
 export const LazyVitePwaManifest: LazyComponent<typeof import("../node_modules/@vite-pwa/nuxt/dist/runtime/components/VitePwaManifest")['default']>
 export const LazyNuxtPwaManifest: LazyComponent<typeof import("../node_modules/@vite-pwa/nuxt/dist/runtime/components/VitePwaManifest")['default']>
 export const LazyNuxtPwaAssets: LazyComponent<typeof import("../node_modules/@vite-pwa/nuxt/dist/runtime/components/NuxtPwaAssets")['default']>

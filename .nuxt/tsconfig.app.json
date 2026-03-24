@@ -94,6 +94,9 @@
       "vue-demi": [
         "../node_modules/nuxt/dist/app/compat/vue-demi"
       ],
+      "#nuxt-delay-hydration/api": [
+        "./delay-hydration.mjs"
+      ],
       "#site-config": [
         "../node_modules/nuxt-site-config/dist/runtime"
       ],
@@ -189,6 +192,7 @@
   "exclude": [
     "../node_modules",
     "../node_modules/nuxt/node_modules",
+    "../node_modules/nuxt-delay-hydration/node_modules",
     "../node_modules/@nuxtjs/tailwindcss/node_modules",
     "../node_modules/@pinia/nuxt/node_modules",
     "../node_modules/@nuxt/image/node_modules",

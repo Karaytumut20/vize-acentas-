@@ -33,6 +33,8 @@ interface _GlobalComponents {
   NuxtAnnouncer: typeof import("../../node_modules/nuxt/dist/app/components/nuxt-announcer")['default']
   NuxtImg: typeof import("../../node_modules/@nuxt/image/dist/runtime/components/NuxtImg.vue")['default']
   NuxtPicture: typeof import("../../node_modules/@nuxt/image/dist/runtime/components/NuxtPicture.vue")['default']
+  DelayHydration: typeof import("../../node_modules/nuxt-delay-hydration/dist/runtime/components/DelayHydration")['default']
+  HydrationStatus: typeof import("../../node_modules/nuxt-delay-hydration/dist/runtime/components/HydrationStatus.vue")['default']
   VitePwaManifest: typeof import("../../node_modules/@vite-pwa/nuxt/dist/runtime/components/VitePwaManifest")['default']
   NuxtPwaManifest: typeof import("../../node_modules/@vite-pwa/nuxt/dist/runtime/components/VitePwaManifest")['default']
   NuxtPwaAssets: typeof import("../../node_modules/@vite-pwa/nuxt/dist/runtime/components/NuxtPwaAssets")['default']
@@ -94,6 +96,8 @@ interface _GlobalComponents {
   LazyNuxtAnnouncer: LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/nuxt-announcer")['default']>
   LazyNuxtImg: LazyComponent<typeof import("../../node_modules/@nuxt/image/dist/runtime/components/NuxtImg.vue")['default']>
   LazyNuxtPicture: LazyComponent<typeof import("../../node_modules/@nuxt/image/dist/runtime/components/NuxtPicture.vue")['default']>
+  LazyDelayHydration: LazyComponent<typeof import("../../node_modules/nuxt-delay-hydration/dist/runtime/components/DelayHydration")['default']>
+  LazyHydrationStatus: LazyComponent<typeof import("../../node_modules/nuxt-delay-hydration/dist/runtime/components/HydrationStatus.vue")['default']>
   LazyVitePwaManifest: LazyComponent<typeof import("../../node_modules/@vite-pwa/nuxt/dist/runtime/components/VitePwaManifest")['default']>
   LazyNuxtPwaManifest: LazyComponent<typeof import("../../node_modules/@vite-pwa/nuxt/dist/runtime/components/VitePwaManifest")['default']>
   LazyNuxtPwaAssets: LazyComponent<typeof import("../../node_modules/@vite-pwa/nuxt/dist/runtime/components/NuxtPwaAssets")['default']>

@@ -8,22 +8,7 @@ export default defineNuxtConfig({
     inlineStyles: true
   },
 
-  vite: {
-    build: {
-      rollupOptions: {
-        output: {
-          manualChunks(id: string) {
-            if (id.includes('node_modules')) {
-              if (id.includes('vue') || id.includes('nuxt')) {
-                return 'core-vendor';
-              }
-              return 'vendor';
-            }
-          }
-        }
-      }
-    }
-  },
+
 
   srcDir: "app/",
 
@@ -85,6 +70,7 @@ export default defineNuxtConfig({
   },
 
   modules: [
+    "nuxt-delay-hydration",
     "@nuxtjs/tailwindcss",
     "@pinia/nuxt",
     "@nuxt/image",
@@ -93,6 +79,10 @@ export default defineNuxtConfig({
     "@vite-pwa/nuxt",
     "nuxt-schema-org",
   ],
+
+  delayHydration: {
+    mode: 'init',
+  },
 
   schemaOrg: {
     identity: "Organization",
@@ -139,7 +129,7 @@ export default defineNuxtConfig({
 
   image: {
     format: ["avif", "webp"],
-    quality: 75,
+    quality: 60,
     screens: {
       xs: 320,
       sm: 640,

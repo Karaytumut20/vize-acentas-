@@ -25,6 +25,7 @@ type NuxtAppInjections =
   InjectionType<typeof import("../../node_modules/nuxt-schema-org/dist/runtime/app/plugins/init.js")> &
   InjectionType<typeof import("../pwa-icons-plugin")> &
   InjectionType<typeof import("../../node_modules/@nuxtjs/robots/dist/runtime/app/plugins/robot-meta.server.js")> &
+  InjectionType<typeof import("../../node_modules/nuxt-delay-hydration/dist/runtime/nuxt-plugin.js")> &
   InjectionType<typeof import("../../node_modules/nuxt/dist/app/plugins/warn.dev.server.js")> &
   InjectionType<typeof import("../../node_modules/nuxt/dist/app/plugins/check-if-layout-used.js")> &
   InjectionType<typeof import("../../app/plugins/00.security.client")> &
