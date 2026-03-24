@@ -835,11 +835,15 @@ const _inlineRuntimeConfig = {
         "sitemapName": "sitemap.xml",
         "route": "sitemap.xml",
         "defaults": {
-          "lastmod": "2026-03-24T22:09:05Z"
+          "lastmod": "2026-03-24T22:32:25Z"
         },
         "include": [],
         "exclude": [
           "/_**",
+          "/_nuxt/**",
+          "/_nuxt/**",
+          "/_nuxt/**",
+          "/_nuxt/**",
           "/_nuxt/**",
           "/_nuxt/**"
         ],
@@ -6488,7 +6492,7 @@ const sources$1 = [
             },
             {
                 "loc": "/",
-                "lastmod": "2026-03-24T22:03:56.382Z"
+                "lastmod": "2026-03-24T22:30:44.641Z"
             }
         ],
         "sourceType": "app"

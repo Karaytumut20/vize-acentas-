@@ -4,6 +4,27 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: false },
 
+  features: {
+    inlineStyles: true
+  },
+
+  vite: {
+    build: {
+      rollupOptions: {
+        output: {
+          manualChunks(id: string) {
+            if (id.includes('node_modules')) {
+              if (id.includes('vue') || id.includes('nuxt')) {
+                return 'core-vendor';
+              }
+              return 'vendor';
+            }
+          }
+        }
+      }
+    }
+  },
+
   srcDir: "app/",
 
   app: {
@@ -119,7 +140,6 @@ export default defineNuxtConfig({
   image: {
     format: ["avif", "webp"],
     quality: 90,
-    provider: "ipx",
     screens: {
       xs: 320,
       sm: 640,

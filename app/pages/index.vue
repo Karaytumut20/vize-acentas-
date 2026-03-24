@@ -106,7 +106,7 @@ const testimonials = [
     <section class="relative min-h-[100svh] pt-32 pb-32 flex flex-col justify-center overflow-hidden">
       <!-- Background Image -->
       <div class="absolute inset-0 z-0">
-        <NuxtImg src="/img/hero-plane.jpg" alt="Vize Danışmanlık ve Seyahat" class="w-full h-full object-cover" format="webp" preload fetchpriority="high" />
+        <NuxtImg src="/img/hero-plane.jpg" alt="" class="w-full h-full object-cover" format="webp" preload fetchpriority="high" />
         <div class="absolute inset-0 bg-gradient-to-b from-[#0f172a]/90 via-[#0f172a]/70 to-[#0f172a]/95 backdrop-blur-[2px]"></div>
       </div>
 
@@ -255,9 +255,9 @@ const testimonials = [
             <div class="absolute bottom-10 left-10 right-10 bg-white/10 backdrop-blur-xl rounded-3xl p-6 border border-white/20">
               <div class="flex items-center gap-5">
                 <div class="flex -space-x-4">
-                  <img class="w-12 h-12 rounded-full border-2 border-[#0f172a]" src="https://i.pravatar.cc/100?img=1" alt="Müşteri">
-                  <img class="w-12 h-12 rounded-full border-2 border-[#0f172a]" src="https://i.pravatar.cc/100?img=2" alt="Müşteri">
-                  <img class="w-12 h-12 rounded-full border-2 border-[#0f172a]" src="https://i.pravatar.cc/100?img=3" alt="Müşteri">
+                  <NuxtImg class="w-12 h-12 rounded-full border-2 border-[#0f172a]" src="/img/avatar-1.jpg" alt="Müşteri" format="webp" loading="lazy" />
+                  <NuxtImg class="w-12 h-12 rounded-full border-2 border-[#0f172a]" src="/img/avatar-2.jpg" alt="Müşteri" format="webp" loading="lazy" />
+                  <NuxtImg class="w-12 h-12 rounded-full border-2 border-[#0f172a]" src="/img/avatar-3.jpg" alt="Müşteri" format="webp" loading="lazy" />
                   <div class="w-12 h-12 rounded-full border-2 border-[#0f172a] bg-[#f59e0b] flex items-center justify-center text-sm font-bold text-[#0f172a]">+5K</div>
                 </div>
                 <div>
@@ -299,7 +299,7 @@ const testimonials = [
                 {{ review.name.charAt(0) }}
               </div>
               <div>
-                <h4 class="font-bold text-[#0f172a] text-lg">{{ review.name }}</h4>
+                <h3 class="font-bold text-[#0f172a] text-lg">{{ review.name }}</h3>
                 <p class="text-[#b45309] text-sm">{{ review.visa }} Süreci</p>
               </div>
             </div>
