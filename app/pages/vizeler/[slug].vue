@@ -128,11 +128,15 @@ onMounted(() => {
           <h2 class="text-3xl font-black text-[#0f172a] mb-6 tracking-tight">{{ data.title }} Kapsamlı Rehberi</h2>
           <div class="prose prose-lg prose-gray max-w-none text-gray-600 leading-relaxed mb-10 font-medium" v-html="data.content"></div>
           
-          <div class="bg-gray-50 border-l-4 border-[#f59e0b] p-6 rounded-r-xl mb-12">
+          <div class="bg-gray-50 border-l-4 border-[#f59e0b] p-6 rounded-r-xl mb-8">
             <h3 class="text-xl font-bold text-[#0f172a] mb-3">Uzman Stratejisi</h3>
             <p class="text-gray-700 leading-relaxed text-sm">
               {{ data.howToApply }}
             </p>
+          </div>
+
+          <div class="mb-12">
+            <VisaCalculator />
           </div>
 
           <h3 class="text-2xl font-black text-[#0f172a] mb-6 tracking-tight" id="gerekli-evraklar">Gerekli Evraklar (Statüye Göre)</h3>
@@ -159,19 +163,9 @@ onMounted(() => {
                 </div>
               </button>
               
-              <div 
-                class="overflow-hidden transition-all duration-300 ease-in-out"
-                :style="{ maxHeight: activeReqCategory === index ? '500px' : '0px', opacity: activeReqCategory === index ? 1 : 0 }"
-              >
-                <div class="px-6 pb-6 pt-2 border-t border-gray-50">
-                  <ul class="space-y-3">
-                    <li v-for="(item, i) in req.items" :key="i" class="flex items-start gap-3 text-sm text-gray-600 font-medium">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#25D366] shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                      {{ item }}
-                    </li>
-                  </ul>
+                <div class="overflow-hidden transition-all duration-300 ease-in-out" :style="{ maxHeight: activeReqCategory === index ? '1000px' : '0px', opacity: activeReqCategory === index ? 1 : 0 }">
+                  <DocumentChecklist :items="req.items" v-if="req.category" :key="index" />
                 </div>
-              </div>
             </div>
           </div>
 

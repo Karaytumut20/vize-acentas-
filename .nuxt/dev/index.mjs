@@ -3,44 +3,44 @@ import { Server } from 'node:http';
 import { resolve as resolve$1, dirname, join } from 'node:path';
 import nodeCrypto from 'node:crypto';
 import { parentPort, threadId } from 'node:worker_threads';
-import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, appendResponseHeader, getRequestURL, getResponseHeader, removeResponseHeader, createError, getQuery as getQuery$1, readBody, getRequestProtocol, getRequestHost, setHeader, getHeader, getResponseStatus, lazyEventHandler, useBase, createApp, createRouter as createRouter$1, toNodeListener, getRouterParam, appendHeader, getResponseStatusText } from 'file://C:/Users/umut/Desktop/ccc%20-%20Kopya/node_modules/h3/dist/index.mjs';
-import { escapeHtml } from 'file://C:/Users/umut/Desktop/ccc%20-%20Kopya/node_modules/@vue/shared/dist/shared.cjs.js';
-import { Feed } from 'file://C:/Users/umut/Desktop/ccc%20-%20Kopya/node_modules/feed/lib/feed.js';
-import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file://C:/Users/umut/Desktop/ccc%20-%20Kopya/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { parseURL, withoutBase, joinURL, getQuery, withQuery, hasProtocol, withHttps, withoutTrailingSlash, withTrailingSlash, decodePath, withLeadingSlash, joinRelativeURL, withBase, parsePath, stringifyQuery, parseQuery, encodePath, stringifyParsedURL } from 'file://C:/Users/umut/Desktop/ccc%20-%20Kopya/node_modules/ufo/dist/index.mjs';
-import destr, { destr as destr$1 } from 'file://C:/Users/umut/Desktop/ccc%20-%20Kopya/node_modules/destr/dist/index.mjs';
-import { renderToString } from 'file://C:/Users/umut/Desktop/ccc%20-%20Kopya/node_modules/vue/server-renderer/index.mjs';
-import { klona } from 'file://C:/Users/umut/Desktop/ccc%20-%20Kopya/node_modules/klona/dist/index.mjs';
-import defu, { defuFn, defu as defu$1, createDefu } from 'file://C:/Users/umut/Desktop/ccc%20-%20Kopya/node_modules/defu/dist/defu.mjs';
-import { snakeCase } from 'file://C:/Users/umut/Desktop/ccc%20-%20Kopya/node_modules/scule/dist/index.mjs';
-import { createHead as createHead$1, propsToString, renderSSRHead } from 'file://C:/Users/umut/Desktop/ccc%20-%20Kopya/node_modules/unhead/dist/server.mjs';
-import { stringify, uneval } from 'file://C:/Users/umut/Desktop/ccc%20-%20Kopya/node_modules/devalue/index.js';
-import { toValue, isVNode, isRef } from 'file://C:/Users/umut/Desktop/ccc%20-%20Kopya/node_modules/vue/index.mjs';
-import { createHooks } from 'file://C:/Users/umut/Desktop/ccc%20-%20Kopya/node_modules/nitropack/node_modules/hookable/dist/index.mjs';
-import { createFetch, Headers as Headers$1 } from 'file://C:/Users/umut/Desktop/ccc%20-%20Kopya/node_modules/ofetch/dist/node.mjs';
-import { fetchNodeRequestHandler, callNodeRequestHandler } from 'file://C:/Users/umut/Desktop/ccc%20-%20Kopya/node_modules/node-mock-http/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file://C:/Users/umut/Desktop/ccc%20-%20Kopya/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file://C:/Users/umut/Desktop/ccc%20-%20Kopya/node_modules/unstorage/drivers/fs.mjs';
-import { digest } from 'file://C:/Users/umut/Desktop/ccc%20-%20Kopya/node_modules/ohash/dist/index.mjs';
-import { toRouteMatcher, createRouter } from 'file://C:/Users/umut/Desktop/ccc%20-%20Kopya/node_modules/radix3/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, appendResponseHeader, getRequestURL, getResponseHeader, removeResponseHeader, createError, getQuery as getQuery$1, readBody, getRequestProtocol, getRequestHost, setHeader, getHeader, getResponseStatus, lazyEventHandler, useBase, createApp, createRouter as createRouter$1, toNodeListener, getRouterParam, appendHeader, getResponseStatusText } from 'file://C:/Users/umut/Desktop/vize%20acentas%C4%B1/node_modules/h3/dist/index.mjs';
+import { escapeHtml } from 'file://C:/Users/umut/Desktop/vize%20acentas%C4%B1/node_modules/@vue/shared/dist/shared.cjs.js';
+import { Feed } from 'file://C:/Users/umut/Desktop/vize%20acentas%C4%B1/node_modules/feed/lib/feed.js';
+import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file://C:/Users/umut/Desktop/vize%20acentas%C4%B1/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { parseURL, withoutBase, joinURL, getQuery, withQuery, hasProtocol, withHttps, withoutTrailingSlash, withTrailingSlash, decodePath, withLeadingSlash, joinRelativeURL, withBase, parsePath, stringifyQuery, parseQuery, encodePath, stringifyParsedURL } from 'file://C:/Users/umut/Desktop/vize%20acentas%C4%B1/node_modules/ufo/dist/index.mjs';
+import destr, { destr as destr$1 } from 'file://C:/Users/umut/Desktop/vize%20acentas%C4%B1/node_modules/destr/dist/index.mjs';
+import { renderToString } from 'file://C:/Users/umut/Desktop/vize%20acentas%C4%B1/node_modules/vue/server-renderer/index.mjs';
+import { klona } from 'file://C:/Users/umut/Desktop/vize%20acentas%C4%B1/node_modules/klona/dist/index.mjs';
+import defu, { defuFn, defu as defu$1, createDefu } from 'file://C:/Users/umut/Desktop/vize%20acentas%C4%B1/node_modules/defu/dist/defu.mjs';
+import { snakeCase } from 'file://C:/Users/umut/Desktop/vize%20acentas%C4%B1/node_modules/scule/dist/index.mjs';
+import { createHead as createHead$1, propsToString, renderSSRHead } from 'file://C:/Users/umut/Desktop/vize%20acentas%C4%B1/node_modules/unhead/dist/server.mjs';
+import { stringify, uneval } from 'file://C:/Users/umut/Desktop/vize%20acentas%C4%B1/node_modules/devalue/index.js';
+import { toValue, isVNode, isRef } from 'file://C:/Users/umut/Desktop/vize%20acentas%C4%B1/node_modules/vue/index.mjs';
+import { createHooks } from 'file://C:/Users/umut/Desktop/vize%20acentas%C4%B1/node_modules/nitropack/node_modules/hookable/dist/index.mjs';
+import { createFetch, Headers as Headers$1 } from 'file://C:/Users/umut/Desktop/vize%20acentas%C4%B1/node_modules/ofetch/dist/node.mjs';
+import { fetchNodeRequestHandler, callNodeRequestHandler } from 'file://C:/Users/umut/Desktop/vize%20acentas%C4%B1/node_modules/node-mock-http/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file://C:/Users/umut/Desktop/vize%20acentas%C4%B1/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file://C:/Users/umut/Desktop/vize%20acentas%C4%B1/node_modules/unstorage/drivers/fs.mjs';
+import { digest } from 'file://C:/Users/umut/Desktop/vize%20acentas%C4%B1/node_modules/ohash/dist/index.mjs';
+import { toRouteMatcher, createRouter } from 'file://C:/Users/umut/Desktop/vize%20acentas%C4%B1/node_modules/radix3/dist/index.mjs';
 import { readFile } from 'node:fs/promises';
-import consola, { createConsola, consola as consola$1 } from 'file://C:/Users/umut/Desktop/ccc%20-%20Kopya/node_modules/consola/dist/index.mjs';
-import { ErrorParser } from 'file://C:/Users/umut/Desktop/ccc%20-%20Kopya/node_modules/youch-core/build/index.js';
-import { Youch } from 'file://C:/Users/umut/Desktop/ccc%20-%20Kopya/node_modules/youch/build/index.js';
-import { SourceMapConsumer } from 'file://C:/Users/umut/Desktop/ccc%20-%20Kopya/node_modules/source-map/source-map.js';
-import devalue from 'file://C:/Users/umut/Desktop/ccc%20-%20Kopya/node_modules/@nuxt/devalue/dist/devalue.mjs';
+import consola, { createConsola, consola as consola$1 } from 'file://C:/Users/umut/Desktop/vize%20acentas%C4%B1/node_modules/consola/dist/index.mjs';
+import { ErrorParser } from 'file://C:/Users/umut/Desktop/vize%20acentas%C4%B1/node_modules/youch-core/build/index.js';
+import { Youch } from 'file://C:/Users/umut/Desktop/vize%20acentas%C4%B1/node_modules/youch/build/index.js';
+import { SourceMapConsumer } from 'file://C:/Users/umut/Desktop/vize%20acentas%C4%B1/node_modules/source-map/source-map.js';
+import devalue from 'file://C:/Users/umut/Desktop/vize%20acentas%C4%B1/node_modules/@nuxt/devalue/dist/devalue.mjs';
 import { AsyncLocalStorage } from 'node:async_hooks';
-import { getContext } from 'file://C:/Users/umut/Desktop/ccc%20-%20Kopya/node_modules/unctx/dist/index.mjs';
-import { captureRawStackTrace, parseRawStackTrace } from 'file://C:/Users/umut/Desktop/ccc%20-%20Kopya/node_modules/errx/dist/index.js';
-import _wH6JrtIxmaSoA8lCPWFnE9z4lQeXW6H5z3l5aymEQw from 'file://C:/Users/umut/Desktop/ccc%20-%20Kopya/node_modules/@nuxt/vite-builder/dist/fix-stacktrace.mjs';
+import { getContext } from 'file://C:/Users/umut/Desktop/vize%20acentas%C4%B1/node_modules/unctx/dist/index.mjs';
+import { captureRawStackTrace, parseRawStackTrace } from 'file://C:/Users/umut/Desktop/vize%20acentas%C4%B1/node_modules/errx/dist/index.js';
+import _wH6JrtIxmaSoA8lCPWFnE9z4lQeXW6H5z3l5aymEQw from 'file://C:/Users/umut/Desktop/vize%20acentas%C4%B1/node_modules/@nuxt/vite-builder/dist/fix-stacktrace.mjs';
 import { promises } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { dirname as dirname$1, resolve as resolve$2, isAbsolute } from 'file://C:/Users/umut/Desktop/ccc%20-%20Kopya/node_modules/pathe/dist/index.mjs';
-import { walkResolver } from 'file://C:/Users/umut/Desktop/ccc%20-%20Kopya/node_modules/unhead/dist/utils.mjs';
-import { XMLParser } from 'file://C:/Users/umut/Desktop/ccc%20-%20Kopya/node_modules/fast-xml-parser/src/fxp.js';
-import { ipxFSStorage, ipxHttpStorage, createIPX, createIPXH3Handler } from 'file://C:/Users/umut/Desktop/ccc%20-%20Kopya/node_modules/ipx/dist/index.mjs';
+import { dirname as dirname$1, resolve as resolve$2, isAbsolute } from 'file://C:/Users/umut/Desktop/vize%20acentas%C4%B1/node_modules/pathe/dist/index.mjs';
+import { walkResolver } from 'file://C:/Users/umut/Desktop/vize%20acentas%C4%B1/node_modules/unhead/dist/utils.mjs';
+import { XMLParser } from 'file://C:/Users/umut/Desktop/vize%20acentas%C4%B1/node_modules/fast-xml-parser/src/fxp.js';
+import { ipxFSStorage, ipxHttpStorage, createIPX, createIPXH3Handler } from 'file://C:/Users/umut/Desktop/vize%20acentas%C4%B1/node_modules/ipx/dist/index.mjs';
 
-const serverAssets = [{"baseName":"server","dir":"C:/Users/umut/Desktop/ccc - Kopya/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"C:/Users/umut/Desktop/vize acentası/server/assets"}];
 
 const assets$1 = createStorage();
 
@@ -52,11 +52,11 @@ const storage = createStorage({});
 
 storage.mount('/assets', assets$1);
 
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:/Users/umut/Desktop/ccc - Kopya","watchOptions":{"ignored":[null]}}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:/Users/umut/Desktop/ccc - Kopya/server","watchOptions":{"ignored":[null]}}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:/Users/umut/Desktop/ccc - Kopya/.nuxt"}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:/Users/umut/Desktop/ccc - Kopya/.nuxt/cache"}));
-storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"C:/Users/umut/Desktop/ccc - Kopya/.data/kv"}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:/Users/umut/Desktop/vize acentası","watchOptions":{"ignored":[null]}}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:/Users/umut/Desktop/vize acentası/server","watchOptions":{"ignored":[null]}}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:/Users/umut/Desktop/vize acentası/.nuxt"}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:/Users/umut/Desktop/vize acentası/.nuxt/cache"}));
+storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"C:/Users/umut/Desktop/vize acentası/.data/kv"}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -671,6 +671,36 @@ const _inlineRuntimeConfig = {
           "X-Robots-Tag": "noindex"
         }
       },
+      "/vizeler/schengen-vizesi": {
+        "prerender": true
+      },
+      "/vizeler/amerika-vizesi": {
+        "prerender": true
+      },
+      "/vizeler/ingiltere-vizesi": {
+        "prerender": true
+      },
+      "/vizeler/japonya-vizesi": {
+        "prerender": true
+      },
+      "/vizeler/kanada-vizesi": {
+        "prerender": true
+      },
+      "/vizeler/cin-vizesi": {
+        "prerender": true
+      },
+      "/vizeler/avustralya-vizesi": {
+        "prerender": true
+      },
+      "/vizeler/dubai-vizesi": {
+        "prerender": true
+      },
+      "/vizeler/misir-vizesi": {
+        "prerender": true
+      },
+      "/vizeler/rusya-vizesi": {
+        "prerender": true
+      },
       "/_nuxt/builds/meta/**": {
         "headers": {
           "cache-control": "public, max-age=31536000, immutable"
@@ -680,11 +710,41 @@ const _inlineRuntimeConfig = {
         "headers": {
           "cache-control": "public, max-age=1, immutable"
         }
+      },
+      "/vizeler/schengen-vizesi/_payload.json": {
+        "prerender": true
+      },
+      "/vizeler/amerika-vizesi/_payload.json": {
+        "prerender": true
+      },
+      "/vizeler/ingiltere-vizesi/_payload.json": {
+        "prerender": true
+      },
+      "/vizeler/japonya-vizesi/_payload.json": {
+        "prerender": true
+      },
+      "/vizeler/kanada-vizesi/_payload.json": {
+        "prerender": true
+      },
+      "/vizeler/cin-vizesi/_payload.json": {
+        "prerender": true
+      },
+      "/vizeler/avustralya-vizesi/_payload.json": {
+        "prerender": true
+      },
+      "/vizeler/dubai-vizesi/_payload.json": {
+        "prerender": true
+      },
+      "/vizeler/misir-vizesi/_payload.json": {
+        "prerender": true
+      },
+      "/vizeler/rusya-vizesi/_payload.json": {
+        "prerender": true
       }
     }
   },
   "public": {
-    "siteUrl": "https://champegitim.com.tr",
+    "siteUrl": "https://vize-acentasi.vercel.app",
     "gtagId": "",
     "nuxt-schema-org": {
       "reactive": true,
@@ -724,7 +784,7 @@ const _inlineRuntimeConfig = {
         }
       ],
       "sitemap": [
-        "https://champegitim.com.tr/sitemap.xml",
+        "https://vize-acentasi.vercel.app/sitemap.xml",
         "/sitemap.xml"
       ],
       "header": true,
@@ -775,7 +835,7 @@ const _inlineRuntimeConfig = {
         "sitemapName": "sitemap.xml",
         "route": "sitemap.xml",
         "defaults": {
-          "lastmod": "2026-03-23T19:26:49Z"
+          "lastmod": "2026-03-24T18:42:25Z"
         },
         "include": [],
         "exclude": [
@@ -800,7 +860,7 @@ const _inlineRuntimeConfig = {
       {
         "_context": "system",
         "_priority": -15,
-        "name": "ccc - Kopya",
+        "name": "vize acentası",
         "env": "development"
       },
       {
@@ -811,8 +871,8 @@ const _inlineRuntimeConfig = {
       {
         "_priority": -3,
         "_context": "nuxt-site-config:config",
-        "url": "https://champegitim.com.tr",
-        "name": "Champ Yurt Dışı Eğitim | Sınavsız Üniversite"
+        "url": "https://vize-acentasi.vercel.app",
+        "name": "Vize Acentası | Profesyonel Vize Danışmanlık"
       }
     ],
     "version": "3.2.21",
@@ -848,7 +908,7 @@ const _inlineRuntimeConfig = {
       }
     ],
     "sitemap": [
-      "https://champegitim.com.tr/sitemap.xml",
+      "https://vize-acentasi.vercel.app/sitemap.xml",
       "/sitemap.xml"
     ],
     "header": true,
@@ -863,7 +923,7 @@ const _inlineRuntimeConfig = {
     "alias": {},
     "fs": {
       "dir": [
-        "C:/Users/umut/Desktop/ccc - Kopya/public"
+        "C:/Users/umut/Desktop/vize acentası/public"
       ]
     },
     "http": {
@@ -2325,7 +2385,7 @@ function getSiteConfig(e, _options) {
   return e.context.siteConfig.get(options);
 }
 
-const _d05Gj_slDkCOcH45U7n62jt46m2FbAkUVCNpZWYXhzc = defineNitroPlugin(async (nitroApp) => {
+const _GtiAsu40g7LNmOFTLCaeXBqU05pvVl92U_iRrSjqsE = defineNitroPlugin(async (nitroApp) => {
   nitroApp.hooks.hook("render:html", async (ctx, { event }) => {
     const routeOptions = getRouteRules(event);
     const isIsland = process.env.NUXT_COMPONENT_ISLANDS && event.path.startsWith("/__nuxt_island");
@@ -2849,7 +2909,7 @@ async function resolveRobotsTxtContext(e, nitro = useNitroApp()) {
   return generateRobotsTxtCtx;
 }
 
-const _y7BmUU8P0C9i6OsnkgKKT8uo09ttF1XUC6sHmUhuSs = defineNitroPlugin(async (nitroApp) => {
+const _2RIDMvIGRDACNAGMw5sjolW650p3JDf1xi2LFlFIow = defineNitroPlugin(async (nitroApp) => {
   const { isNuxtContentV2, robotsDisabledValue, botDetection } = useRuntimeConfigNuxtRobots();
   if (botDetection !== false) {
     nitroApp._robotsPatternMap = createPatternMap();
@@ -2873,7 +2933,7 @@ const _y7BmUU8P0C9i6OsnkgKKT8uo09ttF1XUC6sHmUhuSs = defineNitroPlugin(async (nit
   }
 });
 
-const rootDir = "C:/Users/umut/Desktop/ccc - Kopya";
+const rootDir = "C:/Users/umut/Desktop/vize acentası";
 
 const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no"},{"charset":"utf-8"},{"name":"theme-color","content":"hsl(253 0% 7%)"},{"name":"msapplication-TileColor","content":"#000000"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"black-translucent"},{"name":"mobile-web-app-capable","content":"yes"},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image/x-icon","href":"/favicon.ico"},{"rel":"icon","type":"image/png","sizes":"32x32","href":"/favicon-32x32.png"},{"rel":"icon","type":"image/png","sizes":"16x16","href":"/favicon-16x16.png"},{"rel":"apple-touch-icon","sizes":"180x180","href":"/apple-touch-icon.png"},{"rel":"mask-icon","href":"/safari-pinned-tab.svg","color":"#000000"},{"rel":"preload","as":"font","type":"font/woff2","href":"/fonts/lchmp.woff2","crossorigin":"anonymous"}],"style":[],"script":[],"noscript":[],"htmlAttrs":{"lang":"tr"},"charset":"utf-8","viewport":"width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no"};
 
@@ -2902,7 +2962,7 @@ const asyncContext = getContext("nuxt-dev", {
 	asyncContext: true,
 	AsyncLocalStorage
 });
-const _WYpFUILYH2m6pZffWoPBCSVtqyyYt2swf52DbIDCYuI = (nitroApp) => {
+const _zYaREM_1VqOP7mDvyM5y_X0SmtCZ6bSdvTfGccIqk3Q = (nitroApp) => {
 	const handler = nitroApp.h3App.handler;
 	nitroApp.h3App.handler = (event) => {
 		return asyncContext.callAsync({
@@ -2976,9 +3036,9 @@ function onConsoleLog(callback) {
 }
 
 const plugins = [
-  _d05Gj_slDkCOcH45U7n62jt46m2FbAkUVCNpZWYXhzc,
-_y7BmUU8P0C9i6OsnkgKKT8uo09ttF1XUC6sHmUhuSs,
-_WYpFUILYH2m6pZffWoPBCSVtqyyYt2swf52DbIDCYuI,
+  _GtiAsu40g7LNmOFTLCaeXBqU05pvVl92U_iRrSjqsE,
+_2RIDMvIGRDACNAGMw5sjolW650p3JDf1xi2LFlFIow,
+_zYaREM_1VqOP7mDvyM5y_X0SmtCZ6bSdvTfGccIqk3Q,
 _wH6JrtIxmaSoA8lCPWFnE9z4lQeXW6H5z3l5aymEQw
 ];
 
@@ -3007,7 +3067,7 @@ function getAsset (id) {
 
 const METHODS = /* @__PURE__ */ new Set(["HEAD", "GET"]);
 const EncodingMap = { gzip: ".gz", br: ".br" };
-const _RZ5kvb = eventHandler((event) => {
+const _SqZzdS = eventHandler((event) => {
   if (event.method && !METHODS.has(event.method)) {
     return;
   }
@@ -3071,7 +3131,7 @@ const _RZ5kvb = eventHandler((event) => {
   return readAsset(id);
 });
 
-const _VRPYn3 = defineEventHandler((event) => {
+const _1Rv5SA = defineEventHandler((event) => {
   const host = getRequestHeader(event, "x-forwarded-host") || getRequestHeader(event, "host");
   if (!host || !host.startsWith("www.")) return;
   const url = getRequestURL(event);
@@ -3161,9 +3221,9 @@ function publicAssetsURL(...path) {
 const APP_ROOT_OPEN_TAG = `<${appRootTag}${propsToString(appRootAttrs)}>`;
 const APP_ROOT_CLOSE_TAG = `</${appRootTag}>`;
 // @ts-expect-error file will be produced after app build
-const getServerEntry = () => import('file://C:/Users/umut/Desktop/ccc%20-%20Kopya/.nuxt//dist/server/server.mjs').then((r) => r.default || r);
+const getServerEntry = () => import('file://C:/Users/umut/Desktop/vize%20acentas%C4%B1/.nuxt//dist/server/server.mjs').then((r) => r.default || r);
 // @ts-expect-error file will be produced after app build
-const getClientManifest = () => import('file://C:/Users/umut/Desktop/ccc%20-%20Kopya/.nuxt//dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getClientManifest = () => import('file://C:/Users/umut/Desktop/vize%20acentas%C4%B1/.nuxt//dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
 // -- SSR Renderer --
 const getSSRRenderer = lazyCachedFunction(async () => {
 	// Load server bundle
@@ -3549,7 +3609,7 @@ function getNitroOrigin(e) {
   });
 }
 
-const _k2zNDV = eventHandler(async (e) => {
+const _LrUvVk = eventHandler(async (e) => {
   if (e.context._initedSiteConfig)
     return;
   const runtimeConfig = useRuntimeConfig(e);
@@ -3600,7 +3660,7 @@ const _k2zNDV = eventHandler(async (e) => {
   e.context._initedSiteConfig = true;
 });
 
-const _WuhBih = eventHandler(async (e) => {
+const _NPOxLp = eventHandler(async (e) => {
   const siteConfig = getSiteConfig(e);
   const nitroOrigin = getNitroOrigin(e);
   const runtimeConfig = useRuntimeConfig(e);
@@ -3829,7 +3889,7 @@ function getSiteRobotConfig(e) {
   return { indexable, hints };
 }
 
-const _2p3Xro = defineEventHandler(async (e) => {
+const _AuJHYC = defineEventHandler(async (e) => {
   const nitroApp = useNitroApp();
   const { indexable, hints } = getSiteRobotConfig(e);
   const { credits, isNuxtContentV2, cacheControl } = useRuntimeConfigNuxtRobots(e);
@@ -4018,7 +4078,7 @@ function getPathRobotConfig(e, options) {
   };
 }
 
-const _xVZY2b = defineEventHandler(async (e) => {
+const _xOhA8X = defineEventHandler(async (e) => {
   if (e.path === "/robots.txt" || e.path.startsWith("/__") || e.path.startsWith("/api") || e.path.startsWith("/_nuxt"))
     return;
   const nuxtRobotsConfig = useRuntimeConfigNuxtRobots(e);
@@ -4037,7 +4097,7 @@ const _xVZY2b = defineEventHandler(async (e) => {
   }
 });
 
-const _7sMe_Y = defineEventHandler(async (e) => {
+const __QeyeE = defineEventHandler(async (e) => {
   const runtimeConfig = useRuntimeConfigNuxtRobots(e);
   const { indexable, hints } = getSiteRobotConfig(e);
   const siteConfig = useSiteConfig(e);
@@ -4057,7 +4117,7 @@ const _7sMe_Y = defineEventHandler(async (e) => {
   };
 });
 
-const _QABzUr = defineEventHandler(async (e) => {
+const _BTvimN = defineEventHandler(async (e) => {
   const query = getQuery$1(e);
   const path = query.path;
   const isMockProduction = Boolean(query.mockProductionEnv);
@@ -4566,7 +4626,7 @@ async function parseSitemapXml(xml) {
   if (!xml) {
     throw new Error("Empty XML input provided");
   }
-  const { XMLParser } = await import('file://C:/Users/umut/Desktop/ccc%20-%20Kopya/node_modules/fast-xml-parser/src/fxp.js');
+  const { XMLParser } = await import('file://C:/Users/umut/Desktop/vize%20acentas%C4%B1/node_modules/fast-xml-parser/src/fxp.js');
   const parser = new XMLParser({
     isArray: (tagName) => ["url", "image", "video", "link", "tag", "price"].includes(tagName),
     removeNSPrefix: true,
@@ -4932,7 +4992,7 @@ function attachUrlWarnings(sources) {
   }
   return sources;
 }
-const _66yMxN = defineEventHandler(async (e) => {
+const _kiR2Ck = defineEventHandler(async (e) => {
   const _runtimeConfig = useSitemapRuntimeConfig();
   const siteConfig = getSiteConfig(e);
   const { sitemaps: _sitemaps } = _runtimeConfig;
@@ -4957,7 +5017,7 @@ const _66yMxN = defineEventHandler(async (e) => {
   };
 });
 
-const _ch74Qb = defineEventHandler(async (e) => {
+const _awKsbN = defineEventHandler(async (e) => {
   const fixPath = createSitePathResolver(e, { absolute: false, withBase: true });
   const { sitemapName: fallbackSitemapName, cacheMaxAgeSeconds, version, xslColumns, xslTips } = useSitemapRuntimeConfig();
   setHeader(e, "Content-Type", "application/xslt+xml");
@@ -5974,7 +6034,7 @@ async function sitemapXmlEventHandler(e) {
   return createSitemap(e, Object.values(sitemaps)[0], runtimeConfig);
 }
 
-const _Nj3MQZ = defineEventHandler(sitemapXmlEventHandler);
+const _Kb5q7f = defineEventHandler(sitemapXmlEventHandler);
 
 function useSchemaOrgConfig(e) {
   const runtimeConfig = useRuntimeConfig(e);
@@ -5983,7 +6043,7 @@ function useSchemaOrgConfig(e) {
   });
 }
 
-const _fjsQnC = defineEventHandler(async (e) => {
+const _YXU94F = defineEventHandler(async (e) => {
   const nitroOrigin = useNitroOrigin(e);
   return {
     nitroOrigin,
@@ -6071,7 +6131,7 @@ async function runTask(name, {
   }
 }
 
-const _n2Pqht = lazyEventHandler(() => {
+const _EZ05Oc = lazyEventHandler(() => {
   const opts = useRuntimeConfig().ipx || {};
   const fsDir = opts?.fs?.dir ? (Array.isArray(opts.fs.dir) ? opts.fs.dir : [opts.fs.dir]).map((dir) => isAbsolute(dir) ? dir : fileURLToPath(new URL(dir, globalThis._importMeta_.url))) : void 0;
   const fsStorage = opts.fs?.dir ? ipxFSStorage({ ...opts.fs, dir: fsDir }) : void 0;
@@ -6089,29 +6149,29 @@ const _n2Pqht = lazyEventHandler(() => {
   return useBase(opts.baseURL, ipxHandler);
 });
 
-const _lazy_FJR4zT = () => Promise.resolve().then(function () { return llms_txt$1; });
-const _lazy_Sc_ke3 = () => Promise.resolve().then(function () { return rss_xml$1; });
-const _lazy_fo0qiw = () => Promise.resolve().then(function () { return renderer; });
+const _lazy_zUoVfM = () => Promise.resolve().then(function () { return llms_txt$1; });
+const _lazy_0Wqfv6 = () => Promise.resolve().then(function () { return rss_xml$1; });
+const _lazy_rLZVAa = () => Promise.resolve().then(function () { return renderer; });
 
 const handlers = [
-  { route: '', handler: _RZ5kvb, lazy: false, middleware: true, method: undefined },
-  { route: '', handler: _VRPYn3, lazy: false, middleware: true, method: undefined },
-  { route: '/llms.txt', handler: _lazy_FJR4zT, lazy: true, middleware: false, method: undefined },
-  { route: '/rss.xml', handler: _lazy_Sc_ke3, lazy: true, middleware: false, method: undefined },
-  { route: '/__nuxt_error', handler: _lazy_fo0qiw, lazy: true, middleware: false, method: undefined },
+  { route: '', handler: _SqZzdS, lazy: false, middleware: true, method: undefined },
+  { route: '', handler: _1Rv5SA, lazy: false, middleware: true, method: undefined },
+  { route: '/llms.txt', handler: _lazy_zUoVfM, lazy: true, middleware: false, method: undefined },
+  { route: '/rss.xml', handler: _lazy_0Wqfv6, lazy: true, middleware: false, method: undefined },
+  { route: '/__nuxt_error', handler: _lazy_rLZVAa, lazy: true, middleware: false, method: undefined },
   { route: '/__nuxt_island/**', handler: handler$1, lazy: false, middleware: false, method: undefined },
-  { route: '', handler: _k2zNDV, lazy: false, middleware: true, method: undefined },
-  { route: '/__site-config__/debug.json', handler: _WuhBih, lazy: false, middleware: false, method: undefined },
-  { route: '/robots.txt', handler: _2p3Xro, lazy: false, middleware: false, method: undefined },
-  { route: '', handler: _xVZY2b, lazy: false, middleware: true, method: undefined },
-  { route: '/__robots__/debug.json', handler: _7sMe_Y, lazy: false, middleware: false, method: undefined },
-  { route: '/__robots__/debug-path.json', handler: _QABzUr, lazy: false, middleware: false, method: undefined },
-  { route: '/__sitemap__/debug.json', handler: _66yMxN, lazy: false, middleware: false, method: undefined },
-  { route: '/__sitemap__/style.xsl', handler: _ch74Qb, lazy: false, middleware: false, method: undefined },
-  { route: '/sitemap.xml', handler: _Nj3MQZ, lazy: false, middleware: false, method: undefined },
-  { route: '/__schema-org__/debug.json', handler: _fjsQnC, lazy: false, middleware: false, method: undefined },
-  { route: '/_ipx/**', handler: _n2Pqht, lazy: false, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_fo0qiw, lazy: true, middleware: false, method: undefined }
+  { route: '', handler: _LrUvVk, lazy: false, middleware: true, method: undefined },
+  { route: '/__site-config__/debug.json', handler: _NPOxLp, lazy: false, middleware: false, method: undefined },
+  { route: '/robots.txt', handler: _AuJHYC, lazy: false, middleware: false, method: undefined },
+  { route: '', handler: _xOhA8X, lazy: false, middleware: true, method: undefined },
+  { route: '/__robots__/debug.json', handler: __QeyeE, lazy: false, middleware: false, method: undefined },
+  { route: '/__robots__/debug-path.json', handler: _BTvimN, lazy: false, middleware: false, method: undefined },
+  { route: '/__sitemap__/debug.json', handler: _kiR2Ck, lazy: false, middleware: false, method: undefined },
+  { route: '/__sitemap__/style.xsl', handler: _awKsbN, lazy: false, middleware: false, method: undefined },
+  { route: '/sitemap.xml', handler: _Kb5q7f, lazy: false, middleware: false, method: undefined },
+  { route: '/__schema-org__/debug.json', handler: _YXU94F, lazy: false, middleware: false, method: undefined },
+  { route: '/_ipx/**', handler: _EZ05Oc, lazy: false, middleware: false, method: undefined },
+  { route: '/**', handler: _lazy_rLZVAa, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
@@ -6386,28 +6446,40 @@ const sources$1 = [
         },
         "urls": [
             {
-                "loc": "/garanti-ve-guvence",
-                "lastmod": "2026-03-22T01:35:35.225Z"
+                "loc": "/basarilarimiz",
+                "lastmod": "2026-03-24T18:31:15.460Z"
+            },
+            {
+                "loc": "/blog",
+                "lastmod": "2026-03-24T18:30:35.252Z"
+            },
+            {
+                "loc": "/gizlilik-politikasi",
+                "lastmod": "2026-03-24T18:31:17.465Z"
+            },
+            {
+                "loc": "/hakkimizda",
+                "lastmod": "2026-03-24T18:31:10.300Z"
             },
             {
                 "loc": "/iletisim",
-                "lastmod": "2026-03-22T03:12:15.589Z"
+                "lastmod": "2026-03-23T20:16:31.982Z"
             },
             {
                 "loc": "/kurumsal",
-                "lastmod": "2026-03-22T03:12:13.570Z"
+                "lastmod": "2026-03-24T01:43:32.733Z"
             },
             {
-                "loc": "/programlar",
-                "lastmod": "2026-03-22T01:36:28.788Z"
+                "loc": "/randevu-al",
+                "lastmod": "2026-03-24T18:30:46.129Z"
             },
             {
                 "loc": "/sss",
-                "lastmod": "2026-03-22T03:13:23.579Z"
+                "lastmod": "2026-03-24T18:30:44.121Z"
             },
             {
-                "loc": "/universiteler",
-                "lastmod": "2026-03-22T03:13:25.602Z"
+                "loc": "/vizeler",
+                "lastmod": "2026-03-24T00:08:28.162Z"
             },
             {
                 "loc": "/yazilar",
@@ -6415,7 +6487,7 @@ const sources$1 = [
             },
             {
                 "loc": "/",
-                "lastmod": "2026-03-23T19:15:57.303Z"
+                "lastmod": "2026-03-24T18:32:40.559Z"
             }
         ],
         "sourceType": "app"
@@ -6435,28 +6507,28 @@ const childSources = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProper
 }, Symbol.toStringTag, { value: 'Module' }));
 
 const siteConfig = {
-  name: "Champ Yurt D\u0131\u015F\u0131 E\u011Fitim | S\u0131navs\u0131z \xDCniversite",
-  description: "Lise diplomas\u0131 ile Avrupa ve d\xFCnyadaki partner \xFCniversitelerimize s\u0131navs\u0131z kay\u0131t! Makedonya, Bosna Hersek e\u011Fitimleri, Work and Travel ve kariyer garantisi.",
-  url: "https://champegitim.com.tr",
-  ogImage: "https://champegitim.com.tr/og-image.jpg",
+  name: "Vize Acentas\u0131 | Profesyonel Vize Dan\u0131\u015Fmanl\u0131k",
+  description: "T\xFCrkiye'nin en g\xFCvenilir vize dan\u0131\u015Fmanl\u0131k firmas\u0131. Schengen, Amerika, \u0130ngiltere, Kanada ve di\u011Fer \xFClke vizesi ba\u015Fvurular\u0131n\u0131zda uzman deste\u011Fi ile yan\u0131n\u0131zday\u0131z.",
+  url: "https://vize-acentasi.vercel.app",
+  ogImage: "https://vize-acentasi.vercel.app/images/og-default.jpg",
   lang: "tr",
-  contactEmail: "bilgi@champegitim.com.tr",
+  contactEmail: "bilgi@vize-acentasi.vercel.app",
   foundedAt: "2014-01-01",
   address: {
     addressLocality: "\u0130stanbul",
     addressCountry: "TR"
   },
   links: {
-    twitter: "https://twitter.com/champegitim",
-    linkedin: "https://linkedin.com/company/champ-egitim"},
+    twitter: "https://twitter.com/vizeacentasi",
+    linkedin: "https://linkedin.com/company/vizeacentasi"},
   knowsAbout: [
-    "Yurt D\u0131\u015F\u0131 E\u011Fitim Dan\u0131\u015Fmanl\u0131\u011F\u0131",
-    "S\u0131navs\u0131z \xDCniversite Kabul\xFC",
-    "Makedonya ve Bosna Hersek \xDCniversiteleri",
-    "A\xE7\u0131ktan \xDCniversite",
-    "Work and Travel"
+    "Schengen Vizesi Dan\u0131\u015Fmanl\u0131\u011F\u0131",
+    "Amerika Vizesi",
+    "\u0130ngiltere Vizesi",
+    "Kanada Vizesi",
+    "Vize Ba\u015Fvuru S\xFCre\xE7 Takibi"
   ],
-  creator: "Champ Yurt D\u0131\u015F\u0131 E\u011Fitim"};
+  creator: "Vize Acentas\u0131"};
 
 const llms_txt = defineEventHandler((event) => {
   appendHeader(event, "Content-Type", "text/plain; charset=utf-8");

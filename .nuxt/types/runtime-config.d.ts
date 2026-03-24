@@ -133,6 +133,20 @@ import { RuntimeConfig as UserRuntimeConfig, PublicRuntimeConfig as UserPublicRu
 
    gtagId: string,
 
+   "nuxt-schema-org": {
+      reactive: boolean,
+
+      minify: boolean,
+
+      scriptAttributes: {
+         "data-nuxt-schema-org": boolean,
+      },
+
+      identity: string,
+
+      version: string,
+   },
+
    "nuxt-robots": {
       version: string,
 

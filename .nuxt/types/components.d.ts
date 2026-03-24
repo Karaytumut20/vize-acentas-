@@ -14,9 +14,13 @@ type HydrationStrategies = {
 type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }> & T
 
 interface _GlobalComponents {
+  DocumentChecklist: typeof import("../../app/components/DocumentChecklist.vue")['default']
+  FloatingWhatsApp: typeof import("../../app/components/FloatingWhatsApp.vue")['default']
   Footer: typeof import("../../app/components/Footer.vue")['default']
   GridHelper: typeof import("../../app/components/GridHelper.vue")['default']
   Navbar: typeof import("../../app/components/Navbar.vue")['default']
+  SchemaOrg: typeof import("../../app/components/SchemaOrg.vue")['default']
+  VisaCalculator: typeof import("../../app/components/VisaCalculator.vue")['default']
   NuxtWelcome: typeof import("../../node_modules/nuxt/dist/app/components/welcome.vue")['default']
   NuxtLayout: typeof import("../../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
   NuxtErrorBoundary: typeof import("../../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']
@@ -72,9 +76,13 @@ interface _GlobalComponents {
   Html: typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Html']
   Body: typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Body']
   NuxtIsland: typeof import("../../node_modules/nuxt/dist/app/components/nuxt-island")['default']
+  LazyDocumentChecklist: LazyComponent<typeof import("../../app/components/DocumentChecklist.vue")['default']>
+  LazyFloatingWhatsApp: LazyComponent<typeof import("../../app/components/FloatingWhatsApp.vue")['default']>
   LazyFooter: LazyComponent<typeof import("../../app/components/Footer.vue")['default']>
   LazyGridHelper: LazyComponent<typeof import("../../app/components/GridHelper.vue")['default']>
   LazyNavbar: LazyComponent<typeof import("../../app/components/Navbar.vue")['default']>
+  LazySchemaOrg: LazyComponent<typeof import("../../app/components/SchemaOrg.vue")['default']>
+  LazyVisaCalculator: LazyComponent<typeof import("../../app/components/VisaCalculator.vue")['default']>
   LazyNuxtWelcome: LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
   LazyNuxtLayout: LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>
   LazyNuxtErrorBoundary: LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']>

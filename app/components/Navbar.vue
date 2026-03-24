@@ -76,11 +76,11 @@ const servicesLinks = Object.entries(visaDatabase).map(([slug, data]) => ({
             </button>
             
             <div 
-              class="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-[600px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 origin-top"
+              class="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-[800px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 origin-top"
             >
-              <div class="bg-white rounded-xl shadow-2xl p-6 border border-gray-100 grid grid-cols-2 gap-6 relative before:absolute before:-top-2 before:left-1/2 before:-translate-x-1/2 before:border-8 before:border-transparent before:border-b-white">
+              <div class="bg-white rounded-2xl shadow-2xl p-8 border border-gray-100 grid grid-cols-3 gap-6 relative before:absolute before:-top-2 before:left-1/2 before:-translate-x-1/2 before:border-8 before:border-transparent before:border-b-white">
                 <NuxtLink 
-                  v-for="visa in popularVisas" 
+                  v-for="visa in servicesLinks" 
                   :key="visa.path" 
                   :to="visa.path" 
                   class="group/item flex flex-col p-3 rounded-lg hover:bg-gray-50 transition-colors"
@@ -89,8 +89,8 @@ const servicesLinks = Object.entries(visaDatabase).map(([slug, data]) => ({
                   <span class="text-xs text-gray-500 leading-relaxed">{{ visa.desc }}</span>
                 </NuxtLink>
                 
-                <div class="col-span-2 pt-4 mt-2 border-t border-gray-100 flex justify-center">
-                  <NuxtLink to="/vizeler" class="text-sm font-semibold text-[#1e293b] hover:text-[#f59e0b] inline-flex items-center gap-1 transition-colors">
+                <div class="col-span-3 pt-6 mt-4 border-t border-gray-100 flex justify-center">
+                  <NuxtLink to="/vizeler" class="text-sm font-bold text-[#1e293b] hover:text-[#f59e0b] inline-flex items-center gap-2 transition-colors">
                     Tüm Vize Hizmetlerini Görüntüle
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                   </NuxtLink>
@@ -138,9 +138,9 @@ const servicesLinks = Object.entries(visaDatabase).map(([slug, data]) => ({
           <NuxtLink to="/kurumsal" @click="isMobileMenuOpen = false" class="border-b border-gray-100 pb-4">Kurumsal</NuxtLink>
           
           <div class="flex flex-col gap-4 border-b border-gray-100 pb-4">
-            <span class="text-gray-400 text-sm uppercase tracking-wider font-bold">Popüler Vizeler</span>
+            <span class="text-gray-400 text-sm uppercase tracking-wider font-bold">Vize Kategorileri</span>
             <NuxtLink 
-              v-for="visa in popularVisas" 
+              v-for="visa in servicesLinks" 
               :key="visa.path" 
               :to="visa.path" 
               @click="isMobileMenuOpen = false" 

@@ -14,9 +14,13 @@ type HydrationStrategies = {
 type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }> & T
 
 
+export const DocumentChecklist: typeof import("../app/components/DocumentChecklist.vue")['default']
+export const FloatingWhatsApp: typeof import("../app/components/FloatingWhatsApp.vue")['default']
 export const Footer: typeof import("../app/components/Footer.vue")['default']
 export const GridHelper: typeof import("../app/components/GridHelper.vue")['default']
 export const Navbar: typeof import("../app/components/Navbar.vue")['default']
+export const SchemaOrg: typeof import("../app/components/SchemaOrg.vue")['default']
+export const VisaCalculator: typeof import("../app/components/VisaCalculator.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
 export const NuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
 export const NuxtErrorBoundary: typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']
@@ -72,9 +76,13 @@ export const Head: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
+export const LazyDocumentChecklist: LazyComponent<typeof import("../app/components/DocumentChecklist.vue")['default']>
+export const LazyFloatingWhatsApp: LazyComponent<typeof import("../app/components/FloatingWhatsApp.vue")['default']>
 export const LazyFooter: LazyComponent<typeof import("../app/components/Footer.vue")['default']>
 export const LazyGridHelper: LazyComponent<typeof import("../app/components/GridHelper.vue")['default']>
 export const LazyNavbar: LazyComponent<typeof import("../app/components/Navbar.vue")['default']>
+export const LazySchemaOrg: LazyComponent<typeof import("../app/components/SchemaOrg.vue")['default']>
+export const LazyVisaCalculator: LazyComponent<typeof import("../app/components/VisaCalculator.vue")['default']>
 export const LazyNuxtWelcome: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
 export const LazyNuxtLayout: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>
 export const LazyNuxtErrorBoundary: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']>

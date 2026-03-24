@@ -195,6 +195,7 @@ declare global {
   const useRouter: typeof import('../../node_modules/nuxt/dist/app/composables/router').useRouter
   const useRuntimeConfig: typeof import('../../node_modules/nuxt/dist/app/nuxt').useRuntimeConfig
   const useRuntimeHook: typeof import('../../node_modules/nuxt/dist/app/composables/runtime-hook').useRuntimeHook
+  const useSEO: typeof import('../../app/composables/useSEO').useSEO
   const useSchemaOrg: typeof import('../../node_modules/nuxt-schema-org/dist/runtime/app/composables/useSchemaOrg').useSchemaOrg
   const useScript: typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs').useScript
   const useScriptClarity: typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs').useScriptClarity
@@ -461,6 +462,7 @@ declare module 'vue' {
     readonly useRouter: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/router')['useRouter']>
     readonly useRuntimeConfig: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/nuxt')['useRuntimeConfig']>
     readonly useRuntimeHook: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/runtime-hook')['useRuntimeHook']>
+    readonly useSEO: UnwrapRef<typeof import('../../app/composables/useSEO')['useSEO']>
     readonly useSchemaOrg: UnwrapRef<typeof import('../../node_modules/nuxt-schema-org/dist/runtime/app/composables/useSchemaOrg')['useSchemaOrg']>
     readonly useScript: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs')['useScript']>
     readonly useScriptClarity: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs')['useScriptClarity']>

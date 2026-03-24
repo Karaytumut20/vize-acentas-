@@ -48,13 +48,13 @@ onMounted(() => {
         y: 30, opacity: 0, duration: 1, delay: 0.6
       })
       
-      gsap.utils.toArray('.reveal-section').forEach((elem: any) => {
+      gsap.utils.toArray('.reveal-content').forEach((elem: any) => {
         gsap.from(elem, {
           scrollTrigger: {
             trigger: elem,
             start: 'top 85%'
           },
-          y: 50,
+          y: 40,
           opacity: 0,
           duration: 0.8,
           ease: 'power2.out'
@@ -98,8 +98,8 @@ onMounted(() => {
     </section>
 
     <!-- Biz Kimiz Section -->
-    <section class="py-20 lg:py-32 reveal-section">
-      <div class="container mx-auto px-4 md:px-6 lg:px-8">
+    <section class="py-20 lg:py-32">
+      <div class="container mx-auto px-4 md:px-6 lg:px-8 reveal-content">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div class="relative rounded-3xl overflow-hidden shadow-2xl h-[500px] group">
             <NuxtImg src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1200" alt="Champ Vize Ekibi" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" format="webp" loading="lazy" />
@@ -139,12 +139,12 @@ onMounted(() => {
     </section>
 
     <!-- Neden Biz / Avantajlarımız -->
-    <section class="py-20 lg:py-32 bg-gray-50 reveal-section border-y border-gray-100 relative overflow-hidden">
+    <section class="py-20 lg:py-32 bg-gray-50 border-y border-gray-100 relative overflow-hidden">
       <!-- Decor -->
       <div class="absolute -top-40 -right-40 w-96 h-96 bg-[#f59e0b]/5 rounded-full blur-3xl pointer-events-none"></div>
       <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl pointer-events-none"></div>
 
-      <div class="container mx-auto px-4 md:px-6 lg:px-8 text-center max-w-4xl mb-20 relative z-10">
+      <div class="container mx-auto px-4 md:px-6 lg:px-8 text-center max-w-4xl mb-20 relative z-10 animate-fade-in-up">
         <span class="text-[#f59e0b] font-bold tracking-widest uppercase text-sm mb-4 block">Farkımızı Keşfedin</span>
         <h2 class="text-4xl md:text-5xl font-black text-[#0f172a] mb-8 tracking-tight" id="neden-biz">Neden Bizi Tercih Etmelisiniz?</h2>
         <p class="text-xl text-gray-600 leading-relaxed font-light">
@@ -152,11 +152,11 @@ onMounted(() => {
         </p>
       </div>
 
-      <div class="container mx-auto px-4 md:px-6 lg:px-8 relative z-10">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 stagger-cards">
+      <div class="container mx-auto px-4 md:px-6 lg:px-8 relative z-10 group">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           
           <!-- Item 1 -->
-          <div class="stagger-item bg-white p-10 rounded-[2.5rem] shadow-[0_10px_40px_rgba(0,0,0,0.03)] border border-gray-100 hover:border-[#f59e0b]/30 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group relative overflow-hidden">
+          <div class="bg-white p-10 rounded-[2.5rem] shadow-[0_10px_40px_rgba(0,0,0,0.03)] border border-gray-100 hover:border-[#f59e0b]/30 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 relative overflow-hidden">
             <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-gray-50 to-transparent rounded-bl-[4rem] -z-0"></div>
             <div class="w-20 h-20 rounded-3xl bg-[#0f172a] text-[#f59e0b] flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500 shadow-xl relative z-10">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
@@ -168,7 +168,7 @@ onMounted(() => {
           </div>
 
           <!-- Item 2 -->
-          <div class="stagger-item bg-white p-10 rounded-[2.5rem] shadow-[0_10px_40px_rgba(0,0,0,0.03)] border border-gray-100 hover:border-[#f59e0b]/30 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group relative overflow-hidden">
+          <div class="bg-white p-10 rounded-[2.5rem] shadow-[0_10px_40px_rgba(0,0,0,0.03)] border border-gray-100 hover:border-[#f59e0b]/30 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 relative overflow-hidden">
             <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-gray-50 to-transparent rounded-bl-[4rem] -z-0"></div>
             <div class="w-20 h-20 rounded-3xl bg-[#0f172a] text-[#f59e0b] flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500 shadow-xl relative z-10">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
@@ -180,7 +180,7 @@ onMounted(() => {
           </div>
 
           <!-- Item 3 -->
-          <div class="stagger-item bg-white p-10 rounded-[2.5rem] shadow-[0_10px_40px_rgba(0,0,0,0.03)] border border-gray-100 hover:border-[#f59e0b]/30 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group relative overflow-hidden">
+          <div class="bg-white p-10 rounded-[2.5rem] shadow-[0_10px_40px_rgba(0,0,0,0.03)] border border-gray-100 hover:border-[#f59e0b]/30 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 relative overflow-hidden">
             <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-gray-50 to-transparent rounded-bl-[4rem] -z-0"></div>
             <div class="w-20 h-20 rounded-3xl bg-[#f59e0b] text-white flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500 shadow-[0_10px_20px_rgba(245,158,11,0.3)] relative z-10">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
@@ -192,7 +192,7 @@ onMounted(() => {
           </div>
 
           <!-- Item 4 -->
-          <div class="stagger-item bg-white p-10 rounded-[2.5rem] shadow-[0_10px_40px_rgba(0,0,0,0.03)] border border-gray-100 hover:border-[#f59e0b]/30 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group relative overflow-hidden">
+          <div class="bg-white p-10 rounded-[2.5rem] shadow-[0_10px_40px_rgba(0,0,0,0.03)] border border-gray-100 hover:border-[#f59e0b]/30 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 relative overflow-hidden">
             <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-gray-50 to-transparent rounded-bl-[4rem] -z-0"></div>
             <div class="w-20 h-20 rounded-3xl bg-[#0f172a] text-[#f59e0b] flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500 shadow-xl relative z-10">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
@@ -204,7 +204,7 @@ onMounted(() => {
           </div>
 
           <!-- Item 5 -->
-          <div class="stagger-item bg-white p-10 rounded-[2.5rem] shadow-[0_10px_40px_rgba(0,0,0,0.03)] border border-gray-100 hover:border-[#f59e0b]/30 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group relative overflow-hidden">
+          <div class="bg-white p-10 rounded-[2.5rem] shadow-[0_10px_40px_rgba(0,0,0,0.03)] border border-gray-100 hover:border-[#f59e0b]/30 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 relative overflow-hidden">
             <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-gray-50 to-transparent rounded-bl-[4rem] -z-0"></div>
             <div class="w-20 h-20 rounded-3xl bg-[#0f172a] text-[#f59e0b] flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500 shadow-xl relative z-10">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 18a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2"/><rect width="18" height="18" x="3" y="4" rx="2"/><circle cx="12" cy="10" r="2"/><line x1="8" x2="8" y1="2" y2="4"/><line x1="16" x2="16" y1="2" y2="4"/></svg>
@@ -216,7 +216,7 @@ onMounted(() => {
           </div>
 
           <!-- Item 6 -->
-          <div class="stagger-item bg-white p-10 rounded-[2.5rem] shadow-[0_10px_40px_rgba(0,0,0,0.03)] border border-gray-100 hover:border-[#f59e0b]/30 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group relative overflow-hidden">
+          <div class="bg-white p-10 rounded-[2.5rem] shadow-[0_10px_40px_rgba(0,0,0,0.03)] border border-gray-100 hover:border-[#f59e0b]/30 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 relative overflow-hidden">
             <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-gray-50 to-transparent rounded-bl-[4rem] -z-0"></div>
             <div class="w-20 h-20 rounded-3xl bg-[#0f172a] text-[#f59e0b] flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500 shadow-xl relative z-10">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -232,8 +232,8 @@ onMounted(() => {
     </section>
 
     <!-- Misyon & Vizyon -->
-    <section class="py-20 lg:py-32 bg-[#0f172a] text-white reveal-section" id="vizyon-misyon">
-      <div class="container mx-auto px-4 md:px-6 lg:px-8">
+    <section class="py-20 lg:py-32 bg-[#0f172a] text-white" id="vizyon-misyon">
+      <div class="container mx-auto px-4 md:px-6 lg:px-8 reveal-content">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div class="p-10 md:p-14 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm relative overflow-hidden group hover:bg-white/10 transition-colors">
             <div class="absolute top-0 right-0 w-32 h-32 bg-[#f59e0b]/20 rounded-bl-full blur-2xl group-hover:bg-[#f59e0b]/40 transition-colors"></div>
@@ -254,12 +254,12 @@ onMounted(() => {
     </section>
 
     <!-- Call to action -->
-    <section class="py-20 bg-[#f59e0b] text-white text-center reveal-section relative overflow-hidden">
+    <section class="py-20 bg-[#f59e0b] text-white text-center relative overflow-hidden">
       <!-- Decor -->
       <div class="absolute -right-20 -top-40 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
       <div class="absolute -left-20 -bottom-40 w-96 h-96 bg-black/10 rounded-full blur-3xl"></div>
       
-      <div class="container mx-auto px-4 relative z-10">
+      <div class="container mx-auto px-4 relative z-10 reveal-content">
         <h2 class="text-3xl md:text-5xl font-black mb-6 tracking-tight text-[#0f172a]">Champ Vize ile Uçuşa Hazır mısınız?</h2>
         <p class="text-xl opacity-90 mb-10 max-w-2xl mx-auto font-medium text-[#0f172a]/80">
           Güvenilir ellerde, stres yaşamadan vizenizi alın. Ücretsiz dosya analizi ve randevu takvimi kontrolü için hemen iletişime geçin.

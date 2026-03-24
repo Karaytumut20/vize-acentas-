@@ -33,6 +33,7 @@ export { setInterval } from '#app/compat/interval';
 export { definePageMeta, PageMeta } from '#app/composables/pages';
 export { defineLazyHydrationComponent } from '#app/composables/lazy-hydration';
 export { useGsap } from '../app/composables/useGsap';
+export { useSEO } from '../app/composables/useSEO';
 export { useThemeTransition } from '../app/composables/useThemeTransition';
 export { cn } from '../app/utils/cn';
 export { siteConfig, SiteConfig } from '../app/utils/site';

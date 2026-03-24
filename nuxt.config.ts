@@ -80,6 +80,20 @@ export default defineNuxtConfig({
   css: ["~/assets/scss/main.scss"],
 
   nitro: {
+    prerender: {
+      routes: [
+        "/vizeler/schengen-vizesi",
+        "/vizeler/amerika-vizesi",
+        "/vizeler/ingiltere-vizesi",
+        "/vizeler/japonya-vizesi",
+        "/vizeler/kanada-vizesi",
+        "/vizeler/cin-vizesi",
+        "/vizeler/avustralya-vizesi",
+        "/vizeler/dubai-vizesi",
+        "/vizeler/misir-vizesi",
+        "/vizeler/rusya-vizesi"
+      ]
+    },
     routeRules: {
       // 1. IPX Görüntü Önbellekleme
       "/_ipx/**": {

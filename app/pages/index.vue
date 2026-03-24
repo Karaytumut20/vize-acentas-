@@ -160,17 +160,19 @@ const testimonials = [
     
     <!-- Hero Section -->
     <section class="relative min-h-[100svh] pt-32 pb-32 flex flex-col justify-center overflow-hidden">
-      <!-- Background Image with Overlay -->
+      <!-- Background Video with Overlay -->
       <div class="absolute inset-0 z-0">
-        <NuxtImg 
-          src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=2000" 
-          alt="Dünya Vize Başvuru Merkezi" 
+        <video 
+          autoplay 
+          loop 
+          muted 
+          playsinline 
           class="w-full h-full object-cover"
-          format="webp"
-          preload
-          loading="eager"
-        />
-        <div class="absolute inset-0 bg-gradient-to-b from-[#0f172a]/95 via-[#0f172a]/80 to-[#0f172a]/95"></div>
+        >
+          <!-- Using a high quality Pexels/Vimeo Airplane stock video -->
+          <source src="https://player.vimeo.com/external/400615598.hd.mp4?s=d0db5d39beadbf23efb72bce9fb3cde965ad6e6a&profile_id=174&oauth2_token_id=57447761" type="video/mp4">
+        </video>
+        <div class="absolute inset-0 bg-gradient-to-b from-[#0f172a]/90 via-[#0f172a]/70 to-[#0f172a]/95 backdrop-blur-[2px]"></div>
       </div>
 
       <div class="container relative z-10 px-4 mt-8 md:mt-12 text-center max-w-5xl mx-auto flex-1 flex flex-col justify-center">
@@ -185,15 +187,28 @@ const testimonials = [
           Kusursuz dosya hazırlığı, %98 onay oranı ve kişisel stratejilerimiz ile vize süreçlerinizdeki stres ve belirsizliğe son veriyoruz.
         </p>
         
-        <div class="hero-cta flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-          <NuxtLink to="/iletisim" class="px-8 py-4 bg-[#f59e0b] hover:bg-[#d97706] text-white rounded-full font-bold text-lg transition-all hover:scale-105 shadow-[0_0_30px_rgba(245,158,11,0.5)] w-full sm:w-auto relative group overflow-hidden">
-            <span class="relative z-10">Ücretsiz Analiz Alın</span>
-            <div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
-          </NuxtLink>
-          <a href="tel:+9008501234567" class="px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white rounded-full font-bold text-lg transition-colors w-full sm:w-auto flex items-center justify-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#f59e0b]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            0850 123 45 67
-          </a>
+        <div class="hero-cta flex flex-col items-center justify-center gap-6 mb-16 w-full max-w-2xl mx-auto">
+          <!-- Quick Search Bar -->
+          <div class="relative w-full group">
+            <div class="absolute -inset-1 bg-gradient-to-r from-[#f59e0b] to-amber-300 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-500"></div>
+            <div class="relative w-full">
+              <input type="text" placeholder="Hangi vizeyi arıyorsunuz? (Örn: Schengen, Amerika...)" class="w-full bg-[#0f172a]/60 border border-white/20 backdrop-blur-xl text-white placeholder-gray-400 px-8 py-5 rounded-full outline-none focus:bg-[#0f172a]/80 focus:border-[#f59e0b] transition-all text-[15px] sm:text-lg shadow-2xl">
+              <button class="absolute right-2 top-2 bottom-2 bg-[#f59e0b] hover:bg-[#d97706] text-white px-6 sm:px-8 rounded-full font-bold transition-all flex items-center gap-2 shadow-lg hover:shadow-[#f59e0b]/50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 hidden sm:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                Vize Bul
+              </button>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full mt-4">
+            <NuxtLink to="/iletisim" class="px-8 py-4 bg-white hover:bg-gray-100 text-[#0f172a] rounded-full font-bold transition-all hover:scale-105 shadow-xl w-full sm:w-auto relative group overflow-hidden">
+              <span class="relative z-10">Ücretsiz Analiz Alın</span>
+            </NuxtLink>
+            <a href="tel:+9008501234567" class="px-8 py-4 bg-white/5 hover:bg-white/10 backdrop-blur-md border border-white/10 text-white rounded-full font-bold transition-colors w-full sm:w-auto flex items-center justify-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#f59e0b]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              0850 123 45 67
+            </a>
+          </div>
         </div>
 
         <!-- Trust Badges -->
