@@ -82,6 +82,7 @@ export default defineNuxtConfig({
 
   delayHydration: {
     mode: 'init',
+    debug: false,
   },
 
   schemaOrg: {

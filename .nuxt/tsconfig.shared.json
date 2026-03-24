@@ -94,9 +94,6 @@
       "vue-demi": [
         "../node_modules/nuxt/dist/app/compat/vue-demi"
       ],
-      "#nuxt-delay-hydration/api": [
-        "./delay-hydration.mjs"
-      ],
       "#site-config": [
         "../node_modules/nuxt-site-config/dist/runtime"
       ],

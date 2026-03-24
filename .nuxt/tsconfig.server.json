@@ -98,9 +98,6 @@
       "#internal/nuxt/paths": [
         "../node_modules/@nuxt/nitro-server/dist/runtime/utils/paths"
       ],
-      "#nuxt-delay-hydration/api": [
-        "./delay-hydration.mjs"
-      ],
       "#site-config": [
         "../node_modules/nuxt-site-config/dist/runtime"
       ],

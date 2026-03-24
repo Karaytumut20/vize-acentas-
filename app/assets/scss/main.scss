@@ -6,8 +6,9 @@
   @font-face {
     font-family: "lchmp";
     src: url("/fonts/lchmp.woff2") format("woff2");
+    font-display: optional;
     font-weight: 300 600;
-    font-display: swap;
+    font-display: optional;
     font-style: normal;
   }
 

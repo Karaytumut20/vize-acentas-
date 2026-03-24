@@ -126,7 +126,7 @@ const testimonials = [
           <!-- Quick Search Bar -->
           <div class="relative w-full group">
             <div class="relative max-w-2xl mx-auto hero-search-bar" aria-hidden="true">
-              <input type="text" id="country-search" aria-label="Gitmek istediğiniz ülkeyi arayın" class="w-full bg-[#0f172a]/80 border border-white/20 text-white px-8 py-5 rounded-full outline-none text-[15px] sm:text-lg">
+              <input type="text" id="destination-country" name="destination-country" class="w-full bg-[#0f172a]/80 border border-white/20 text-white px-8 py-5 rounded-full outline-none focus:border-[#f59e0b] focus:ring-1 focus:ring-[#f59e0b] transition-all duration-300 placeholder-gray-400" placeholder="Hangi ülke için vize almak istiyorsunuz?" aria-label="Gitmek istediğiniz ülkeyi yazın" />
               <button aria-label="Arama Yap" class="absolute right-2 top-2 bottom-2 bg-[#f59e0b] text-[#0f172a] px-6 sm:px-8 rounded-full font-bold flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 hidden sm:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
                 Vize Bul
