@@ -9,6 +9,7 @@ export default defineNuxtPlugin(() => {
   const allowedDomains = [
     "le-champ.com",
     "vercel.app",
+    "netlify.app",
     "localhost",
     "127.0.0.1",
   ];

@@ -95,6 +95,7 @@ export default defineNuxtConfig({
       ]
     },
     routeRules: {
+
       // 1. IPX Görüntü Önbellekleme
       "/_ipx/**": {
         headers: {
@@ -104,6 +105,7 @@ export default defineNuxtConfig({
       // 🔥 2. YENİ: Global Güvenlik Başlıkları (Google ve Güvenlik Zafiyeti Taramaları için)
       "/**": {
         headers: {
+          "X-Powered-By": "", // Nuxt header gizlendi
           "X-Content-Type-Options": "nosniff", // MIME-type sniffing engellemesi
           "X-Frame-Options": "DENY", // Clickjacking (Siteni iframe içinde gösterme) engellemesi
           "X-XSS-Protection": "1; mode=block", // Tarayıcı bazlı XSS filtresi

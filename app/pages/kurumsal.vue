@@ -182,7 +182,7 @@ onMounted(() => {
           <!-- Item 3 -->
           <div class="bg-white p-10 rounded-[2.5rem] shadow-[0_10px_40px_rgba(0,0,0,0.03)] border border-gray-100 hover:border-[#f59e0b]/30 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 relative overflow-hidden">
             <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-gray-50 to-transparent rounded-bl-[4rem] -z-0"></div>
-            <div class="w-20 h-20 rounded-3xl bg-[#f59e0b] text-white flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500 shadow-[0_10px_20px_rgba(245,158,11,0.3)] relative z-10">
+            <div class="w-20 h-20 rounded-3xl bg-[#f59e0b] text-[#0f172a] flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500 shadow-sm relative z-10">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             </div>
             <h3 class="text-2xl font-bold text-[#0f172a] mb-4 relative z-10">VIP ve Hızlı Randevu</h3>
@@ -264,7 +264,7 @@ onMounted(() => {
         <p class="text-xl opacity-90 mb-10 max-w-2xl mx-auto font-medium text-[#0f172a]/80">
           Güvenilir ellerde, stres yaşamadan vizenizi alın. Ücretsiz dosya analizi ve randevu takvimi kontrolü için hemen iletişime geçin.
         </p>
-        <NuxtLink to="/iletisim" class="inline-block bg-[#0f172a] hover:bg-black text-white px-10 py-5 rounded-full font-bold text-lg transition-transform hover:scale-105 shadow-2xl">
+        <NuxtLink aria-label="Satış Temsilcisiyle Görüşün" to="/iletisim" class="inline-block bg-[#0f172a] hover:bg-black text-white px-10 py-5 rounded-full font-bold text-lg transition-transform hover:scale-105 shadow-sm">
           Uzmanımızla Görüşün
         </NuxtLink>
       </div>

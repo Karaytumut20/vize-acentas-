@@ -192,8 +192,8 @@ const testimonials = [
           <div class="relative w-full group">
             <div class="absolute -inset-1 bg-gradient-to-r from-[#f59e0b] to-amber-300 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-500"></div>
             <div class="relative w-full">
-              <input type="text" placeholder="Hangi vizeyi arıyorsunuz? (Örn: Schengen, Amerika...)" class="w-full bg-[#0f172a]/60 border border-white/20 backdrop-blur-xl text-white placeholder-gray-400 px-8 py-5 rounded-full outline-none focus:bg-[#0f172a]/80 focus:border-[#f59e0b] transition-all text-[15px] sm:text-lg shadow-2xl">
-              <button class="absolute right-2 top-2 bottom-2 bg-[#f59e0b] hover:bg-[#d97706] text-white px-6 sm:px-8 rounded-full font-bold transition-all flex items-center gap-2 shadow-lg hover:shadow-[#f59e0b]/50">
+              <input type="text" placeholder="Hangi vizeyi arıyorsunuz? (Örn: Schengen, Amerika...)" class="w-full bg-[#0f172a]/60 border border-white/20 backdrop-blur-xl text-white placeholder-gray-400 px-8 py-5 rounded-full outline-none focus:bg-[#0f172a]/80 focus:border-[#f59e0b] transition-all text-[15px] sm:text-lg shadow-sm">
+              <button aria-label="Arama Yap" class="absolute right-2 top-2 bottom-2 bg-[#f59e0b] hover:bg-[#d97706] text-[#0f172a] px-6 sm:px-8 rounded-full font-bold transition-all flex items-center gap-2 shadow-sm">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 hidden sm:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
                 Vize Bul
               </button>
@@ -201,7 +201,7 @@ const testimonials = [
           </div>
 
           <div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full mt-4">
-            <NuxtLink to="/iletisim" class="px-8 py-4 bg-white hover:bg-gray-100 text-[#0f172a] rounded-full font-bold transition-all hover:scale-105 shadow-xl w-full sm:w-auto relative group overflow-hidden">
+            <NuxtLink aria-label="Ücretsiz Analiz Formuna Git" to="/iletisim" class="px-8 py-4 bg-white hover:bg-gray-100 text-[#0f172a] rounded-full font-bold transition-all shadow-sm w-full sm:w-auto relative group overflow-hidden">
               <span class="relative z-10">Ücretsiz Analiz Alın</span>
             </NuxtLink>
             <a href="tel:+9008501234567" class="px-8 py-4 bg-white/5 hover:bg-white/10 backdrop-blur-md border border-white/10 text-white rounded-full font-bold transition-colors w-full sm:w-auto flex items-center justify-center gap-2">
@@ -248,7 +248,7 @@ const testimonials = [
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 stagger-grid">
-          <NuxtLink v-for="(service, index) in services" :key="index" :to="service.path" class="stagger-item group relative rounded-2xl overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 h-[380px] md:h-[420px] block backdrop-blur-sm">
+          <NuxtLink v-for="(service, index) in services" :key="index" :to="service.path" class="stagger-item group relative rounded-2xl overflow-hidden shadow-sm border border-gray-100 h-[380px] md:h-[420px] block backdrop-blur-sm">
             <NuxtImg :src="service.image" :alt="service.title" class="absolute inset-0 w-full h-full object-cover transition-transform duration-[10s] ease-out group-hover:scale-110" format="webp" loading="lazy" />
             <div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/60 to-[#0f172a]/10"></div>
             
@@ -283,7 +283,7 @@ const testimonials = [
             
             <div class="space-y-8">
               <div class="flex gap-5 items-start">
-                <div class="w-14 h-14 rounded-2xl bg-[#f59e0b]/10 border border-[#f59e0b]/20 flex items-center justify-center shrink-0 text-[#f59e0b] shadow-[0_0_20px_rgba(245,158,11,0.1)]">
+                <div class="w-14 h-14 rounded-2xl bg-[#f59e0b]/10 border border-[#f59e0b]/20 flex items-center justify-center shrink-0 text-[#f59e0b] shadow-sm">
                   <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                 </div>
                 <div>
@@ -293,7 +293,7 @@ const testimonials = [
               </div>
               
               <div class="flex gap-5 items-start">
-                <div class="w-14 h-14 rounded-2xl bg-[#f59e0b]/10 border border-[#f59e0b]/20 flex items-center justify-center shrink-0 text-[#f59e0b] shadow-[0_0_20px_rgba(245,158,11,0.1)]">
+                <div class="w-14 h-14 rounded-2xl bg-[#f59e0b]/10 border border-[#f59e0b]/20 flex items-center justify-center shrink-0 text-[#f59e0b] shadow-sm">
                   <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
                 </div>
                 <div>
@@ -303,7 +303,7 @@ const testimonials = [
               </div>
 
               <div class="flex gap-5 items-start">
-                <div class="w-14 h-14 rounded-2xl bg-[#f59e0b]/10 border border-[#f59e0b]/20 flex items-center justify-center shrink-0 text-[#f59e0b] shadow-[0_0_20px_rgba(245,158,11,0.1)]">
+                <div class="w-14 h-14 rounded-2xl bg-[#f59e0b]/10 border border-[#f59e0b]/20 flex items-center justify-center shrink-0 text-[#f59e0b] shadow-sm">
                   <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
                 </div>
                 <div>
@@ -326,7 +326,7 @@ const testimonials = [
                   <img class="w-12 h-12 rounded-full border-2 border-[#0f172a]" src="https://i.pravatar.cc/100?img=1" alt="Müşteri">
                   <img class="w-12 h-12 rounded-full border-2 border-[#0f172a]" src="https://i.pravatar.cc/100?img=2" alt="Müşteri">
                   <img class="w-12 h-12 rounded-full border-2 border-[#0f172a]" src="https://i.pravatar.cc/100?img=3" alt="Müşteri">
-                  <div class="w-12 h-12 rounded-full border-2 border-[#0f172a] bg-[#f59e0b] flex items-center justify-center text-sm font-bold text-white shadow-[0_0_15px_rgba(245,158,11,0.5)]">+5K</div>
+                  <div class="w-12 h-12 rounded-full border-2 border-[#0f172a] bg-[#f59e0b] flex items-center justify-center text-sm font-bold text-[#0f172a]">+5K</div>
                 </div>
                 <div>
                   <div class="text-base font-bold text-white">Sadece bu yıl mutlu edilen müşteri</div>

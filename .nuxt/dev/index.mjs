@@ -646,6 +646,7 @@ const _inlineRuntimeConfig = {
       },
       "/**": {
         "headers": {
+          "X-Powered-By": "",
           "X-Content-Type-Options": "nosniff",
           "X-Frame-Options": "DENY",
           "X-XSS-Protection": "1; mode=block",
@@ -835,11 +836,13 @@ const _inlineRuntimeConfig = {
         "sitemapName": "sitemap.xml",
         "route": "sitemap.xml",
         "defaults": {
-          "lastmod": "2026-03-24T18:42:25Z"
+          "lastmod": "2026-03-24T20:03:17Z"
         },
         "include": [],
         "exclude": [
           "/_**",
+          "/_nuxt/**",
+          "/_nuxt/**",
           "/_nuxt/**"
         ],
         "includeAppSources": true
@@ -6467,7 +6470,7 @@ const sources$1 = [
             },
             {
                 "loc": "/kurumsal",
-                "lastmod": "2026-03-24T01:43:32.733Z"
+                "lastmod": "2026-03-24T18:46:00.142Z"
             },
             {
                 "loc": "/randevu-al",

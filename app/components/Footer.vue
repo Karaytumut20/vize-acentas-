@@ -128,13 +128,13 @@ const legalLinks = [
       </div>
 
       <!-- Bottom Bar -->
-      <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
-        <p class="text-xs text-gray-500">
+      <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
+        <p class="text-sm text-gray-400">
           &copy; {{ currentYear }} Champ Vize Danışmanlık. Tüm hakları saklıdır.
         </p>
-        <ul class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-gray-500">
+        <ul class="flex flex-wrap items-center justify-center gap-x-6 gap-y-4 text-sm text-gray-400">
           <li v-for="link in legalLinks" :key="link.path">
-            <NuxtLink :to="link.path" class="hover:text-white transition-colors">{{ link.name }}</NuxtLink>
+            <NuxtLink :to="link.path" class="hover:text-white transition-colors py-2 px-1 block">{{ link.name }}</NuxtLink>
           </li>
         </ul>
       </div>

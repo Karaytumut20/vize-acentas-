@@ -12,15 +12,16 @@ const gsapCtx = useGsap()
 
 import { visaDatabase } from '~/data/visas'
 
-// Varsayılan Data (Eğer slug bulunmazsa anasayfaya veya genel bir şablona düşmesini önlemek için)
+// Varsayılan Data
 const defaultData = visaDatabase['schengen-vizesi']
 const data = computed(() => visaDatabase[slug] || defaultData)
 
-useSeoMeta({
-  title: `${data.value.title} Danışmanlığı | Champ Vize`,
+useSEO({
+  title: data.value.title,
   description: `${data.value.title} işlemlerinizde ${data.value.processingTime} içinde, profesyonel dosya hazırlığı ve VIP randevu hizmeti.`,
-  ogTitle: `${data.value.title} Başvurusu - Champ Vize`,
-  ogImage: data.value.heroImage,
+  image: data.value.heroImage,
+  type: 'article',
+  keywords: `${data.value.title.toLowerCase()}, vize danışmanlık, 2026 randevu, hızlı vize başvurusu, garantili vize`
 })
 
 useHead({
@@ -113,7 +114,7 @@ onMounted(() => {
           {{ data.subtitle }}
         </p>
         
-        <NuxtLink to="/iletisim" class="inline-flex items-center justify-center px-8 py-4 bg-[#f59e0b] hover:bg-white hover:text-[#0f172a] text-white rounded-full font-bold text-lg transition-transform hover:scale-105 shadow-[0_10px_30px_rgba(245,158,11,0.4)]">
+        <NuxtLink aria-label="Danışmanlarımızla İletişime Geçin" to="/iletisim" class="inline-flex items-center justify-center px-8 py-4 bg-[#f59e0b] hover:bg-white hover:text-[#0f172a] text-[#0f172a] rounded-full font-bold text-lg transition-transform hover:scale-105 shadow-sm">
           Ücretsiz Randevu Oluştur
         </NuxtLink>
       </div>
@@ -139,6 +140,14 @@ onMounted(() => {
             <VisaCalculator />
           </div>
 
+          <!-- Social Share -->
+          <div class="flex items-center gap-4 mt-10 pt-8 border-t border-gray-100">
+            <span class="text-sm font-bold text-gray-400 uppercase tracking-widest">Paylaş:</span>
+            <a :href="'https://twitter.com/intent/tweet?text=' + encodeURIComponent(data.title + ' ile Dünyanın Kapılarını Aralayın') + '&url=https://vize-acentasi.vercel.app/vizeler/' + slug" target="_blank" rel="noopener" aria-label="Twitter'da Paylaş" class="w-10 h-10 rounded-full bg-gray-50 border border-gray-200 hover:bg-[#0f172a] hover:text-white flex items-center justify-center text-gray-600 transition-colors font-bold">X</a>
+            <a :href="'https://www.facebook.com/sharer/sharer.php?u=https://vize-acentasi.vercel.app/vizeler/' + slug" target="_blank" rel="noopener" aria-label="Facebook'ta Paylaş" class="w-10 h-10 rounded-full bg-gray-50 border border-gray-200 hover:bg-[#1877F2] hover:border-[#1877F2] hover:text-white flex items-center justify-center text-gray-600 transition-colors font-bold">f</a>
+            <a :href="'https://api.whatsapp.com/send?text=' + encodeURIComponent('Kesinlikle incelemelisin: ' + data.title + ' - https://vize-acentasi.vercel.app/vizeler/' + slug)" target="_blank" rel="noopener" aria-label="WhatsApp'ta Paylaş" class="w-10 h-10 rounded-full bg-gray-50 border border-gray-200 hover:bg-[#25D366] hover:border-[#25D366] hover:text-white flex items-center justify-center text-gray-600 transition-colors font-bold">W</a>
+          </div>
+          
           <h3 class="text-2xl font-black text-[#0f172a] mb-6 tracking-tight" id="gerekli-evraklar">Gerekli Evraklar (Statüye Göre)</h3>
           <p class="text-gray-500 mb-6 text-sm">Konsolosluk kuralları gereği hazırlamanız gereken asgari belgeler aşağıdaki gibidir. Bize ulaştığınızda durumunuza özel tam liste iletilecektir.</p>
           
@@ -172,7 +181,7 @@ onMounted(() => {
           <!-- FAQ (Spesifik) -->
           <h3 class="text-2xl font-black text-[#0f172a] mb-6 tracking-tight">Merak Edilenler</h3>
           <div class="space-y-4 mb-12">
-            <div v-for="(q, index) in data.faq" :key="index" class="bg-white border rounded-xl overflow-hidden transition-all duration-200" :class="activeFaqIndex === index ? 'border-[#f59e0b] shadow-[0_4px_20px_rgba(245,158,11,0.08)]' : 'border-gray-100 hover:border-gray-200'">
+            <div v-for="(q, index) in data.faq" :key="index" class="bg-white border rounded-xl overflow-hidden transition-all duration-200" :class="activeFaqIndex === index ? 'border-[#f59e0b] shadow-sm' : 'border-gray-100 hover:border-gray-200'">
               <button @click="toggleFaq(index)" class="w-full text-left px-5 md:px-7 py-5 flex items-center justify-between font-bold focus:outline-none transition-colors" :class="activeFaqIndex === index ? 'bg-white' : 'bg-gray-50/50 hover:bg-gray-50'">
                 <span class="text-[1.05rem] pr-6 leading-snug transition-colors" :class="activeFaqIndex === index ? 'text-[#f59e0b]' : 'text-[#0f172a]'">{{ q.q }}</span>
                 <div class="w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-all duration-300" :class="activeFaqIndex === index ? 'bg-[#f59e0b]/10' : 'bg-white shadow-sm border border-gray-100'">
@@ -244,7 +253,7 @@ onMounted(() => {
             <p class="text-sm font-medium opacity-90 mb-6 relative z-10">
               Vize redlerinin %70'i eksik veya yanlış beyan edilmiş çevrilmiş belgeler sebebiyle olmaktadır. Risk almayın.
             </p>
-            <NuxtLink to="/iletisim" class="inline-block bg-[#0f172a] hover:bg-black text-white px-8 py-3 rounded-full font-bold shadow-lg transition-transform hover:scale-105 relative z-10">
+            <NuxtLink aria-label="Uzmanımızla Görüşün" to="/iletisim" class="inline-block bg-[#0f172a] hover:bg-black text-white px-8 py-3 rounded-full font-bold shadow-sm transition-transform hover:scale-105 relative z-10">
               Ücretsiz Kontrol Ettir
             </NuxtLink>
           </div>

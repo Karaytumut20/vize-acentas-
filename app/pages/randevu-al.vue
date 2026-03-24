@@ -46,7 +46,7 @@ useSeoMeta({
               <textarea rows="4" class="w-full bg-gray-50 border border-gray-200 px-5 py-4 rounded-xl focus:border-[#f59e0b] focus:ring-2 focus:ring-[#f59e0b]/20 outline-none transition" placeholder="Mesleğiniz, seyahat tarihiniz vb. detayları belirtebilirsiniz."></textarea>
             </div>
             
-            <button class="w-full bg-[#f59e0b] hover:bg-[#0f172a] text-white py-4 rounded-xl font-bold transition-all shadow-lg hover:shadow-xl hover:-translate-y-1">
+            <button class="w-full bg-[#f59e0b] hover:bg-[#d97706] text-[#0f172a] py-4 rounded-xl font-bold transition-all shadow-sm">
               Randevu Talebi Oluştur
             </button>
           </form>

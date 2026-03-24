@@ -12,7 +12,16 @@ export const useSEO = (options: {
   const route = useRoute();
   
   const siteUrl = config.public.siteUrl || 'https://vize-acentasi.vercel.app';
-  const fullTitle = `${options.title} | Vize Acentası`;
+  
+  // SEO 580px (yaklaşık 55-60 karakter) kuralı ve kelime tekrarı engelleme
+  const cleanTitle = options.title.replace(/\| Vize Acentası|\| Champ Vize/g, '').trim();
+  const suffix = cleanTitle.length > 45 ? '' : ' | Champ Vize';
+  let fullTitle = `${cleanTitle}${suffix}`;
+  
+  if (fullTitle.length > 60) {
+    fullTitle = fullTitle.substring(0, 57) + '...';
+  }
+
   const fullUrl = `${siteUrl}${route.path}`;
   const defaultImage = `${siteUrl}/images/og-default.jpg`;
   
