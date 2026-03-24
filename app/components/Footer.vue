@@ -42,14 +42,15 @@ const legalLinks = [
           <p class="text-sm text-gray-400 leading-relaxed mb-6 max-w-sm">
             Türkiye'nin öncü ve en yüksek onay oranına sahip vize danışmanlık firması. Amerika, İngiltere ve Schengen bölgeleri başta olmak üzere tüm dünya için güvenilir çözümler üretiyoruz.
           </p>
+          </p>
           <div class="flex items-center gap-4">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#f59e0b] hover:text-white transition-colors aria-label='Facebook'">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#f59e0b] hover:text-white transition-colors">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#f59e0b] hover:text-white transition-colors aria-label='Instagram'">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#f59e0b] hover:text-white transition-colors">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#f59e0b] hover:text-white transition-colors aria-label='LinkedIn'">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#f59e0b] hover:text-white transition-colors">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
             </a>
           </div>
@@ -120,7 +121,7 @@ const legalLinks = [
               class="bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 w-full text-sm text-white focus:outline-none focus:border-[#f59e0b] transition-colors placeholder:text-gray-600"
               required
             >
-            <button type="submit" class="bg-[#f59e0b] hover:bg-[#d97706] text-white px-4 py-2.5 rounded-lg transition-colors aria-label='Abone Ol'">
+            <button type="submit" aria-label="Abone Ol" class="bg-[#f59e0b] hover:bg-[#d97706] text-white px-4 py-2.5 rounded-lg transition-colors">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>
             </button>
           </form>

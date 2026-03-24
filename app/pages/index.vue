@@ -160,18 +160,9 @@ const testimonials = [
     
     <!-- Hero Section -->
     <section class="relative min-h-[100svh] pt-32 pb-32 flex flex-col justify-center overflow-hidden">
-      <!-- Background Video with Overlay -->
+      <!-- Background Image -->
       <div class="absolute inset-0 z-0">
-        <video 
-          autoplay 
-          loop 
-          muted 
-          playsinline 
-          class="w-full h-full object-cover"
-        >
-          <!-- Using a high quality Pexels/Vimeo Airplane stock video -->
-          <source src="https://player.vimeo.com/external/400615598.hd.mp4?s=d0db5d39beadbf23efb72bce9fb3cde965ad6e6a&profile_id=174&oauth2_token_id=57447761" type="video/mp4">
-        </video>
+        <NuxtImg src="https://images.unsplash.com/photo-1542296332-2e4473faf563?auto=format&fit=crop&q=80&w=2500" alt="Vize Danışmanlık ve Seyahat" class="w-full h-full object-cover" format="webp" preload fetchpriority="high" />
         <div class="absolute inset-0 bg-gradient-to-b from-[#0f172a]/90 via-[#0f172a]/70 to-[#0f172a]/95 backdrop-blur-[2px]"></div>
       </div>
 
@@ -367,7 +358,7 @@ const testimonials = [
                 {{ review.name.charAt(0) }}
               </div>
               <div>
-                <h4 class="font-bold text-[#0f172a] text-lg">{{ review.name }}</h4>
+                <h3 class="font-bold text-[#0f172a] text-lg">{{ review.name }}</h3>
                 <p class="text-sm text-[#f59e0b] font-medium">{{ review.role }}</p>
               </div>
             </div>
