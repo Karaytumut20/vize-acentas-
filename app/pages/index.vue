@@ -106,7 +106,7 @@ const testimonials = [
     <section class="relative min-h-[100svh] pt-32 pb-32 flex flex-col justify-center overflow-hidden">
       <!-- Background Image -->
       <div class="absolute inset-0 z-0">
-        <NuxtImg src="/img/hero-plane.jpg" alt="" class="w-full h-full object-cover" format="webp" preload fetchpriority="high" />
+        <NuxtImg src="/img/hero-plane.jpg" alt="" class="w-full h-full object-cover" format="webp" preload fetchpriority="high" sizes="sm:100vw md:100vw lg:100vw" />
         <div class="absolute inset-0 bg-gradient-to-b from-[#0f172a]/90 via-[#0f172a]/70 to-[#0f172a]/95 backdrop-blur-[2px]"></div>
       </div>
 
@@ -183,7 +183,7 @@ const testimonials = [
 
         <div class="grid grid-cols-6 lg:grid-cols-12 gap-6">
           <NuxtLink v-for="(service, index) in services" :key="index" :to="service.path" class="col-span-6 md:col-span-3 lg:col-span-3 relative rounded-2xl overflow-hidden border border-gray-100 h-[380px] md:h-[420px] block backdrop-blur-sm">
-            <NuxtImg :src="service.image" :alt="service.title" class="absolute inset-0 w-full h-full object-cover" format="webp" loading="lazy" />
+            <NuxtImg :src="service.image" :alt="service.title" class="absolute inset-0 w-full h-full object-cover" format="webp" loading="lazy" sizes="sm:100vw md:50vw lg:33vw" />
             <div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/60 to-[#0f172a]/10"></div>
             
             <div class="absolute bottom-0 left-0 right-0 p-8">
@@ -247,7 +247,7 @@ const testimonials = [
           </div>
           
           <div class="col-span-6 lg:col-span-6 relative order-1 lg:order-2 h-[400px] md:h-[500px] lg:h-[700px] rounded-[2.5rem] overflow-hidden">
-            <NuxtImg src="/img/ekip.jpg" alt="Vize Danışmanlık Ekibi" class="absolute inset-0 w-full h-full object-cover" format="webp" loading="lazy" />
+            <NuxtImg src="/img/ekip.jpg" alt="Vize Danışmanlık Ekibi" class="absolute inset-0 w-full h-full object-cover" format="webp" loading="lazy" sizes="sm:100vw md:100vw lg:100vw" />
             <div class="absolute inset-0 bg-[#0f172a]/20 mix-blend-multiply"></div>
             <div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/40 to-transparent"></div>
             
