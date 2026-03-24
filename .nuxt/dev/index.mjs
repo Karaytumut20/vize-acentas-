@@ -835,11 +835,12 @@ const _inlineRuntimeConfig = {
         "sitemapName": "sitemap.xml",
         "route": "sitemap.xml",
         "defaults": {
-          "lastmod": "2026-03-24T21:43:35Z"
+          "lastmod": "2026-03-24T22:09:05Z"
         },
         "include": [],
         "exclude": [
           "/_**",
+          "/_nuxt/**",
           "/_nuxt/**"
         ],
         "includeAppSources": true
@@ -2935,7 +2936,7 @@ const _2RIDMvIGRDACNAGMw5sjolW650p3JDf1xi2LFlFIow = defineNitroPlugin(async (nit
 
 const rootDir = "C:/Users/umut/Desktop/vize acentası";
 
-const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no"},{"charset":"utf-8"},{"name":"theme-color","content":"hsl(253 0% 7%)"},{"name":"msapplication-TileColor","content":"#000000"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"black-translucent"},{"name":"mobile-web-app-capable","content":"yes"},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image/x-icon","href":"/favicon.ico"},{"rel":"icon","type":"image/png","sizes":"32x32","href":"/favicon-32x32.png"},{"rel":"icon","type":"image/png","sizes":"16x16","href":"/favicon-16x16.png"},{"rel":"apple-touch-icon","sizes":"180x180","href":"/apple-touch-icon.png"},{"rel":"mask-icon","href":"/safari-pinned-tab.svg","color":"#000000"},{"rel":"preload","as":"font","type":"font/woff2","href":"/fonts/lchmp.woff2","crossorigin":"anonymous"}],"style":[],"script":[],"noscript":[],"htmlAttrs":{"lang":"tr"},"charset":"utf-8","viewport":"width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no"};
+const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1, viewport-fit=cover"},{"charset":"utf-8"},{"name":"theme-color","content":"hsl(253 0% 7%)"},{"name":"msapplication-TileColor","content":"#000000"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"black-translucent"},{"name":"mobile-web-app-capable","content":"yes"},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image/x-icon","href":"/favicon.ico"},{"rel":"icon","type":"image/png","sizes":"32x32","href":"/favicon-32x32.png"},{"rel":"icon","type":"image/png","sizes":"16x16","href":"/favicon-16x16.png"},{"rel":"apple-touch-icon","sizes":"180x180","href":"/apple-touch-icon.png"},{"rel":"mask-icon","href":"/safari-pinned-tab.svg","color":"#000000"},{"rel":"preload","as":"font","type":"font/woff2","href":"/fonts/lchmp.woff2","crossorigin":"anonymous"}],"style":[],"script":[],"noscript":[],"htmlAttrs":{"lang":"tr"},"charset":"utf-8","viewport":"width=device-width, initial-scale=1, viewport-fit=cover"};
 
 const appRootTag = "div";
 
@@ -6447,47 +6448,47 @@ const sources$1 = [
         "urls": [
             {
                 "loc": "/basarilarimiz",
-                "lastmod": "2026-03-24T18:31:15.460Z"
+                "lastmod": "2026-03-24T21:59:23.099Z"
             },
             {
                 "loc": "/blog",
-                "lastmod": "2026-03-24T18:30:35.252Z"
+                "lastmod": "2026-03-24T21:59:23.100Z"
             },
             {
                 "loc": "/gizlilik-politikasi",
-                "lastmod": "2026-03-24T18:31:17.465Z"
+                "lastmod": "2026-03-24T22:04:21.114Z"
             },
             {
                 "loc": "/hakkimizda",
-                "lastmod": "2026-03-24T18:31:10.300Z"
+                "lastmod": "2026-03-24T21:59:23.101Z"
             },
             {
                 "loc": "/iletisim",
-                "lastmod": "2026-03-24T21:16:34.218Z"
+                "lastmod": "2026-03-24T22:04:00.438Z"
             },
             {
                 "loc": "/kurumsal",
-                "lastmod": "2026-03-24T21:17:51.799Z"
+                "lastmod": "2026-03-24T22:05:10.647Z"
             },
             {
                 "loc": "/randevu-al",
-                "lastmod": "2026-03-24T20:04:53.242Z"
+                "lastmod": "2026-03-24T21:59:23.106Z"
             },
             {
                 "loc": "/sss",
-                "lastmod": "2026-03-24T18:30:44.121Z"
+                "lastmod": "2026-03-24T21:59:23.106Z"
             },
             {
                 "loc": "/vizeler",
-                "lastmod": "2026-03-24T00:08:28.162Z"
+                "lastmod": "2026-03-24T22:04:23.552Z"
             },
             {
                 "loc": "/yazilar",
-                "lastmod": "2026-03-22T02:15:42.407Z"
+                "lastmod": "2026-03-24T21:59:23.109Z"
             },
             {
                 "loc": "/",
-                "lastmod": "2026-03-24T21:17:06.590Z"
+                "lastmod": "2026-03-24T22:03:56.382Z"
             }
         ],
         "sourceType": "app"

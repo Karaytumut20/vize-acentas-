@@ -125,8 +125,8 @@ const testimonials = [
         <div class="hero-cta flex flex-col items-center justify-center gap-6 mb-16 w-full max-w-2xl mx-auto">
           <!-- Quick Search Bar -->
           <div class="relative w-full group">
-            <div class="relative w-full">
-              <input type="text" class="w-full bg-[#0f172a]/80 border border-white/20 text-white px-8 py-5 rounded-full outline-none text-[15px] sm:text-lg">
+            <div class="relative max-w-2xl mx-auto hero-search-bar" aria-hidden="true">
+              <input type="text" id="country-search" aria-label="Gitmek istediğiniz ülkeyi arayın" class="w-full bg-[#0f172a]/80 border border-white/20 text-white px-8 py-5 rounded-full outline-none text-[15px] sm:text-lg">
               <button aria-label="Arama Yap" class="absolute right-2 top-2 bottom-2 bg-[#f59e0b] text-[#0f172a] px-6 sm:px-8 rounded-full font-bold flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 hidden sm:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
                 Vize Bul
@@ -174,7 +174,7 @@ const testimonials = [
     <section class="py-24 bg-white" aria-labelledby="popular-visas-heading">
       <div class="container mx-auto px-4 md:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-16 reveal-up">
-          <span class="text-[#f59e0b] font-bold tracking-widest uppercase text-sm mb-4 block">Gideceğiniz Ülkeyi Seçin</span>
+          <span class="text-[#b45309] font-bold tracking-widest uppercase text-sm mb-4 block">Gideceğiniz Ülkeyi Seçin</span>
           <h2 id="popular-visas-heading" class="text-4xl md:text-5xl font-black text-[#0f172a] mb-6 tracking-tight">En Çok Tercih Edilen Vizeler</h2>
           <p class="text-lg text-gray-600 leading-relaxed">
             Amerika'dan Avrupa'ya, İngiltere'den Kanada'ya kadar en popüler destinasyonlar için tüm vize sürecinizi biz yönetiyoruz. Güvenli ve hızlı başvuru için doğru adrestesiniz.
@@ -189,7 +189,7 @@ const testimonials = [
             <div class="absolute bottom-0 left-0 right-0 p-8">
               <h3 class="text-2xl font-bold text-white mb-3">{{ service.title }}</h3>
               <p class="text-gray-300 text-sm mb-6 leading-relaxed">{{ service.desc }}</p>
-              <span class="inline-flex items-center gap-2 text-sm font-bold text-[#f59e0b] uppercase tracking-wider">
+              <span class="inline-flex items-center gap-2 text-sm font-bold text-[#b45309] uppercase tracking-wider">
                 Detaylı Bilgi
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
               </span>
@@ -277,7 +277,7 @@ const testimonials = [
     <section class="py-24 bg-gray-50 overflow-hidden relative" id="yorumlar">
       <div class="container mx-auto px-4 md:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-16 reveal-up">
-          <span class="text-[#f59e0b] font-bold tracking-widest uppercase text-sm mb-4 block">Başarı Hikayeleri</span>
+          <span class="text-[#b45309] font-bold tracking-widest uppercase text-sm mb-4 block">Başarı Hikayeleri</span>
           <h2 class="text-4xl md:text-5xl font-black text-[#0f172a] mb-6 tracking-tight">Müşterilerimiz Neler Söylüyor?</h2>
           <p class="text-lg text-gray-600">Onlarca ülkeye, binlerce mutlu yolcu. Vizesine kavuşan misafirlerimizin deneyimlerini okuyun.</p>
         </div>
@@ -286,7 +286,7 @@ const testimonials = [
           <div v-for="(review, index) in testimonials" :key="index" class="col-span-6 lg:col-span-4 bg-white p-10 rounded-[2rem] border border-gray-100 relative group">
             <svg class="absolute top-8 right-8 w-12 h-12 text-gray-100" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
             
-            <div class="flex items-center gap-1 mb-6 text-[#f59e0b]">
+            <div class="flex items-center gap-1 mb-6 text-[#b45309]">
               <svg v-for="i in review.rating" :key="i" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
             </div>
             
@@ -299,8 +299,8 @@ const testimonials = [
                 {{ review.name.charAt(0) }}
               </div>
               <div>
-                <h3 class="font-bold text-[#0f172a] text-lg">{{ review.name }}</h3>
-                <p class="text-sm text-[#f59e0b] font-medium">{{ review.role }}</p>
+                <h4 class="font-bold text-[#0f172a] text-lg">{{ review.name }}</h4>
+                <p class="text-[#b45309] text-sm">{{ review.visa }} Süreci</p>
               </div>
             </div>
           </div>
@@ -312,7 +312,7 @@ const testimonials = [
     <section class="py-24 bg-white" aria-labelledby="faq-heading" id="sss">
       <div class="container mx-auto px-4 md:px-6 lg:px-8 max-w-4xl">
         <div class="text-center mb-10 md:mb-16 reveal-up">
-          <span class="text-[#f59e0b] font-bold tracking-widest uppercase text-sm mb-4 block">Merak Edilenler</span>
+          <span class="text-[#b45309] font-bold tracking-widest uppercase text-sm mb-4 block">Merak Edilenler</span>
           <h2 id="faq-heading" class="text-4xl md:text-5xl font-black text-[#0f172a] mb-6 tracking-tight">Sıkça Sorulan Sorular</h2>
           <p class="text-lg text-gray-600">Vize süreciyle ilgili aklınıza takılan tüm soruları şeffaflıkla yanıtlıyoruz.</p>
         </div>

@@ -81,7 +81,7 @@ const servicesLinks = Object.entries(visaDatabase).map(([slug, data]) => ({
                 </NuxtLink>
                 
                 <div class="col-span-3 pt-6 mt-4 border-t border-gray-100 flex justify-center">
-                  <NuxtLink to="/vizeler" class="text-sm font-bold text-[#1e293b] inline-flex items-center gap-2">
+                  <NuxtLink to="/vizeler" class="text-sm font-bold text-[#b45309] inline-flex items-center gap-2">
                     Tüm Vize Hizmetlerini Görüntüle
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                   </NuxtLink>
@@ -129,7 +129,7 @@ const servicesLinks = Object.entries(visaDatabase).map(([slug, data]) => ({
           <NuxtLink to="/kurumsal" @click="isMobileMenuOpen = false" class="border-b border-gray-100 pb-4">Kurumsal</NuxtLink>
           
           <div class="flex flex-col gap-4 border-b border-gray-100 pb-4">
-            <span class="text-gray-400 text-sm uppercase tracking-wider font-bold">Vize Kategorileri</span>
+            <span class="text-gray-600 text-sm uppercase tracking-wider font-bold">Vize Kategorileri</span>
             <NuxtLink 
               v-for="visa in servicesLinks" 
               :key="visa.path" 
@@ -139,7 +139,7 @@ const servicesLinks = Object.entries(visaDatabase).map(([slug, data]) => ({
             >
               {{ visa.name }}
             </NuxtLink>
-            <NuxtLink to="/vizeler" @click="isMobileMenuOpen = false" class="pl-4 text-sm font-semibold text-[#f59e0b] mt-2">
+            <NuxtLink to="/vizeler" @click="isMobileMenuOpen = false" class="pl-4 text-sm font-semibold text-[#b45309] mt-2">
               Tüm Vizeler &rarr;
             </NuxtLink>
           </div>

@@ -35,7 +35,7 @@ const legalLinks = [
             <span class="text-3xl font-bold tracking-tight text-white mb-1">
               Champ<span class="text-[#f59e0b]">Vize</span>
             </span>
-            <span class="text-xs tracking-widest font-medium uppercase text-gray-500">
+            <span class="text-xs tracking-widest font-medium uppercase text-gray-400">
               Kurumsal Danışmanlık
             </span>
           </NuxtLink>
