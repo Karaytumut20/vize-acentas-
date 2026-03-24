@@ -9,28 +9,40 @@ const sources = [
         },
         "urls": [
             {
-                "loc": "/garanti-ve-guvence",
-                "lastmod": "2026-03-22T01:35:35.225Z"
+                "loc": "/basarilarimiz",
+                "lastmod": "2026-03-24T18:31:15.460Z"
+            },
+            {
+                "loc": "/blog",
+                "lastmod": "2026-03-24T18:30:35.252Z"
+            },
+            {
+                "loc": "/gizlilik-politikasi",
+                "lastmod": "2026-03-24T18:31:17.465Z"
+            },
+            {
+                "loc": "/hakkimizda",
+                "lastmod": "2026-03-24T18:31:10.300Z"
             },
             {
                 "loc": "/iletisim",
-                "lastmod": "2026-03-22T02:14:54.175Z"
+                "lastmod": "2026-03-23T20:16:31.982Z"
             },
             {
                 "loc": "/kurumsal",
-                "lastmod": "2026-03-22T02:29:55.613Z"
+                "lastmod": "2026-03-24T18:46:00.142Z"
             },
             {
-                "loc": "/programlar",
-                "lastmod": "2026-03-22T01:36:28.788Z"
+                "loc": "/randevu-al",
+                "lastmod": "2026-03-24T18:30:46.129Z"
             },
             {
                 "loc": "/sss",
-                "lastmod": "2026-03-22T02:14:30.243Z"
+                "lastmod": "2026-03-24T18:30:44.121Z"
             },
             {
-                "loc": "/universiteler",
-                "lastmod": "2026-03-22T02:13:40.117Z"
+                "loc": "/vizeler",
+                "lastmod": "2026-03-24T00:08:28.162Z"
             },
             {
                 "loc": "/yazilar",
@@ -38,7 +50,7 @@ const sources = [
             },
             {
                 "loc": "/",
-                "lastmod": "2026-03-22T02:11:40.615Z"
+                "lastmod": "2026-03-24T18:32:40.559Z"
             }
         ],
         "sourceType": "app"

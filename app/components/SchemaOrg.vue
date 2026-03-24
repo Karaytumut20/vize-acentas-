@@ -8,7 +8,8 @@ const props = defineProps<{
 
 if (props.type === 'Service') {
   useSchemaOrg([
-    defineService({
+    {
+      '@type': 'Service',
       name: props.data.name,
       description: props.data.description,
       provider: {
@@ -20,30 +21,37 @@ if (props.type === 'Service') {
         '@type': 'OfferCatalog',
         name: 'Vize Hizmetleri'
       }
-    })
+    }
   ])
 } else if (props.type === 'BlogPosting') {
   useSchemaOrg([
-    defineArticle({
+    {
+      '@type': 'Article',
       headline: props.data.title,
       description: props.data.description,
       image: props.data.image,
       datePublished: props.data.publishedAt,
       dateModified: props.data.modifiedAt,
       author: {
+        '@type': 'Organization',
         name: 'Vize Acentası',
         url: 'https://vize-acentasi.vercel.app'
       }
-    })
+    }
   ])
 } else if (props.type === 'FAQPage') {
   useSchemaOrg([
-    defineQuestion(
-      props.data.questions.map((q: any) => ({
+    {
+      '@type': 'FAQPage',
+      mainEntity: props.data.questions.map((q: any) => ({
+        '@type': 'Question',
         name: q.question,
-        acceptedAnswer: q.answer
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: q.answer
+        }
       }))
-    )
+    }
   ])
 }
 </script>

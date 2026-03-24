@@ -18,9 +18,9 @@ const corporateLinks = [
 
 const legalLinks = [
   { name: 'Gizlilik ve Güvenlik', path: '/gizlilik-politikasi' },
-  { name: 'Kişisel Verilerin Korunması', path: '/kvkk' },
-  { name: 'Çerez Politikası', path: '/cerez-politikasi' },
-  { name: 'Hizmet Sözleşmesi', path: '/hizmet-sozlesmesi' },
+  { name: 'Kişisel Verilerin Korunması', path: '/gizlilik-politikasi' },
+  { name: 'Çerez Politikası', path: '/gizlilik-politikasi' },
+  { name: 'Hizmet Sözleşmesi', path: '/gizlilik-politikasi' },
 ]
 </script>
 

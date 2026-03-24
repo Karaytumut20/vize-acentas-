@@ -1,26 +1,26 @@
 const siteConfig = {
-  name: "Champ Yurt D\u0131\u015F\u0131 E\u011Fitim | S\u0131navs\u0131z \xDCniversite & E\u011Fitim Ko\xE7lu\u011Fu",
-  description: "Lise diplomas\u0131 ile Avrupa ve d\xFCnyadaki partner \xFCniversitelerimize s\u0131navs\u0131z kay\u0131t! Makedonya, Bosna Hersek e\u011Fitimleri, Work and Travel ve kariyer garantisi.",
-  url: "https://champegitim.com.tr",
-  ogImage: "https://champegitim.com.tr/og-image.jpg",
+  name: "Vize Acentas\u0131 | Profesyonel Vize Dan\u0131\u015Fmanl\u0131k",
+  description: "T\xFCrkiye'nin en g\xFCvenilir vize dan\u0131\u015Fmanl\u0131k firmas\u0131. Schengen, Amerika, \u0130ngiltere, Kanada ve di\u011Fer \xFClke vizesi ba\u015Fvurular\u0131n\u0131zda uzman deste\u011Fi ile yan\u0131n\u0131zday\u0131z.",
+  url: "https://vize-acentasi.vercel.app",
+  ogImage: "https://vize-acentasi.vercel.app/images/og-default.jpg",
   lang: "tr",
-  contactEmail: "bilgi@champegitim.com.tr",
+  contactEmail: "bilgi@vize-acentasi.vercel.app",
   foundedAt: "2014-01-01",
   address: {
     addressLocality: "\u0130stanbul",
     addressCountry: "TR"
   },
   links: {
-    twitter: "https://twitter.com/champegitim",
-    linkedin: "https://linkedin.com/company/champ-egitim"},
+    twitter: "https://twitter.com/vizeacentasi",
+    linkedin: "https://linkedin.com/company/vizeacentasi"},
   knowsAbout: [
-    "Yurt D\u0131\u015F\u0131 E\u011Fitim Dan\u0131\u015Fmanl\u0131\u011F\u0131",
-    "S\u0131navs\u0131z \xDCniversite Kabul\xFC",
-    "Makedonya ve Bosna Hersek \xDCniversiteleri",
-    "A\xE7\u0131ktan \xDCniversite",
-    "Work and Travel"
+    "Schengen Vizesi Dan\u0131\u015Fmanl\u0131\u011F\u0131",
+    "Amerika Vizesi",
+    "\u0130ngiltere Vizesi",
+    "Kanada Vizesi",
+    "Vize Ba\u015Fvuru S\xFCre\xE7 Takibi"
   ],
-  creator: "Champ Yurt D\u0131\u015F\u0131 E\u011Fitim"};
+  creator: "Vize Acentas\u0131"};
 
 export { siteConfig as s };
 //# sourceMappingURL=site.mjs.map

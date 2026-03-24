@@ -1,11 +1,11 @@
-import process from 'node:process';globalThis._importMeta_=globalThis._importMeta_||{url:"file:///_entry.js",env:process.env};import { hasInjectionContext, inject, getCurrentInstance, defineComponent, createElementBlock, shallowRef, provide, cloneVNode, h, ref, useSSRContext, defineAsyncComponent, computed, unref, shallowReactive, Suspense, Fragment, createApp, mergeProps, withCtx, createVNode, resolveDirective, onErrorCaptured, onServerPrefetch, resolveDynamicComponent, reactive, effectScope, nextTick, getCurrentScope, toRef, isReadonly, toValue, toRaw, isRef, isShallow, isReactive, watch } from 'vue';
-import { n as parseURL, o as encodePath, q as decodePath, r as hasProtocol, v as isScriptProtocol, m as joinURL, w as withQuery, x as sanitizeStatusCode, y as getContext, $ as $fetch, z as baseURL, A as defu, k as createError$1, B as executeAsync, C as hash, D as camelCase, E as withTrailingSlash, F as getRequestHeaders, G as withLeadingSlash, H as withoutTrailingSlash, I as withBase } from '../_/nitro.mjs';
+import process from 'node:process';globalThis._importMeta_=globalThis._importMeta_||{url:"file:///_entry.js",env:process.env};import { hasInjectionContext, inject, getCurrentInstance, defineComponent, createElementBlock, shallowRef, provide, cloneVNode, h, ref, useSSRContext, defineAsyncComponent, computed, unref, shallowReactive, Suspense, Fragment, createApp, mergeProps, watch, withCtx, createVNode, resolveDirective, onErrorCaptured, onServerPrefetch, resolveDynamicComponent, reactive, effectScope, nextTick, getCurrentScope, toRef, isReadonly, toValue, toRaw, isRef, isShallow, isReactive } from 'vue';
+import { n as parseURL, o as encodePath, q as decodePath, r as hasProtocol, v as isScriptProtocol, m as joinURL, w as withQuery, x as defu, y as sanitizeStatusCode, z as getContext, $ as $fetch, A as baseURL, k as createError$1, B as executeAsync, C as hash, D as camelCase, E as withTrailingSlash, F as getRequestHeaders, G as withLeadingSlash, H as withoutTrailingSlash, I as withBase } from '../_/nitro.mjs';
 import { defineStore, setActivePinia, createPinia, shouldHydrate } from 'pinia';
 import { useRoute as useRoute$1, RouterView, createMemoryHistory, createRouter, START_LOCATION } from 'vue-router';
 import { isPlainObject } from '@vue/shared';
 import { defineOrganization, defineLocalBusiness, defineWebSite, defineWebPage, SchemaOrgUnheadPlugin } from '@unhead/schema-org/vue';
 import { ssrRenderAttrs, ssrRenderList, ssrRenderClass, ssrRenderComponent, ssrGetDirectiveProps, ssrInterpolate, ssrRenderSuspense, ssrRenderVNode } from 'vue/server-renderer';
-import { u as useHead$1, a as useSeoMeta$1, h as headSymbol } from '../routes/renderer.mjs';
+import { u as useSeoMeta$1, a as useHead$1, h as headSymbol } from '../routes/renderer.mjs';
 import 'node:http';
 import 'node:https';
 import 'node:events';
@@ -730,59 +730,69 @@ function toArray$1(value) {
 }
 const _routes = [
   {
-    name: "programlar-slug",
-    path: "/programlar/:slug()",
-    component: () => import('./_slug_-PBdWFj50.mjs')
-  },
-  {
-    name: "universiteler-slug",
-    path: "/universiteler/:slug()",
-    component: () => import('./_slug_-014nHcSe.mjs')
+    name: "vizeler-slug",
+    path: "/vizeler/:slug()",
+    component: () => import('./_slug_-CcFOPO73.mjs')
   },
   {
     name: "yazilar-slug",
     path: "/yazilar/:slug()",
-    component: () => import('./_slug_-BI6O1Uuy.mjs')
+    component: () => import('./_slug_-B6Xj2Qv1.mjs')
   },
   {
-    name: "garanti-ve-guvence",
-    path: "/garanti-ve-guvence",
-    component: () => import('./garanti-ve-guvence-DrotFt_0.mjs')
+    name: "basarilarimiz",
+    path: "/basarilarimiz",
+    component: () => import('./basarilarimiz-DRf7aS4u.mjs')
+  },
+  {
+    name: "blog",
+    path: "/blog",
+    component: () => import('./index-9K-AzD-F.mjs')
+  },
+  {
+    name: "gizlilik-politikasi",
+    path: "/gizlilik-politikasi",
+    component: () => import('./gizlilik-politikasi-CG49ktMQ.mjs')
+  },
+  {
+    name: "hakkimizda",
+    path: "/hakkimizda",
+    component: () => import('./hakkimizda-B1GVN1-Z.mjs')
   },
   {
     name: "iletisim",
     path: "/iletisim",
-    component: () => import('./iletisim-DdKoJRBl.mjs')
+    component: () => import('./iletisim-xu0OwSdp.mjs')
   },
   {
     name: "kurumsal",
     path: "/kurumsal",
-    component: () => import('./kurumsal-Bf5y2Oij.mjs')
+    component: () => import('./kurumsal-CDcn9WCK.mjs')
   },
   {
-    name: "programlar",
-    path: "/programlar",
-    component: () => import('./index-Bs5KbDlP.mjs')
+    name: "randevu-al",
+    path: "/randevu-al",
+    component: () => import('./randevu-al-DTfcygV-.mjs')
   },
   {
     name: "sss",
     path: "/sss",
-    component: () => import('./sss-yJoIzU_P.mjs')
+    component: () => import('./sss-BiWo-hFw.mjs')
   },
   {
-    name: "universiteler",
-    path: "/universiteler",
-    component: () => import('./index-Bj2A641d.mjs')
+    name: "vizeler",
+    path: "/vizeler",
+    component: () => import('./index-DVcO-uQx.mjs')
   },
   {
     name: "yazilar",
     path: "/yazilar",
-    component: () => import('./index-B_VHO1R2.mjs')
+    component: () => import('./index-CCb8uIEo.mjs')
   },
   {
     name: "index",
     path: "/",
-    component: () => import('./index-BiexHjL6.mjs')
+    component: () => import('./index-D5TbMpdi.mjs')
   }
 ];
 const _wrapInTransition = (props, children) => {
@@ -2199,7 +2209,7 @@ _sfc_main$3.setup = (props, ctx) => {
 };
 const __nuxt_component_2 = Object.assign(_sfc_main$3, { __name: "GridHelper" });
 const layouts = {
-  default: defineAsyncComponent(() => import('./default-CsD1dtC-.mjs').then((m) => m.default || m))
+  default: defineAsyncComponent(() => import('./default-9BNyIeeG.mjs').then((m) => m.default || m))
 };
 const routeRulesMatcher = _routeRulesMatcher;
 const LayoutLoader = defineComponent({
@@ -2437,51 +2447,51 @@ function normalizeSlot(slot, data) {
   return slotContent.length === 1 ? h(slotContent[0]) : h(Fragment, void 0, slotContent);
 }
 const siteConfig = {
-  name: "Champ Yurt Dışı Eğitim | Sınavsız Üniversite & Eğitim Koçluğu",
-  shortName: "Champ Eğitim",
-  description: "Lise diploması ile Avrupa ve dünyadaki partner üniversitelerimize sınavsız kayıt! Makedonya, Bosna Hersek eğitimleri, Work and Travel ve kariyer garantisi.",
-  url: "https://champegitim.com.tr",
-  ogImage: "https://champegitim.com.tr/og-image.jpg",
+  name: "Vize Acentası | Profesyonel Vize Danışmanlık",
+  shortName: "Vize Acentası",
+  description: "Türkiye'nin en güvenilir vize danışmanlık firması. Schengen, Amerika, İngiltere, Kanada ve diğer ülke vizesi başvurularınızda uzman desteği ile yanınızdayız.",
+  url: "https://vize-acentasi.vercel.app",
+  ogImage: "https://vize-acentasi.vercel.app/images/og-default.jpg",
   ogImageWidth: 1200,
   ogImageHeight: 630,
   themeColors: {
-    dark: "hsl(253 0% 7%)",
-    light: "hsl(210 11% 94%)"
+    dark: "hsl(253 0% 7%)"
   },
   lang: "tr",
-  contactEmail: "bilgi@champegitim.com.tr",
+  contactEmail: "bilgi@vize-acentasi.vercel.app",
   address: {
-    streetAddress: "Eğitim Cd.",
+    streetAddress: "Şişli Merkez",
     addressLocality: "İstanbul",
     addressRegion: "İstanbul",
-    postalCode: "34000",
+    postalCode: "34360",
     addressCountry: "TR"
   },
   geo: {
-    latitude: 41.0082,
-    longitude: 28.9784
+    latitude: 41.0625,
+    longitude: 28.9897
   },
   links: {
-    twitter: "https://twitter.com/champegitim",
-    github: "https://github.com/champegitim",
-    linkedin: "https://linkedin.com/company/champ-egitim",
-    instagram: "https://instagram.com/champegitim",
-    dribbble: "https://dribbble.com/champegitim",
-    behance: "https://behance.net/champegitim"
+    twitter: "https://twitter.com/vizeacentasi",
+    linkedin: "https://linkedin.com/company/vizeacentasi",
+    instagram: "https://instagram.com/vizeacentasi",
+    youtube: "https://youtube.com/@vizeacentasi",
+    facebook: "https://facebook.com/vizeacentasi"
   },
-  twitterHandle: "@champegitim",
+  twitterHandle: "@vizeacentasi",
   keywords: [
-    "Makedonya üniversite fiyatları",
-    "Goce Delcev Üniversitesi",
-    "Saraybosna Üniversitesi",
-    "Sınavsız üniversite",
-    "Yurt dışı eğitim danışmanlığı",
-    "Açıktan üniversite okumak",
-    "Work and Travel",
-    "Makedonya vatandaşlık başvurusu",
-    "Eğitim koçluğu"
+    "schengen vizesi",
+    "amerika vizesi",
+    "vize danışmanlık",
+    "istanbul vize",
+    "vize başvurusu",
+    "ingiltere vizesi",
+    "kanada vizesi",
+    "vize acentesi",
+    "schengen vizesi danışmanlık",
+    "amerika vizesi mülakatı",
+    "turistik vize"
   ],
-  creator: "Champ Yurt Dışı Eğitim",
+  creator: "Vize Acentası",
   verification: {
     google: "google-site-verification-code",
     yandex: "yandex-verification-code",
@@ -2494,6 +2504,11 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
   setup(__props) {
     const store = useAppStore();
     const route = useRoute$1();
+    watch(
+      () => route.path,
+      () => {
+      }
+    );
     useHead({
       htmlAttrs: {
         lang: siteConfig.lang,
@@ -2550,7 +2565,7 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
       description: siteConfig.description,
       keywords: siteConfig.keywords.join(", "),
       author: siteConfig.creator,
-      ogLocale: "en_US",
+      ogLocale: "tr_TR",
       ogType: "website",
       ogSiteName: siteConfig.name,
       ogTitle: siteConfig.name,
@@ -2723,5 +2738,5 @@ let entry;
 }
 const entry_default = ((ssrContext) => entry(ssrContext));
 
-export { useHead as a, useRouter as b, useNuxtApp as c, useRuntimeConfig as d, entry_default as default, encodeRoutePath as e, nuxtLinkDefaults as f, hashMode as h, navigateTo as n, resolveRouteObject as r, siteConfig as s, useSeoMeta as u };
+export { useSeoMeta as a, useHead as b, useSchemaOrg as c, useNuxtApp as d, entry_default as default, useRuntimeConfig as e, useRequestEvent as f, useRouter as g, encodeRoutePath as h, hashMode as i, nuxtLinkDefaults as j, navigateTo as n, resolveRouteObject as r, siteConfig as s, useRoute as u };
 //# sourceMappingURL=server.mjs.map
