@@ -38,7 +38,7 @@ useSeoMeta({
         
         <div class="relative">
           <div class="absolute inset-0 bg-gradient-to-tr from-[#0f172a] to-[#f59e0b] rounded-[3rem] transform rotate-3 scale-105 opacity-20 blur-xl"></div>
-          <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1000" alt="Vize Acentası Ekibi" class="relative rounded-[3rem] shadow-2xl object-cover h-[600px] w-full border-8 border-white">
+          <NuxtImg src="/img/champ-ekibi.jpg" alt="Vize Acentası Ekibi" class="relative rounded-[3rem] object-cover h-[600px] w-full border-8 border-white" format="webp" loading="lazy" />
         </div>
       </div>
     </div>

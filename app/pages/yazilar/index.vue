@@ -12,16 +12,16 @@
 
       <!-- Kategori Filtresi (Fake UX Element for Professionalism) -->
       <div class="flex flex-wrap justify-center gap-4 mb-16">
-        <button class="bg-slate-900 text-white px-6 py-2 rounded-full text-sm font-bold tracking-widest uppercase shadow-sm">Tümü</button>
-        <button class="bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 px-6 py-2 rounded-full text-sm font-bold tracking-widest uppercase transition-colors">Goce Delcev UGD</button>
-        <button class="bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 px-6 py-2 rounded-full text-sm font-bold tracking-widest uppercase transition-colors">Sınavsız Geçiş</button>
-        <button class="bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 px-6 py-2 rounded-full text-sm font-bold tracking-widest uppercase transition-colors">Oturum İzmi</button>
+        <button class="bg-slate-900 text-white px-6 py-2 rounded-full text-sm font-bold tracking-widest uppercase">Tümü</button>
+        <button class="bg-white text-slate-600 border border-slate-200 px-6 py-2 rounded-full text-sm font-bold tracking-widest uppercase">Goce Delcev UGD</button>
+        <button class="bg-white text-slate-600 border border-slate-200 px-6 py-2 rounded-full text-sm font-bold tracking-widest uppercase">Sınavsız Geçiş</button>
+        <button class="bg-white text-slate-600 border border-slate-200 px-6 py-2 rounded-full text-sm font-bold tracking-widest uppercase">Oturum İzmi</button>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         
         <!-- Dev SEO Makalesi Kartı -->
-        <article class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col">
+        <article class="bg-white rounded-2xl border border-slate-200 overflow-hidden group flex flex-col">
           <NuxtLink to="/yazilar/turkiyede-universite-kazanamadim-demeyin-neden-sinavsiz-goce-delcev" class="block h-56 bg-slate-100 overflow-hidden border-b border-slate-100 relative">
              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent z-10"></div>
              <span class="absolute inset-0 flex items-center justify-center text-slate-400 font-bold tracking-widest uppercase text-xs z-0">[Sınav Stresi Analiz Görseli]</span>
@@ -34,7 +34,7 @@
               <span>5 Dk Okuma</span>
             </div>
             <NuxtLink to="/yazilar/turkiyede-universite-kazanamadim-demeyin-neden-sinavsiz-goce-delcev" class="block">
-              <h2 class="text-2xl font-bold text-slate-900 group-hover:text-emerald-700 transition-colors mb-4 tracking-tight leading-tight">
+              <h2 class="text-2xl font-bold text-slate-900 mb-4 tracking-tight leading-tight">
                 Türkiye'de Üniversite Kazanamadım Demeyin: Neden Sınavsız Goce Delcev'i Seçmelisiniz?
               </h2>
             </NuxtLink>
@@ -43,7 +43,7 @@
             </p>
             <div class="mt-auto border-t border-slate-100 pt-6 flex items-center justify-between">
               <span class="text-xs font-bold text-slate-500 uppercase tracking-widest">Champ Analiz</span>
-              <NuxtLink to="/yazilar/turkiyede-universite-kazanamadim-demeyin-neden-sinavsiz-goce-delcev" class="text-slate-900 group-hover:text-emerald-600 font-bold text-sm tracking-wide transition-colors flex items-center gap-1">
+              <NuxtLink to="/yazilar/turkiyede-universite-kazanamadim-demeyin-neden-sinavsiz-goce-delcev" class="text-slate-900 font-bold text-sm tracking-wide flex items-center gap-1">
                 Makaleyi Oku <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
               </NuxtLink>
             </div>

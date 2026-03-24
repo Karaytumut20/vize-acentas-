@@ -49,7 +49,7 @@ const reset = () => {
 </script>
 
 <template>
-  <div class="bg-white rounded-3xl shadow-2xl overflow-hidden max-w-2xl mx-auto border border-gray-100 relative">
+  <div class="bg-white rounded-3xl overflow-hidden max-w-2xl mx-auto border border-gray-100 relative">
     <!-- Header -->
     <div class="bg-gradient-to-r from-[#0f172a] to-gray-800 p-8 text-white relative overflow-hidden">
       <div class="absolute -right-10 -top-10 w-40 h-40 bg-[#f59e0b]/20 rounded-full blur-2xl"></div>
@@ -61,22 +61,22 @@ const reset = () => {
     <div class="p-8" v-if="!showResult && !isCalculating">
       <!-- Progress -->
       <div class="flex gap-2 mb-8">
-        <div v-for="i in 4" :key="i" class="h-2 rounded-full flex-1 transition-colors duration-300" :class="step >= i ? 'bg-[#f59e0b]' : 'bg-gray-100'"></div>
+        <div v-for="i in 4" :key="i" class="h-2 rounded-full flex-1" :class="step >= i ? 'bg-[#f59e0b]' : 'bg-gray-100'"></div>
       </div>
 
       <!-- Step 1 -->
       <div v-if="step === 1" class="">
         <h4 class="text-xl font-bold text-[#0f172a] mb-6">1. Seyahat Geçmişiniz</h4>
         <div class="space-y-3">
-          <label class="flex items-center gap-4 p-4 rounded-xl border-2 cursor-pointer transition-all" :class="answers.history === 'yes' ? 'border-[#f59e0b] bg-[#f59e0b]/5' : 'border-gray-100 hover:border-gray-200'">
+          <label class="flex items-center gap-4 p-4 rounded-xl border-2 cursor-pointer" :class="answers.history === 'yes' ? 'border-[#f59e0b] bg-[#f59e0b]/5' : 'border-gray-100 '">
             <input type="radio" v-model="answers.history" value="yes" class="w-5 h-5 text-[#f59e0b] focus:ring-[#f59e0b]">
             <span class="font-medium text-gray-700">Daha önce Schengen veya ABD / UK vizem var.</span>
           </label>
-          <label class="flex items-center gap-4 p-4 rounded-xl border-2 cursor-pointer transition-all" :class="answers.history === 'some' ? 'border-[#f59e0b] bg-[#f59e0b]/5' : 'border-gray-100 hover:border-gray-200'">
+          <label class="flex items-center gap-4 p-4 rounded-xl border-2 cursor-pointer" :class="answers.history === 'some' ? 'border-[#f59e0b] bg-[#f59e0b]/5' : 'border-gray-100 '">
             <input type="radio" v-model="answers.history" value="some" class="w-5 h-5 text-[#f59e0b] focus:ring-[#f59e0b]">
             <span class="font-medium text-gray-700">Sadece Balkanlar veya vizesiz ülkelere gittim.</span>
           </label>
-          <label class="flex items-center gap-4 p-4 rounded-xl border-2 cursor-pointer transition-all" :class="answers.history === 'no' ? 'border-[#f59e0b] bg-[#f59e0b]/5' : 'border-gray-100 hover:border-gray-200'">
+          <label class="flex items-center gap-4 p-4 rounded-xl border-2 cursor-pointer" :class="answers.history === 'no' ? 'border-[#f59e0b] bg-[#f59e0b]/5' : 'border-gray-100 '">
             <input type="radio" v-model="answers.history" value="no" class="w-5 h-5 text-[#f59e0b] focus:ring-[#f59e0b]">
             <span class="font-medium text-gray-700">Pasaportum bembeyaz, hiç yurt dışına çıkmadım.</span>
           </label>
@@ -87,15 +87,15 @@ const reset = () => {
       <div v-if="step === 2" class="">
         <h4 class="text-xl font-bold text-[#0f172a] mb-6">2. Finansal Durumunuz</h4>
         <div class="space-y-3">
-          <label class="flex items-center gap-4 p-4 rounded-xl border-2 cursor-pointer transition-all" :class="answers.finance === 'high' ? 'border-[#f59e0b] bg-[#f59e0b]/5' : 'border-gray-100 hover:border-gray-200'">
+          <label class="flex items-center gap-4 p-4 rounded-xl border-2 cursor-pointer" :class="answers.finance === 'high' ? 'border-[#f59e0b] bg-[#f59e0b]/5' : 'border-gray-100 '">
             <input type="radio" v-model="answers.finance" value="high" class="w-5 h-5 text-[#f59e0b] focus:ring-[#f59e0b]">
             <span class="font-medium text-gray-700">Düzenli yüksek gelirim ve bankada iyi birikimim var.</span>
           </label>
-          <label class="flex items-center gap-4 p-4 rounded-xl border-2 cursor-pointer transition-all" :class="answers.finance === 'medium' ? 'border-[#f59e0b] bg-[#f59e0b]/5' : 'border-gray-100 hover:border-gray-200'">
+          <label class="flex items-center gap-4 p-4 rounded-xl border-2 cursor-pointer" :class="answers.finance === 'medium' ? 'border-[#f59e0b] bg-[#f59e0b]/5' : 'border-gray-100 '">
             <input type="radio" v-model="answers.finance" value="medium" class="w-5 h-5 text-[#f59e0b] focus:ring-[#f59e0b]">
             <span class="font-medium text-gray-700">Asgari veya ortalama maaşım var.</span>
           </label>
-          <label class="flex items-center gap-4 p-4 rounded-xl border-2 cursor-pointer transition-all" :class="answers.finance === 'low' ? 'border-[#f59e0b] bg-[#f59e0b]/5' : 'border-gray-100 hover:border-gray-200'">
+          <label class="flex items-center gap-4 p-4 rounded-xl border-2 cursor-pointer" :class="answers.finance === 'low' ? 'border-[#f59e0b] bg-[#f59e0b]/5' : 'border-gray-100 '">
             <input type="radio" v-model="answers.finance" value="low" class="w-5 h-5 text-[#f59e0b] focus:ring-[#f59e0b]">
             <span class="font-medium text-gray-700">Şu an resmi belgelenebilir bir gelirim yok.</span>
           </label>
@@ -106,19 +106,19 @@ const reset = () => {
       <div v-if="step === 3" class="">
         <h4 class="text-xl font-bold text-[#0f172a] mb-6">3. Çalışma Durumunuz</h4>
         <div class="space-y-3">
-          <label class="flex items-center gap-4 p-4 rounded-xl border-2 cursor-pointer transition-all" :class="answers.job === 'fulltime' ? 'border-[#f59e0b] bg-[#f59e0b]/5' : 'border-gray-100 hover:border-gray-200'">
+          <label class="flex items-center gap-4 p-4 rounded-xl border-2 cursor-pointer" :class="answers.job === 'fulltime' ? 'border-[#f59e0b] bg-[#f59e0b]/5' : 'border-gray-100 '">
             <input type="radio" v-model="answers.job" value="fulltime" class="w-5 h-5 text-[#f59e0b] focus:ring-[#f59e0b]">
             <span class="font-medium text-gray-700">Sigortalı Çalışan / Devlet Memuru / Şirket Sahibi</span>
           </label>
-          <label class="flex items-center gap-4 p-4 rounded-xl border-2 cursor-pointer transition-all" :class="answers.job === 'student' ? 'border-[#f59e0b] bg-[#f59e0b]/5' : 'border-gray-100 hover:border-gray-200'">
+          <label class="flex items-center gap-4 p-4 rounded-xl border-2 cursor-pointer" :class="answers.job === 'student' ? 'border-[#f59e0b] bg-[#f59e0b]/5' : 'border-gray-100 '">
             <input type="radio" v-model="answers.job" value="student" class="w-5 h-5 text-[#f59e0b] focus:ring-[#f59e0b]">
             <span class="font-medium text-gray-700">Öğrenci (Ailem sponsor olacak)</span>
           </label>
-          <label class="flex items-center gap-4 p-4 rounded-xl border-2 cursor-pointer transition-all" :class="answers.job === 'freelance' ? 'border-[#f59e0b] bg-[#f59e0b]/5' : 'border-gray-100 hover:border-gray-200'">
+          <label class="flex items-center gap-4 p-4 rounded-xl border-2 cursor-pointer" :class="answers.job === 'freelance' ? 'border-[#f59e0b] bg-[#f59e0b]/5' : 'border-gray-100 '">
             <input type="radio" v-model="answers.job" value="freelance" class="w-5 h-5 text-[#f59e0b] focus:ring-[#f59e0b]">
             <span class="font-medium text-gray-700">Freelance / Serbest Meslek (Resmi şahıs şirketi yok)</span>
           </label>
-          <label class="flex items-center gap-4 p-4 rounded-xl border-2 cursor-pointer transition-all" :class="answers.job === 'none' ? 'border-[#f59e0b] bg-[#f59e0b]/5' : 'border-gray-100 hover:border-gray-200'">
+          <label class="flex items-center gap-4 p-4 rounded-xl border-2 cursor-pointer" :class="answers.job === 'none' ? 'border-[#f59e0b] bg-[#f59e0b]/5' : 'border-gray-100 '">
             <input type="radio" v-model="answers.job" value="none" class="w-5 h-5 text-[#f59e0b] focus:ring-[#f59e0b]">
             <span class="font-medium text-gray-700">Çalışmıyorum</span>
           </label>
@@ -129,11 +129,11 @@ const reset = () => {
       <div v-if="step === 4" class="">
         <h4 class="text-xl font-bold text-[#0f172a] mb-6">4. Aile Eğilimi</h4>
         <div class="space-y-3">
-          <label class="flex items-center gap-4 p-4 rounded-xl border-2 cursor-pointer transition-all" :class="answers.family === 'married' ? 'border-[#f59e0b] bg-[#f59e0b]/5' : 'border-gray-100 hover:border-gray-200'">
+          <label class="flex items-center gap-4 p-4 rounded-xl border-2 cursor-pointer" :class="answers.family === 'married' ? 'border-[#f59e0b] bg-[#f59e0b]/5' : 'border-gray-100 '">
             <input type="radio" v-model="answers.family" value="married" class="w-5 h-5 text-[#f59e0b] focus:ring-[#f59e0b]">
             <span class="font-medium text-gray-700">Evliyim / Çocuğum var.</span>
           </label>
-          <label class="flex items-center gap-4 p-4 rounded-xl border-2 cursor-pointer transition-all" :class="answers.family === 'single' ? 'border-[#f59e0b] bg-[#f59e0b]/5' : 'border-gray-100 hover:border-gray-200'">
+          <label class="flex items-center gap-4 p-4 rounded-xl border-2 cursor-pointer" :class="answers.family === 'single' ? 'border-[#f59e0b] bg-[#f59e0b]/5' : 'border-gray-100 '">
             <input type="radio" v-model="answers.family" value="single" class="w-5 h-5 text-[#f59e0b] focus:ring-[#f59e0b]">
             <span class="font-medium text-gray-700">Bekarım.</span>
           </label>
@@ -141,11 +141,11 @@ const reset = () => {
       </div>
 
       <div class="mt-8 flex justify-between items-center">
-        <button v-if="step > 1" @click="step--" class="text-gray-500 font-bold px-4 py-2 hover:text-[#0f172a]">Geri</button>
+        <button v-if="step > 1" @click="step--" class="text-gray-500 font-bold px-4 py-2">Geri</button>
         <div v-else></div>
         <button 
           @click="nextStep" 
-          class="bg-[#0f172a] text-white px-8 py-3 rounded-xl font-bold hover:bg-[#1e293b] transition-colors disabled:opacity-50"
+          class="bg-[#0f172a] text-white px-8 py-3 rounded-xl font-bold disabled:opacity-50"
           :disabled="(step === 1 && !answers.history) || (step === 2 && !answers.finance) || (step === 3 && !answers.job) || (step === 4 && !answers.family)"
         >
           {{ step === 4 ? 'Sonuçları Gör' : 'İleri' }}
@@ -173,10 +173,10 @@ const reset = () => {
       </p>
       
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <button @click="reset" class="w-full sm:w-auto px-6 py-3 border-2 border-gray-200 text-gray-700 font-bold rounded-xl hover:bg-gray-50 transition-colors">
+        <button @click="reset" class="w-full sm:w-auto px-6 py-3 border-2 border-gray-200 text-gray-700 font-bold rounded-xl">
           Yeniden Hesapla
         </button>
-        <NuxtLink to="/iletisim" class="w-full sm:w-auto px-8 py-3 bg-[#f59e0b] hover:bg-[#0f172a] text-white font-bold rounded-xl transition-colors shadow-lg shadow-[#f59e0b]/30">
+        <NuxtLink to="/iletisim" class="w-full sm:w-auto px-8 py-3 bg-[#f59e0b] text-white font-bold rounded-xl">
           Ücretsiz Danışmana Sor
         </NuxtLink>
       </div>

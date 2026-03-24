@@ -2,8 +2,8 @@
 import { useSeoMeta } from '#imports'
 
 useSeoMeta({
-  title: 'Gizlilik Politikası ve KVKK | Vize Acentası',
-  description: 'Vize Acentası kişisel verilerinizin korunmasına yönelik aydınlatma metni ve yasal bildiriler.',
+  title: 'Gizlilik & KVKK Aydınlatma Metni | Champ Vize',
+  description: 'Champ Vize kişisel verilerinizin korunmasına yönelik aydınlatma metni ve yasal bildiriler.',
 })
 </script>
 

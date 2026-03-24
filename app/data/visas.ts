@@ -2,7 +2,7 @@ export const visaDatabase: Record<string, any> = {
   'schengen-vizesi': {
     title: 'Schengen Vizesi',
     subtitle: '27 Avrupa Ülkesine Tek Vize ile Sınırları Aşın',
-    heroImage: 'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&q=80&w=2000',
+    heroImage: '/img/schengen-hero.jpg',
     description: 'Almanya, Fransa, İtalya, İspanya, Hollanda gibi 27 Avrupa ülkesinde serbest dolaşım hakkı tanıyan Schengen vizesi başvuru rehberi. 2026 yılı güncel Schengen harçları ve gerekli evraklar.',
     content: `
       <p class="mb-4"><strong>Schengen vizesi</strong>, Avrupa Kıtasındaki 27 farklı ülkeye tek bir pasaport etiketiyle serbestçe seyahat imkanı sunan dünyanın en prestijli vize türlerinden biridir. 2026 yılı itibariyle Schengen anlaşması kuralları güncellenmiş ve özellikle parmak izi (biyometrik veri) uygulamaları dijital platformlara daha entegre hale gelmiştir.</p>
@@ -55,7 +55,7 @@ export const visaDatabase: Record<string, any> = {
   'amerika-vizesi': {
     title: 'Amerika (ABD) Vizesi',
     subtitle: '10 Yıllık Amerika Vizesi İçin Profesyonel Mülakat Mentörlüğü',
-    heroImage: 'https://images.unsplash.com/photo-1485738422979-f5c462d49f74?auto=format&fit=crop&q=80&w=2000',
+    heroImage: '/img/amerika-hero.jpg',
     description: 'ABD DS-160 Formu nasıl doldurulur? B1/B2 turizm ve iş vizeleri için Ankara ve İstanbul Amerika Büyükelçiliği 2026 mülakat randevusu süreçleri.',
     content: `
       <p class="mb-4"><strong>Amerika (ABD) Vizesi</strong>, dünyanın en meşakkatli gibi görünen ancak mantığını anladığınızda en uzun süreli verilen vize tiplerinin başında gelir. B1/B2 Ticari ve Turistik vizelerde genellikle <strong>10 yıllık çok girişli (multiple entry)</strong> kullanım hakkı standarttır.</p>
@@ -96,7 +96,7 @@ export const visaDatabase: Record<string, any> = {
   'ingiltere-vizesi': {
     title: 'İngiltere Vizesi',
     subtitle: '6 Aylık veya 10 Yıllık Birleşik Krallık Vizelerinde Profesyonel Yönetim',
-    heroImage: 'https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&q=80&w=2000',
+    heroImage: '/img/ingiltere-hero.jpg',
     description: 'İngiltere (UK) vizesi nasıl alınır? TLS Contact TLS başvuru merkezi detayları. Priority 5 günlük hızlı başvuru ve finansal inceleme evrakları.',
     content: `
       <p class="mb-4">İngiltere (Birleşik Krallık - UK) vizesi, Avrupa standartlarından farklı bir vize inceleme komitesine (UKVI - UK Visas and Immigration) sahiptir. İngiltere konsolosluğu, başvurunuzu değerlendirirken <strong>asla mülakat yapmaz</strong>. Bütün kararı, yüklediğiniz yüzlerce PDF evrağı, finansal hareket tablonuz ve profesyonelce yazılmış olan "İngilizce Cover Letter (Niyet Mektubu)" belirler.</p>
@@ -137,7 +137,7 @@ export const visaDatabase: Record<string, any> = {
   'japonya-vizesi': {
     title: 'Japonya E-Vize ve Turistik Vizesi',
     subtitle: 'Uzak Doğu Kültürüne Güvenle Açılın',
-    heroImage: 'https://images.unsplash.com/photo-1493997181344-711f5fe71e36?auto=format&fit=crop&q=80&w=2000',
+    heroImage: '/img/avustralya-hero.jpg',
     description: 'Japonya e-vize başvuru şartları, 2026 konsolosluk zorunlulukları ve Day-By-Day Itinerary (Seyahat Programı) hazırlamanın püf noktaları.',
     content: `
       <p class="mb-4">Türk vatandaşları 2026 yılında Japonya'ya gerçekleştirecekleri turistik seyahatler için <strong>E-Visa (Elektronik Vize)</strong> rejimine tabi tutulmuştur. Japonya vize sistemi oldukça disiplinlidir ve kesin rezervasyon zincirini kanıtlamanız beklenir.</p>
@@ -176,7 +176,7 @@ export const visaDatabase: Record<string, any> = {
   'kanada-vizesi': {
     title: 'Kanada Vizesi',
     subtitle: 'Kanada TRV Turistik ve Öğrenci Vizeleri (2026)',
-    heroImage: 'https://images.unsplash.com/photo-1503614472-8c93d56e92ce?auto=format&fit=crop&q=80&w=2000',
+    heroImage: '/img/kanada-hero.jpg',
     description: 'Kanada ziyaretçi vizesi, Express Entry ve Göçmenlik yasalarına dair 2026 güncel bilgilendirmeler.',
     content: `
       <p class="mb-4">Kanada, TRV (Temporary Resident Visa) başvurularında dünyadaki en sıkı filtreleri kullanan ülkelerden biridir. Sistem tamamen Online (IRCC portalı) üzerinden GCKey alınarak yönetilir.</p>
@@ -214,7 +214,7 @@ export const visaDatabase: Record<string, any> = {
   'cin-vizesi': {
     title: 'Çin (L/M) Vizesi',
     subtitle: 'Ticaretin ve Kadim Kültürün Merkezine Giriş',
-    heroImage: 'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&q=80&w=2000',
+    heroImage: '/img/japonya-hero.jpg',
     description: 'Çin vize başvuru merkezi detayları, L (Turistik) ve M (Ticari) vize için gerekli PU Letter resmi davetiye kuralları.',
     content: `
       <p class="mb-4">Çin Halk Cumhuriyeti başvuruları, Türkiye'deki Çin Vize Başvuru Merkezi (CVASC) veya yetkili mercilerden yapılır. Çin hükümeti ticari ve fuar gibi seyahatleri büyük ölçüde teşvik etmekle birlikte, gümrük kaçakçılığı ve kalıcı yasa dışı yaşamı engellemek için evrak incelemelerini son yıllarda ciddi bir standarda bağlamıştır.</p>
@@ -249,7 +249,7 @@ export const visaDatabase: Record<string, any> = {
   'avustralya-vizesi': {
     title: 'Avustralya Vizesi',
     subtitle: 'Subclass 600 E-Visa Süreçleri',
-    heroImage: 'https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&q=80&w=2000',
+    heroImage: '/img/dubai-hero.jpg',
     description: 'Avustralya turist vizesi nasıl alınır? Subclass 600 vize türü işlemleri ve ImmiAccount detaylı operasyon yürütümü.',
     content: `
       <p class="mb-4">Avustralya'ya gitmek için <strong>Subclass 600 Visitor Visa</strong> başvurusunda bulunulması gerekir. Kanada sistemi gibi Avustralya sistemi de tamamen dijitaldir; pasaportunuza bir etiket basılmaz ve konsolosluğa asla fiziksel teslimat yapılmaz. Bütün evraklarınız İngilizce yeminli tercüman kaşeli olmak zorunda ve <strong>ImmiAccount</strong> adlı Avustralya göçmenlik sisteminden yüklenmek zorundadır.</p>
@@ -284,7 +284,7 @@ export const visaDatabase: Record<string, any> = {
   'dubai-vizesi': {
     title: 'Dubai (BAE) Vizesi',
     subtitle: 'Kolay E-Vize ile BAE Kapıları Açık',
-    heroImage: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=80&w=2000',
+    heroImage: '/img/cin-hero.jpg',
     description: 'Birleşik Arap Emirlikleri Dubai e-vizesi fiyatları 2026, 30 günlük veya 60 günlük çok girişli ekspres vize şartları.',
     content: `
       <p class="mb-4">Dubai ve Abu Dhabi (Birleşik Arap Emirlikleri) kısa süreli turistik ve çalışma seyahatleri için Bordo (Umuma Mahsus) pasaport sahibi Türk vatandaşlarına ön vize uygulamaktadır. Üstelik banka hesabı, gelir tablosu, uçak bileti, otel rezervasyonu gibi <strong>hiçbir ekstra belgeye</strong> gerek duymadan online vizenizi çıkartmaktayız.</p>
@@ -316,7 +316,7 @@ export const visaDatabase: Record<string, any> = {
   'misir-vizesi': {
     title: 'Mısır Kapı Vizesi',
     subtitle: 'Sahra Çöllerine Hemen Uçuş',
-    heroImage: 'https://images.unsplash.com/photo-1539768942893-daf53e448371?auto=format&fit=crop&q=80&w=2000',
+    heroImage: '/img/misir-hero.jpg',
     description: 'Mısır turistik vizesi 2026 yılı kapıda vize (Visa On Arrival) uygulamaları, Sharm El Sheikh muafiyetleri ve Kahire detayları.',
     content: `
       <p class="mb-4">Mısır Arap Cumhuriyeti, Türkiye ile aralarındaki vize sorununu büyük oranda diplomasiyle çözmüş ve tüm sınır kapılarına Türk vatandaşlarının <strong>25 USD ödeyip</strong> kolayca içeri girebilecekleri yetkiyi tanımıştır. Uzun süreli staj, eğitim veya kalıcı iş bağlantıları için Konsoloslukta özel inceleme şartı olmakla beraber standard turistik rotalar (Kahire, Sharm el Şeyh, Hurghada) oldukça kolaydır.</p>
@@ -350,7 +350,7 @@ export const visaDatabase: Record<string, any> = {
   'rusya-vizesi': {
     title: 'Rusya Vizesi / E-Vize',
     subtitle: 'Tüm Rusya Federasyonuna Tek E-Vize İle Geçiş',
-    heroImage: 'https://images.unsplash.com/photo-1513622470522-26c311a68ce9?auto=format&fit=crop&q=80&w=2000',
+    heroImage: '/img/guney-afrika-hero.jpg',
     description: 'Rusya turist e-vize 2026 şartları, 16 gün geçerli çoklu bölge vizesi ve fiziki ticari Rusya vizesi çıkartma yolları.',
     content: `
       <p class="mb-4">Rusya Federasyonu, diplomatik sorunlarını azaltmak ve turizme alan açmak için geçtiğimiz dönemlerde getirdiği E-Vize sistemini başarıyla devam ettirmektedir. 60 günlük kapı penceresinde, Rusya sınırlarında tam 16 gün konaklamanıza sağlayan bu imkan, klasik vize bürokrasisindeki yığınla davetiye kuralını askıya almıştır.</p>

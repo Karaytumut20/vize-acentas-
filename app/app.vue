@@ -1,6 +1,6 @@
 <template>
   <div
-    class="app-wrapper tracking-tight min-h-screen bg-theme-bg text-theme-fg selection:bg-theme-fg selection:text-theme-bg transition-colors duration-700 ease-in-out"
+    class="app-wrapper tracking-tight min-h-screen bg-theme-bg text-theme-fg selection:bg-theme-fg selection:text-theme-bg"
   >
     <VitePwaManifest />
 

@@ -10,7 +10,7 @@ useSeoMeta({
 <template>
   <main class="min-h-screen pt-32 pb-20 bg-gray-50 flex items-center justify-center">
     <div class="container mx-auto px-4 max-w-3xl">
-      <div class="bg-white rounded-[2.5rem] p-10 md:p-14 shadow-2xl relative overflow-hidden">
+      <div class="bg-white rounded-[2.5rem] p-10 md:p-14 relative overflow-hidden">
         <div class="absolute top-0 right-0 w-64 h-64 bg-[#f59e0b]/10 rounded-full blur-3xl"></div>
         <div class="relative z-10">
           <h1 class="text-4xl font-black text-[#0f172a] mb-4">Ücretsiz Randevu Al</h1>
@@ -46,7 +46,7 @@ useSeoMeta({
               <textarea rows="4" class="w-full bg-gray-50 border border-gray-200 px-5 py-4 rounded-xl focus:border-[#f59e0b] focus:ring-2 focus:ring-[#f59e0b]/20 outline-none transition" placeholder="Mesleğiniz, seyahat tarihiniz vb. detayları belirtebilirsiniz."></textarea>
             </div>
             
-            <button class="w-full bg-[#f59e0b] hover:bg-[#d97706] text-[#0f172a] py-4 rounded-xl font-bold transition-all shadow-sm">
+            <button class="w-full bg-[#f59e0b] text-[#0f172a] py-4 rounded-xl font-bold">
               Randevu Talebi Oluştur
             </button>
           </form>

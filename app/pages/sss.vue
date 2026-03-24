@@ -24,7 +24,7 @@ useSeoMeta({
       <p class="text-lg text-gray-600 mb-12 text-center">Aklınıza takılan soruların cevaplarını burada bulabilirsiniz.</p>
       
       <div class="space-y-4">
-        <details v-for="(faq, i) in faqData" :key="i" class="group bg-white rounded-2xl p-6 border border-gray-100 shadow-sm cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+        <details v-for="(faq, i) in faqData" :key="i" class="group bg-white rounded-2xl p-6 border border-gray-100 cursor-pointer [&_summary::-webkit-details-marker]:hidden">
           <summary class="flex items-center justify-between font-bold text-lg text-[#0f172a] focus:outline-none">
             {{ faq.question }}
             <span class="transition group-open:rotate-180">

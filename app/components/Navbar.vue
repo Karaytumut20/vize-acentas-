@@ -30,10 +30,7 @@ const servicesLinks = Object.entries(visaDatabase).map(([slug, data]) => ({
 
 <template>
   <header
-    :class="[
-      'fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out',
-      isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'
-    ]"
+    :class="[ 'fixed top-0 left-0 right-0 z-50 ', isScrolled ? 'bg-white py-3' : 'bg-transparent py-5' ]"
     role="banner"
   >
     <div class="container mx-auto px-4 md:px-6 lg:px-8">
@@ -41,24 +38,18 @@ const servicesLinks = Object.entries(visaDatabase).map(([slug, data]) => ({
         
         <!-- Logo -->
         <NuxtLink to="/" class="flex flex-col relative z-20 group" aria-label="Ana Sayfa">
-          <span :class="[
-            'text-2xl md:text-3xl font-bold tracking-tight transition-colors duration-300',
-            isScrolled || isMobileMenuOpen ? 'text-[#0f172a]' : 'text-white'
-          ]">
+          <span :class="[ 'text-2xl md:text-3xl font-bold tracking-tight ', isScrolled || isMobileMenuOpen ? 'text-[#0f172a]' : 'text-white' ]">
             Champ<span class="text-[#f59e0b]">Vize</span>
           </span>
-          <span :class="[
-            'text-[0.65rem] tracking-widest font-medium uppercase mt-0.5 transition-colors duration-300',
-            isScrolled || isMobileMenuOpen ? 'text-gray-500' : 'text-gray-200'
-          ]">
+          <span :class="[ 'text-[0.65rem] tracking-widest font-medium uppercase mt-0.5 ', isScrolled || isMobileMenuOpen ? 'text-gray-500' : 'text-gray-200' ]">
             Kurumsal Danışmanlık
           </span>
         </NuxtLink>
 
         <!-- Desktop Navigation -->
         <nav class="hidden lg:flex items-center gap-8" role="navigation" aria-label="Ana Menü">
-          <NuxtLink to="/" :class="['font-medium transition-colors hover:text-[#f59e0b]', isScrolled ? 'text-gray-800' : 'text-white']">Ana Sayfa</NuxtLink>
-          <NuxtLink to="/kurumsal" :class="['font-medium transition-colors hover:text-[#f59e0b]', isScrolled ? 'text-gray-800' : 'text-white']">Kurumsal</NuxtLink>
+          <NuxtLink to="/" :class="['font-medium ', isScrolled ? 'text-gray-800' : 'text-white']">Ana Sayfa</NuxtLink>
+          <NuxtLink to="/kurumsal" :class="['font-medium ', isScrolled ? 'text-gray-800' : 'text-white']">Kurumsal</NuxtLink>
           
           <!-- Mega Menu Dropdown -->
           <div 
@@ -67,30 +58,30 @@ const servicesLinks = Object.entries(visaDatabase).map(([slug, data]) => ({
             @mouseleave="isServicesOpen = false"
           >
             <button 
-              :class="['flex items-center gap-1 font-medium transition-colors hover:text-[#f59e0b]', isScrolled ? 'text-gray-800' : 'text-white']"
+              :class="['flex items-center gap-1 font-medium ', isScrolled ? 'text-gray-800' : 'text-white']"
               aria-haspopup="true"
               :aria-expanded="isServicesOpen"
             >
               Vizeler
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
             </button>
             
             <div 
-              class="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-[800px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 origin-top"
+              class="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-[800px] opacity-0 invisible origin-top"
             >
-              <div class="bg-white rounded-2xl shadow-2xl p-8 border border-gray-100 grid grid-cols-3 gap-6 relative before:absolute before:-top-2 before:left-1/2 before:-translate-x-1/2 before:border-8 before:border-transparent before:border-b-white">
+              <div class="bg-white rounded-2xl p-8 border border-gray-100 grid grid-cols-3 gap-6 relative before:absolute before:-top-2 before:left-1/2 before:-translate-x-1/2 before:border-8 before:border-transparent before:border-b-white">
                 <NuxtLink 
                   v-for="visa in servicesLinks" 
                   :key="visa.path" 
                   :to="visa.path" 
-                  class="group/item flex flex-col p-3 rounded-lg hover:bg-gray-50 transition-colors"
+                  class="group/item flex flex-col p-3 rounded-lg"
                 >
-                  <span class="text-gray-900 font-semibold mb-1 group-hover/item:text-[#f59e0b] transition-colors">{{ visa.name }}</span>
+                  <span class="text-gray-900 font-semibold mb-1 group-hover/item:text-[#f59e0b]">{{ visa.name }}</span>
                   <span class="text-xs text-gray-500 leading-relaxed">{{ visa.desc }}</span>
                 </NuxtLink>
                 
                 <div class="col-span-3 pt-6 mt-4 border-t border-gray-100 flex justify-center">
-                  <NuxtLink to="/vizeler" class="text-sm font-bold text-[#1e293b] hover:text-[#f59e0b] inline-flex items-center gap-2 transition-colors">
+                  <NuxtLink to="/vizeler" class="text-sm font-bold text-[#1e293b] inline-flex items-center gap-2">
                     Tüm Vize Hizmetlerini Görüntüle
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                   </NuxtLink>
@@ -99,16 +90,16 @@ const servicesLinks = Object.entries(visaDatabase).map(([slug, data]) => ({
             </div>
           </div>
 
-          <NuxtLink to="/iletisim" :class="['font-medium transition-colors hover:text-[#f59e0b]', isScrolled ? 'text-gray-800' : 'text-white']">İletişim</NuxtLink>
+          <NuxtLink to="/iletisim" :class="['font-medium ', isScrolled ? 'text-gray-800' : 'text-white']">İletişim</NuxtLink>
         </nav>
 
         <!-- CTAs Desktop -->
         <div class="hidden lg:flex items-center gap-4 relative z-20">
-          <a href="tel:+9008501234567" :class="['flex items-center gap-2 font-semibold text-sm transition-colors', isScrolled ? 'text-[#0f172a]' : 'text-white']" aria-label="Müşteri Hizmetlerini Ara">
+          <a href="tel:+9008501234567" :class="['flex items-center gap-2 font-semibold text-sm', isScrolled ? 'text-[#0f172a]' : 'text-white']" aria-label="Müşteri Hizmetlerini Ara">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             0850 123 45 67
           </a>
-          <NuxtLink to="/iletisim" class="bg-[#f59e0b] hover:bg-[#d97706] text-[#0f172a] px-6 py-2.5 rounded-full font-semibold transition-all transform hover:scale-105 shadow-sm">
+          <NuxtLink to="/iletisim" class="bg-[#f59e0b] text-[#0f172a] px-6 py-2.5 rounded-full font-semibold transform">
             Hemen Başvur
           </NuxtLink>
         </div>
@@ -129,7 +120,7 @@ const servicesLinks = Object.entries(visaDatabase).map(([slug, data]) => ({
 
     <!-- Mobile Navigation Overlay -->
     <div 
-      class="fixed inset-0 bg-white z-10 lg:hidden transition-transform duration-500 max-h-screen overflow-y-auto"
+      class="fixed inset-0 bg-white z-10 lg:hidden max-h-screen overflow-y-auto"
       :class="isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'"
     >
       <div class="pt-24 px-6 pb-12 flex flex-col h-full">
@@ -144,7 +135,7 @@ const servicesLinks = Object.entries(visaDatabase).map(([slug, data]) => ({
               :key="visa.path" 
               :to="visa.path" 
               @click="isMobileMenuOpen = false" 
-              class="pl-4 text-base font-medium text-gray-700 hover:text-[#f59e0b]"
+              class="pl-4 text-base font-medium text-gray-700"
             >
               {{ visa.name }}
             </NuxtLink>
@@ -161,7 +152,7 @@ const servicesLinks = Object.entries(visaDatabase).map(([slug, data]) => ({
             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             0850 123 45 67
           </a>
-          <NuxtLink to="/iletisim" @click="isMobileMenuOpen = false" class="bg-[#f59e0b] text-[#0f172a] text-center py-3 rounded-lg font-bold shadow-sm">
+          <NuxtLink to="/iletisim" @click="isMobileMenuOpen = false" class="bg-[#f59e0b] text-[#0f172a] text-center py-3 rounded-lg font-bold">
             Hemen Başvur
           </NuxtLink>
         </div>

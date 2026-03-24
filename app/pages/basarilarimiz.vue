@@ -16,11 +16,11 @@ useSeoMeta({
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div v-for="i in 6" :key="i" class="bg-white/5 border border-white/10 p-8 rounded-[2rem] hover:bg-white/10 transition-colors backdrop-blur-sm relative">
+        <div v-for="i in 6" :key="i" class="bg-white/5 border border-white/10 p-8 rounded-[2rem] backdrop-blur-sm relative">
           <div class="absolute -top-6 -left-2 text-8xl text-[#f59e0b] opacity-20 font-serif">"</div>
           <p class="text-gray-300 mb-8 relative z-10 leading-relaxed italic">"Amerika vizemin ikinci reddinden sonra burayla tanıştım. DS-160 formunu yeniden doldururken sordukları detaylı sorular beni bile şaşırttı. Sonuç mu? 10 Yıllık B1/B2 ve hayallerime uçuyorum."</p>
           <div class="flex items-center gap-4 border-t border-white/10 pt-6">
-            <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-[#f59e0b] to-yellow-300 flex items-center justify-center font-black text-[#0f172a] shadow-inner text-lg">HY</div>
+            <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-[#f59e0b] to-yellow-300 flex items-center justify-center font-black text-[#0f172a] text-lg">HY</div>
             <div>
               <div class="font-bold">Hasan Yıldırım</div>
               <div class="text-sm text-[#f59e0b] flex items-center gap-1 mt-0.5">

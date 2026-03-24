@@ -1,6 +1,6 @@
 <template>
   <div
-    class="app-wrapper min-h-screen bg-theme-bg text-theme-fg selection:bg-theme-fg selection:text-theme-bg transition-colors duration-700 ease-in-out"
+    class="app-wrapper min-h-screen bg-theme-bg text-theme-fg selection:bg-theme-fg selection:text-theme-bg"
   >
     <main class="page-wrapper pt-safe-top pb-safe-bottom px-page-margin">
       <section
@@ -24,7 +24,7 @@
         <button
           v-reveal
           @click="handleError"
-          class="text-sm md:text-base tracking-widest uppercase border-b border-theme-fg pb-1 hover:text-gray-400 hover:border-gray-400 transition-colors"
+          class="text-sm md:text-base tracking-widest uppercase border-b border-theme-fg pb-1"
         >
           Return to Home
         </button>

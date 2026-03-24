@@ -21,7 +21,7 @@ const isComplete = computed(() => progressPercentage.value === 100)
 </script>
 
 <template>
-  <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
+  <div class="bg-white rounded-2xl overflow-hidden border border-gray-100">
     <div class="p-6 md:p-8 bg-gray-50 border-b border-gray-100">
       <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
         <div>
@@ -36,7 +36,7 @@ const isComplete = computed(() => progressPercentage.value === 100)
           </div>
           <div class="h-3 w-full bg-gray-200 rounded-full overflow-hidden">
             <div 
-              class="h-full transition-all duration-700 ease-out"
+              class="h-full"
               :class="isComplete ? 'bg-green-500' : 'bg-[#f59e0b]'"
               :style="{ width: `${progressPercentage}%` }"
             ></div>
@@ -49,8 +49,8 @@ const isComplete = computed(() => progressPercentage.value === 100)
       <label 
         v-for="(item, index) in items" 
         :key="index"
-        class="flex items-start gap-4 p-4 rounded-xl border-2 cursor-pointer transition-all duration-300"
-        :class="checkedItems[index] ? 'border-green-500/20 bg-green-50/50' : 'border-gray-50 hover:border-gray-200'"
+        class="flex items-start gap-4 p-4 rounded-xl border-2 cursor-pointer"
+        :class="checkedItems[index] ? 'border-green-500/20 bg-green-50/50' : 'border-gray-50 '"
       >
         <div class="relative shrink-0 mt-0.5">
           <input 
@@ -59,13 +59,13 @@ const isComplete = computed(() => progressPercentage.value === 100)
             @change="toggleItem(index)"
             class="peer sr-only"
           >
-          <div class="w-6 h-6 rounded-lg border-2 flex items-center justify-center transition-colors"
-               :class="checkedItems[index] ? 'bg-green-500 border-green-500' : 'bg-white border-gray-300 peer-hover:border-[#f59e0b]'">
+          <div class="w-6 h-6 rounded-lg border-2 flex items-center justify-center"
+               :class="checkedItems[index] ? 'bg-green-500 border-green-500' : 'bg-white border-gray-300 peer-'">
             <svg class="w-4 h-4 text-white transition-opacity" :class="checkedItems[index] ? 'opacity-100 scale-100' : 'opacity-0 scale-50'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           </div>
         </div>
         <span 
-          class="font-medium leading-relaxed transition-all duration-300"
+          class="font-medium leading-relaxed"
           :class="checkedItems[index] ? 'text-gray-400 line-through' : 'text-gray-700'"
         >
           {{ item }}
@@ -75,7 +75,7 @@ const isComplete = computed(() => progressPercentage.value === 100)
 
     <!-- Alert / Completion Banner -->
     <div 
-      class="bg-green-50 border-t border-green-100 p-6 flex items-start gap-4 overflow-hidden transition-all duration-500"
+      class="bg-green-50 border-t border-green-100 p-6 flex items-start gap-4 overflow-hidden"
       :class="isComplete ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0 overflow-y-hidden p-0 border-transparent'"
     >
       <div class="w-10 h-10 rounded-full bg-green-500 text-white flex items-center justify-center shrink-0">
