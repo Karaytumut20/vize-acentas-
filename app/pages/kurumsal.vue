@@ -1,12 +1,6 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
 import { useSeoMeta, useHead } from '#imports'
-import { useGsap } from '~/composables/useGsap'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import SplitText from '~/lib/gsap/SplitText.js'
-
-const gsapCtx = useGsap()
 
 useSeoMeta({
   title: 'Kurumsal | Champ Vize Danışmanlık - Türkiye\'nin En İyi Vize Danışmanlık Merkezi',
@@ -30,54 +24,7 @@ useHead({
   ]
 })
 
-onMounted(() => {
-  if (import.meta.client) {
-    gsap.registerPlugin(ScrollTrigger, SplitText)
-    
-    gsapCtx.add(() => {
-      const heroSplit = new SplitText('.kurumsal-hero h1', { type: 'words, chars' })
-      gsap.from(heroSplit.chars, {
-        y: 60,
-        opacity: 0,
-        duration: 0.8,
-        stagger: 0.02,
-        ease: 'power3.out',
-        delay: 0.2
-      })
-      gsap.from('.kurumsal-hero p', {
-        y: 30, opacity: 0, duration: 1, delay: 0.6
-      })
-      
-      gsap.utils.toArray('.reveal-content').forEach((elem: any) => {
-        gsap.from(elem, {
-          scrollTrigger: {
-            trigger: elem,
-            start: 'top 85%'
-          },
-          y: 40,
-          opacity: 0,
-          duration: 0.8,
-          ease: 'power2.out'
-        })
-      })
-      
-      gsap.utils.toArray('.stagger-cards').forEach((grid: any) => {
-        const items = grid.querySelectorAll('.stagger-item')
-        gsap.from(items, {
-          scrollTrigger: {
-            trigger: grid,
-            start: 'top 80%'
-          },
-          y: 40,
-          opacity: 0,
-          duration: 0.7,
-          stagger: 0.15,
-          ease: 'power2.out'
-        })
-      })
-    })
-  }
-})
+
 
 
 </script>
@@ -144,7 +91,7 @@ onMounted(() => {
       <div class="absolute -top-40 -right-40 w-96 h-96 bg-[#f59e0b]/5 rounded-full blur-3xl pointer-events-none"></div>
       <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl pointer-events-none"></div>
 
-      <div class="container mx-auto px-4 md:px-6 lg:px-8 text-center max-w-4xl mb-20 relative z-10 animate-fade-in-up">
+      <div class="container mx-auto px-4 md:px-6 lg:px-8 text-center max-w-4xl mb-20 relative z-10">
         <span class="text-[#f59e0b] font-bold tracking-widest uppercase text-sm mb-4 block">Farkımızı Keşfedin</span>
         <h2 class="text-4xl md:text-5xl font-black text-[#0f172a] mb-8 tracking-tight" id="neden-biz">Neden Bizi Tercih Etmelisiniz?</h2>
         <p class="text-xl text-gray-600 leading-relaxed font-light">

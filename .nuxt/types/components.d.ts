@@ -15,7 +15,6 @@ type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {},
 
 interface _GlobalComponents {
   DocumentChecklist: typeof import("../../app/components/DocumentChecklist.vue")['default']
-  FloatingWhatsApp: typeof import("../../app/components/FloatingWhatsApp.vue")['default']
   Footer: typeof import("../../app/components/Footer.vue")['default']
   GridHelper: typeof import("../../app/components/GridHelper.vue")['default']
   Navbar: typeof import("../../app/components/Navbar.vue")['default']
@@ -77,7 +76,6 @@ interface _GlobalComponents {
   Body: typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Body']
   NuxtIsland: typeof import("../../node_modules/nuxt/dist/app/components/nuxt-island")['default']
   LazyDocumentChecklist: LazyComponent<typeof import("../../app/components/DocumentChecklist.vue")['default']>
-  LazyFloatingWhatsApp: LazyComponent<typeof import("../../app/components/FloatingWhatsApp.vue")['default']>
   LazyFooter: LazyComponent<typeof import("../../app/components/Footer.vue")['default']>
   LazyGridHelper: LazyComponent<typeof import("../../app/components/GridHelper.vue")['default']>
   LazyNavbar: LazyComponent<typeof import("../../app/components/Navbar.vue")['default']>

@@ -65,7 +65,7 @@ const reset = () => {
       </div>
 
       <!-- Step 1 -->
-      <div v-if="step === 1" class="animate-in fade-in slide-in-from-right-4 duration-300">
+      <div v-if="step === 1" class="">
         <h4 class="text-xl font-bold text-[#0f172a] mb-6">1. Seyahat Geçmişiniz</h4>
         <div class="space-y-3">
           <label class="flex items-center gap-4 p-4 rounded-xl border-2 cursor-pointer transition-all" :class="answers.history === 'yes' ? 'border-[#f59e0b] bg-[#f59e0b]/5' : 'border-gray-100 hover:border-gray-200'">
@@ -84,7 +84,7 @@ const reset = () => {
       </div>
 
       <!-- Step 2 -->
-      <div v-if="step === 2" class="animate-in fade-in slide-in-from-right-4 duration-300">
+      <div v-if="step === 2" class="">
         <h4 class="text-xl font-bold text-[#0f172a] mb-6">2. Finansal Durumunuz</h4>
         <div class="space-y-3">
           <label class="flex items-center gap-4 p-4 rounded-xl border-2 cursor-pointer transition-all" :class="answers.finance === 'high' ? 'border-[#f59e0b] bg-[#f59e0b]/5' : 'border-gray-100 hover:border-gray-200'">
@@ -103,7 +103,7 @@ const reset = () => {
       </div>
 
       <!-- Step 3 -->
-      <div v-if="step === 3" class="animate-in fade-in slide-in-from-right-4 duration-300">
+      <div v-if="step === 3" class="">
         <h4 class="text-xl font-bold text-[#0f172a] mb-6">3. Çalışma Durumunuz</h4>
         <div class="space-y-3">
           <label class="flex items-center gap-4 p-4 rounded-xl border-2 cursor-pointer transition-all" :class="answers.job === 'fulltime' ? 'border-[#f59e0b] bg-[#f59e0b]/5' : 'border-gray-100 hover:border-gray-200'">
@@ -126,7 +126,7 @@ const reset = () => {
       </div>
 
       <!-- Step 4 -->
-      <div v-if="step === 4" class="animate-in fade-in slide-in-from-right-4 duration-300">
+      <div v-if="step === 4" class="">
         <h4 class="text-xl font-bold text-[#0f172a] mb-6">4. Aile Eğilimi</h4>
         <div class="space-y-3">
           <label class="flex items-center gap-4 p-4 rounded-xl border-2 cursor-pointer transition-all" :class="answers.family === 'married' ? 'border-[#f59e0b] bg-[#f59e0b]/5' : 'border-gray-100 hover:border-gray-200'">
@@ -154,14 +154,14 @@ const reset = () => {
     </div>
 
     <!-- Calculating State -->
-    <div v-if="isCalculating" class="p-16 text-center animate-in fade-in duration-300 flex flex-col items-center">
+    <div v-if="isCalculating" class="p-16 text-center flex flex-col items-center">
       <div class="w-16 h-16 border-4 border-gray-100 border-t-[#f59e0b] rounded-full animate-spin mb-6"></div>
       <h4 class="text-xl font-bold text-[#0f172a]">Profiliniz Analiz Ediliyor...</h4>
       <p class="text-gray-500 text-sm mt-2">Konsolosluk algoritmalarına göre başarı puanınız hesaplanıyor.</p>
     </div>
 
     <!-- Result State -->
-    <div v-if="showResult" class="p-12 text-center animate-in zoom-in-95 duration-500">
+    <div v-if="showResult" class="p-12 text-center">
       <div class="inline-flex items-center justify-center w-32 h-32 rounded-full border-8 mb-6 relative" :class="score >= 70 ? 'border-green-500 text-green-500' : (score > 40 ? 'border-[#f59e0b] text-[#f59e0b]' : 'border-red-500 text-red-500')">
         <span class="text-5xl font-black">%{{ score }}</span>
       </div>

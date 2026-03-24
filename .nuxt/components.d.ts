@@ -15,7 +15,6 @@ type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {},
 
 
 export const DocumentChecklist: typeof import("../app/components/DocumentChecklist.vue")['default']
-export const FloatingWhatsApp: typeof import("../app/components/FloatingWhatsApp.vue")['default']
 export const Footer: typeof import("../app/components/Footer.vue")['default']
 export const GridHelper: typeof import("../app/components/GridHelper.vue")['default']
 export const Navbar: typeof import("../app/components/Navbar.vue")['default']
@@ -77,7 +76,6 @@ export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
 export const LazyDocumentChecklist: LazyComponent<typeof import("../app/components/DocumentChecklist.vue")['default']>
-export const LazyFloatingWhatsApp: LazyComponent<typeof import("../app/components/FloatingWhatsApp.vue")['default']>
 export const LazyFooter: LazyComponent<typeof import("../app/components/Footer.vue")['default']>
 export const LazyGridHelper: LazyComponent<typeof import("../app/components/GridHelper.vue")['default']>
 export const LazyNavbar: LazyComponent<typeof import("../app/components/Navbar.vue")['default']>

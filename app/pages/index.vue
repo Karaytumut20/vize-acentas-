@@ -1,12 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
 import { useSeoMeta, useHead } from '#imports'
-import { useGsap } from '~/composables/useGsap'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import SplitText from '~/lib/gsap/SplitText.js'
-
-const gsapCtx = useGsap()
 
 useSeoMeta({
   title: 'Champ Vize - Türkiye\'nin En Güvenilir Vize Danışmanlık Şirketi',
@@ -77,57 +71,7 @@ useHead({
   ]
 })
 
-onMounted(() => {
-  if (import.meta.client) {
-    gsap.registerPlugin(ScrollTrigger, SplitText)
-    
-    gsapCtx.add(() => {
-      // Hero Animations
-      const splitTitle = new SplitText('.hero-title', { type: 'words, chars' })
-      gsap.from(splitTitle.chars, {
-        y: 80,
-        opacity: 0,
-        duration: 1.2,
-        stagger: 0.05,
-        ease: 'power4.out',
-        delay: 0.2
-      })
-      
-      gsap.from('.hero-subtitle', { y: 30, opacity: 0, duration: 1, delay: 0.8, ease: 'power3.out' })
-      gsap.from('.hero-cta', { scale: 0.95, opacity: 0, duration: 0.6, delay: 1.2, ease: 'back.out(1.5)' })
-      gsap.from('.hero-stats', { y: 20, opacity: 0, duration: 1, delay: 1.4, ease: 'power3.out' })
 
-      // Scroll Animations
-      gsap.utils.toArray('.reveal-up').forEach((elem: any) => {
-        gsap.from(elem, {
-          scrollTrigger: {
-            trigger: elem,
-            start: 'top 85%'
-          },
-          y: 60,
-          opacity: 0,
-          duration: 1,
-          ease: 'power3.out'
-        })
-      })
-
-      gsap.utils.toArray('.stagger-grid').forEach((grid: any) => {
-        const items = grid.querySelectorAll('.stagger-item')
-        gsap.from(items, {
-          scrollTrigger: {
-            trigger: grid,
-            start: 'top 80%'
-          },
-          y: 40,
-          opacity: 0,
-          duration: 0.8,
-          stagger: 0.15,
-          ease: 'power2.out'
-        })
-      })
-    })
-  }
-})
 
 const activeFaq = ref<number | null>(null)
 const toggleFaq = (index: number) => {
@@ -222,7 +166,7 @@ const testimonials = [
       </div>
       
       <!-- Scroll Indicator -->
-      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce z-10 text-white/50">
+      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 text-white/50">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
       </div>
     </section>

@@ -646,7 +646,6 @@ const _inlineRuntimeConfig = {
       },
       "/**": {
         "headers": {
-          "X-Powered-By": "",
           "X-Content-Type-Options": "nosniff",
           "X-Frame-Options": "DENY",
           "X-XSS-Protection": "1; mode=block",
@@ -836,13 +835,11 @@ const _inlineRuntimeConfig = {
         "sitemapName": "sitemap.xml",
         "route": "sitemap.xml",
         "defaults": {
-          "lastmod": "2026-03-24T20:03:17Z"
+          "lastmod": "2026-03-24T21:43:35Z"
         },
         "include": [],
         "exclude": [
           "/_**",
-          "/_nuxt/**",
-          "/_nuxt/**",
           "/_nuxt/**"
         ],
         "includeAppSources": true
@@ -6466,15 +6463,15 @@ const sources$1 = [
             },
             {
                 "loc": "/iletisim",
-                "lastmod": "2026-03-23T20:16:31.982Z"
+                "lastmod": "2026-03-24T21:16:34.218Z"
             },
             {
                 "loc": "/kurumsal",
-                "lastmod": "2026-03-24T18:46:00.142Z"
+                "lastmod": "2026-03-24T21:17:51.799Z"
             },
             {
                 "loc": "/randevu-al",
-                "lastmod": "2026-03-24T18:30:46.129Z"
+                "lastmod": "2026-03-24T20:04:53.242Z"
             },
             {
                 "loc": "/sss",
@@ -6490,7 +6487,7 @@ const sources$1 = [
             },
             {
                 "loc": "/",
-                "lastmod": "2026-03-24T18:32:40.559Z"
+                "lastmod": "2026-03-24T21:17:06.590Z"
             }
         ],
         "sourceType": "app"

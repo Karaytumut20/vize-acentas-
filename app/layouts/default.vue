@@ -7,7 +7,6 @@
     </main>
 
     <Footer />
-    <FloatingWhatsApp />
   </div>
 </template>
 

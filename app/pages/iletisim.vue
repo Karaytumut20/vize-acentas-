@@ -1,11 +1,6 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
 import { useSeoMeta, useHead } from '#imports'
-import { useGsap } from '~/composables/useGsap'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-
-const gsapCtx = useGsap()
 
 useSeoMeta({
   title: 'İletişim | Champ Vize Danışmanlık - Bize Ulaşın',
@@ -33,37 +28,7 @@ useHead({
   ]
 })
 
-onMounted(() => {
-  if (import.meta.client) {
-    gsap.registerPlugin(ScrollTrigger)
-    
-    gsapCtx.add(() => {
-      gsap.from('.contact-hero', {
-        y: 40,
-        opacity: 0,
-        duration: 1,
-        ease: 'power3.out',
-        delay: 0.1
-      })
-      
-      gsap.from('.form-block', {
-        x: -40,
-        opacity: 0,
-        duration: 0.8,
-        delay: 0.4,
-        ease: 'power2.out'
-      })
-      
-      gsap.from('.info-block', {
-        x: 40,
-        opacity: 0,
-        duration: 0.8,
-        delay: 0.5,
-        ease: 'power2.out'
-      })
-    })
-  }
-})
+
 
 const branches = [
   {
