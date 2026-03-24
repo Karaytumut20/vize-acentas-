@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "lchmp";
+    src: url("/fonts/lchmp.woff2") format("woff2");
+    font-weight: 300 600;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  :root {
+    /* Kurumsal Renk Paleti Dönüşümü */
+    --color-white: 0 0% 100%;
+    --color-black: 222 47% 11%;    /* Siyahı "Slate-900 / Navy" olarak değiştirdik */
+    --color-light: 210 20% 98%;    /* Hafif kırık beyaz / fildişi zemin */
+    --color-dark: 215 28% 17%;     /* Yumuşak Laci-Gri kart arka plan rengi gerektiğinde */
+
+    /* Varsayılan Tema Renkleri İnvert Edildi (Açık Tema) */
+    --theme-bg: var(--color-light); /* Arka plan artık açık */
+    --theme-fg: var(--color-black); /* Yazılar koyu (Navy) */
+
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 2rem;
+    --text-4xl: 2.5rem;
+    --text-5xl: 3rem;
+    --text-6xl: 4rem;
+    --text-7xl: 5rem;
+    --text-8xl: 6.5rem;
+    --text-9xl: 8rem;
+
+    --page-margin: 2.5rem;
+    --grid-gutter: 1rem;
+    --section-gap: 7.5rem;
+    --header-height: 5rem;
+
+    --radius-sm: 0.5rem;
+    --radius-md: 0.75rem;
+    --radius-lg: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    :root {
+      --text-9xl: 2.75rem;
+      --text-8xl: 2.5rem;
+      --text-7xl: 2.25rem;
+      --text-6xl: 2rem;
+      --text-5xl: 1.75rem;
+      --text-4xl: 1.5rem;
+      --text-3xl: 1.25rem;
+      --text-2xl: 1.125rem;
+      --text-xl: 1rem;
+      --text-base: 0.875rem;
+
+      --page-margin: 1.25rem;
+      --grid-gutter: 0.75rem;
+      --section-gap: 5rem;
+      --header-height: 4rem;
+    }
+  }
+
+  /* --- LENIS ZORUNLU YAPILANDIRMASI --- */
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+  .lenis.lenis-smooth iframe {
+    pointer-events: none;
+  }
+
+  html {
+    font-size: calc(100vw / 1440 * 16);
+    overscroll-behavior: none;
+    -webkit-text-size-adjust: 100%;
+    background-color: hsl(var(--theme-bg));
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    @media (max-width: 768px) {
+      font-size: calc(100vw / 390 * 16);
+    }
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    /* transition class silindi ki sayfa yüklemelerinde glitch yapmasın */
+    @apply font-sans font-normal leading-none tracking-tight bg-theme-bg text-theme-fg;
+    overscroll-behavior: none;
+  }
+
+  * {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+
+  img,
+  picture,
+  video,
+  svg,
+  a {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+  }
+
+  button,
+  a {
+    -webkit-touch-callout: none;
+    outline: none;
+  }
+
+  *:focus-visible {
+    @apply outline-2 outline-offset-4 outline-slate-400;
+  }
+}
