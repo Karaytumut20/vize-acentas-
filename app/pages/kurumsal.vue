@@ -79,28 +79,7 @@ onMounted(() => {
   }
 })
 
-const whyUsFeatures = [
-  {
-    icon: '<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="m9 15 2 2 4-4"/></svg>',
-    title: 'Eksiksiz Belge Hazırlığı',
-    desc: 'Küçük bir hata bile vize reddine neden olabilir. Konsoloslukların güncel taleplerini yakından takip ediyor, belgelerinizin eksiksiz ve hatasız olmasını sağlayarak red riskini büyük oranda azaltıyoruz.'
-  },
-  {
-    icon: '<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>',
-    title: 'Hızlı ve VIP Randevu Yönetimi',
-    desc: 'Randevu bulmanın aylar sürdüğü popüler ülkeler için özel sistemlerimizle boşlukları ilk biz yakalıyor, seyahat planınız aksamadan VIP randevu desteği veriyoruz.'
-  },
-  {
-    icon: '<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>',
-    title: 'Güvenilirlik ve Şeffaflık',
-    desc: 'Champ Vize olarak konsolosluk işlemlerindeki aracılığımızı şeffaf yürütüyoruz. Yapılamayacak işlere söz vermiyor, durumu kritik olan başvuruları önceden tespit ederek strateji geliştiriyoruz.'
-  },
-  {
-    icon: '<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
-    title: 'Kişiye Özel Analiz',
-    desc: 'Her müşterinin ekonomik tablosu ve seyahat geçmişi farklıdır. Standart listeler vermek yerine profilinizi analiz ediyor, konsolosu ikna edecek özel bir dosya yapısı oluşturuyoruz.'
-  }
-]
+
 </script>
 
 <template>
@@ -160,21 +139,94 @@ const whyUsFeatures = [
     </section>
 
     <!-- Neden Biz / Avantajlarımız -->
-    <section class="py-20 lg:py-32 bg-white reveal-section">
-      <div class="container mx-auto px-4 md:px-6 lg:px-8 text-center max-w-3xl mb-16">
-        <h2 class="text-3xl md:text-4xl font-black text-[#0f172a] mb-6 tracking-tight" id="neden-biz">Neden Bizi Tercih Etmelisiniz?</h2>
-        <p class="text-lg text-gray-600">
-          Vize başvuru sürecinin stresiyle baş başa kalmayın. Rakiplerimizin uyguladığı standart formüllere karşın, Champ Vize size tamamen size özel analizlerle yaklaşır.
+    <section class="py-20 lg:py-32 bg-gray-50 reveal-section border-y border-gray-100 relative overflow-hidden">
+      <!-- Decor -->
+      <div class="absolute -top-40 -right-40 w-96 h-96 bg-[#f59e0b]/5 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="container mx-auto px-4 md:px-6 lg:px-8 text-center max-w-4xl mb-20 relative z-10">
+        <span class="text-[#f59e0b] font-bold tracking-widest uppercase text-sm mb-4 block">Farkımızı Keşfedin</span>
+        <h2 class="text-4xl md:text-5xl font-black text-[#0f172a] mb-8 tracking-tight" id="neden-biz">Neden Bizi Tercih Etmelisiniz?</h2>
+        <p class="text-xl text-gray-600 leading-relaxed font-light">
+          Vize başvuru sürecinin stresiyle baş başa kalmayın. Rakiplerimizin uyguladığı standart ve basmakalıp formüllere karşın, <strong class="text-[#0f172a] font-bold">Champ Vize</strong> tamamen size ve seyahat amacınıza özel analizlerle garantili çözümler sunar.
         </p>
       </div>
 
-      <div class="container mx-auto px-4 md:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 stagger-cards">
-          <div v-for="(feature, index) in whyUsFeatures" :key="index" class="stagger-item p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:border-[#f59e0b]/30 hover:shadow-xl transition-all duration-300 group">
-            <div class="w-16 h-16 rounded-2xl bg-[#0f172a] text-[#f59e0b] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg" v-html="feature.icon"></div>
-            <h3 class="text-xl font-bold text-[#0f172a] mb-4">{{ feature.title }}</h3>
-            <p class="text-gray-600 leading-relaxed text-sm">{{ feature.desc }}</p>
+      <div class="container mx-auto px-4 md:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 stagger-cards">
+          
+          <!-- Item 1 -->
+          <div class="stagger-item bg-white p-10 rounded-[2.5rem] shadow-[0_10px_40px_rgba(0,0,0,0.03)] border border-gray-100 hover:border-[#f59e0b]/30 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-gray-50 to-transparent rounded-bl-[4rem] -z-0"></div>
+            <div class="w-20 h-20 rounded-3xl bg-[#0f172a] text-[#f59e0b] flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500 shadow-xl relative z-10">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <h3 class="text-2xl font-bold text-[#0f172a] mb-4 relative z-10">%98 Başarı Oranı</h3>
+            <p class="text-gray-600 leading-relaxed text-base relative z-10">
+              Konsoloslukların en güncel kurallarını anlık takip ederek, ret riskini neredeyse sıfıra indiriyoruz. Başvuruların %98'i sadece ilk denemede onay alıyor.
+            </p>
           </div>
+
+          <!-- Item 2 -->
+          <div class="stagger-item bg-white p-10 rounded-[2.5rem] shadow-[0_10px_40px_rgba(0,0,0,0.03)] border border-gray-100 hover:border-[#f59e0b]/30 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-gray-50 to-transparent rounded-bl-[4rem] -z-0"></div>
+            <div class="w-20 h-20 rounded-3xl bg-[#0f172a] text-[#f59e0b] flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500 shadow-xl relative z-10">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+            </div>
+            <h3 class="text-2xl font-bold text-[#0f172a] mb-4 relative z-10">Kişiye Özel Evrak Analizi</h3>
+            <p class="text-gray-600 leading-relaxed text-base relative z-10">
+              Klasikleşmiş listeler yerine, ekonomik tablonuz ve profiliniz vize uzmanlarımız tarafından detaylıca incelenir. Size en uygun stratejiyle dosyanız kusursuz hazırlanır.
+            </p>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="stagger-item bg-white p-10 rounded-[2.5rem] shadow-[0_10px_40px_rgba(0,0,0,0.03)] border border-gray-100 hover:border-[#f59e0b]/30 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-gray-50 to-transparent rounded-bl-[4rem] -z-0"></div>
+            <div class="w-20 h-20 rounded-3xl bg-[#f59e0b] text-white flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500 shadow-[0_10px_20px_rgba(245,158,11,0.3)] relative z-10">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3 class="text-2xl font-bold text-[#0f172a] mb-4 relative z-10">VIP ve Hızlı Randevu</h3>
+            <p class="text-gray-600 leading-relaxed text-base relative z-10">
+              Schengen veya Amerika fark etmeksizin, aylarca randevu beklemeye son verin. Premium bot sistemlerimizle ilk boşluklar anında sizin için ayrılır, seyahatiniz asla aksamaz.
+            </p>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="stagger-item bg-white p-10 rounded-[2.5rem] shadow-[0_10px_40px_rgba(0,0,0,0.03)] border border-gray-100 hover:border-[#f59e0b]/30 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-gray-50 to-transparent rounded-bl-[4rem] -z-0"></div>
+            <div class="w-20 h-20 rounded-3xl bg-[#0f172a] text-[#f59e0b] flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500 shadow-xl relative z-10">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </div>
+            <h3 class="text-2xl font-bold text-[#0f172a] mb-4 relative z-10">Ücretsiz Red Analizi</h3>
+            <p class="text-gray-600 leading-relaxed text-base relative z-10">
+              Daha önce vize reddi almışsanız, ret mektubunuz çevirmenlerimiz ve danışmanlarımızla ücretsiz değerlendirilir ve nerede hata yapıldığı kuruş harcamadan tespit edilir.
+            </p>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="stagger-item bg-white p-10 rounded-[2.5rem] shadow-[0_10px_40px_rgba(0,0,0,0.03)] border border-gray-100 hover:border-[#f59e0b]/30 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-gray-50 to-transparent rounded-bl-[4rem] -z-0"></div>
+            <div class="w-20 h-20 rounded-3xl bg-[#0f172a] text-[#f59e0b] flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500 shadow-xl relative z-10">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 18a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2"/><rect width="18" height="18" x="3" y="4" rx="2"/><circle cx="12" cy="10" r="2"/><line x1="8" x2="8" y1="2" y2="4"/><line x1="16" x2="16" y1="2" y2="4"/></svg>
+            </div>
+            <h3 class="text-2xl font-bold text-[#0f172a] mb-4 relative z-10">Şeffaf Şartlar ve Mülakat Provası</h3>
+            <p class="text-gray-600 leading-relaxed text-base relative z-10">
+              Sizden asla yalan beyanda bulunmanız istenmez. Doğru bilgiyi doğru şekilde konsolosa iletmeniz için önceden gerçekçi mülakat simülasyonlarıyla sizi hazırlarız.
+            </p>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="stagger-item bg-white p-10 rounded-[2.5rem] shadow-[0_10px_40px_rgba(0,0,0,0.03)] border border-gray-100 hover:border-[#f59e0b]/30 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-gray-50 to-transparent rounded-bl-[4rem] -z-0"></div>
+            <div class="w-20 h-20 rounded-3xl bg-[#0f172a] text-[#f59e0b] flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500 shadow-xl relative z-10">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <h3 class="text-2xl font-bold text-[#0f172a] mb-4 relative z-10">7/24 Kesintisiz İletişim</h3>
+            <p class="text-gray-600 leading-relaxed text-base relative z-10">
+              Dosyanız işleme alındığında, cep telefonunuza anında durum bilgisi gelir. Ekibimize WhatsApp veya telefon üzerinden saniyeler içinde bağlanıp süreç desteği alabilirsiniz.
+            </p>
+          </div>
+
         </div>
       </div>
     </section>
